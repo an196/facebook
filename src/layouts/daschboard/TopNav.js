@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   IHome, IWatch, IGroup, IGame, IMarketplace, IMenu, ISearch, IUser, IMessenger, INotification, ILogo
 } from '../../theme/icons/index';
@@ -14,7 +12,7 @@ const menuIcon = [
 
 function TopNav() {
   return (
-    <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px]'>
+    <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b] sticky top-0'>
       <div className='flex flex-row space-x-[10px] items-center' id='area1'>
         <span className='w-[45px] h-[45px] m-auto p-auto'>
           <ILogo />
@@ -23,13 +21,13 @@ function TopNav() {
           <span className='h-[18px] w-[18px]'>
             <ISearch />
           </span>
-          <input className='px-[8px] pt-[7px] pb-[9px] bg-inherit' placeholder='Tìm kiếm trên Facebook' />
+          <input className='px-[8px] pt-[7px] pb-[9px] bg-inherit outline-none' placeholder='Tìm kiếm trên Facebook' />
         </span>
       </div>
-      <span className='w-[650px] flex flex-row h-full justify-around items-center text-[#b0b3b8]' id='area2'>
+      <span className='w-[680px] flex flex-row h-full justify-around items-center text-[#b0b3b8]' id='area2'>
         {
           menuIcon.map((item, index )=> (
-            <span className={`flex w-full h-full justify-center items-center ${index === 0 && 'menu-item-active'}`}>
+            <span key={index} className={`flex w-full h-full justify-center items-center ${index === 0 && 'menu-item-active'}`}>
               <span className='menu-item'>
                 {item.icon}
               </span>

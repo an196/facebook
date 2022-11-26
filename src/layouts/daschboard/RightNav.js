@@ -1,8 +1,11 @@
-import React from 'react'
+
 
 function RightNav() {
   return (
-    <div>RightNav</div>
+    <div >
+      Right
+
+    </div>
   )
 }
 

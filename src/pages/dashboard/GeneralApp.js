@@ -8,10 +8,10 @@ function GeneralApp() {
   return (
     <>
       <TopNav />
-      <div className='flex flex-col'>
-        <RightNav />
+      <div className='flex flex-row bg-[#18191a] justify-between'>
         <LeftNav />
         <MainFeed />
+        <RightNav />
       </div>
 
     </>
