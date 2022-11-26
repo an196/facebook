@@ -14,7 +14,6 @@ const Loadalbe = (Component) => (props) => {
     )
 }
 
-
 function Router() {
     return useRoutes([
         {
