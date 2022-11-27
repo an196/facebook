@@ -1,6 +1,3 @@
-import React from 'react';
-import '../../styles/leftNav.css';
-
 const items = [
   { title: 'Bạn bè', style: 'left-nav-icon-1 bg-img-a', type: 'icon' },
   { title: 'Đã lưu', style: 'left-nav-icon-2 bg-img-a', type: 'icon' },
@@ -34,7 +31,7 @@ function LeftNav() {
     <div className='text-[#e1e3e8] overflow-y-auto p-[18px] mt-[10px]'>
       <ul className='w-[344px]'>
         {items.map((item, index) => (
-          <li className='flex flex-row space-x-3 items-center h-[52px]'>
+          <li className='flex flex-row space-x-3 items-center h-[52px]' key={index}>
             <span className='w-[36px] h-[36px]'>
               {item.type === 'icon' ?
                 <i data-visualcompletion='css-img' className={`left-nav-icon ${item.style} `}></i>

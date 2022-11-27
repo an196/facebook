@@ -1,4 +1,5 @@
 import Router from './routes';
+import './styles/leftNav.css';
 import './App.css';
 
 function App() {
