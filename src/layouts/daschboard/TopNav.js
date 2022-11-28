@@ -13,7 +13,8 @@ const menuIcon = [
 
 function TopNav() {
   return (
-    <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b] sticky top-0'>
+    <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
+      !z-1000000 sticky top-0'>
       <div className='flex flex-row space-x-[10px] items-center' id='area1'>
         <span className='w-[45px] h-[45px] m-auto p-auto'>
           <ILogo />
