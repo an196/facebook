@@ -1,5 +1,20 @@
 import avatar from '../../../assets/images/avatar1.png';
-import { IEarth, IThreedots } from '../../../theme/icons/index';
+import { IEarth, IThreedots, IThumbsUp, IThumbsUp3, IMessage, IShare } from '../../../theme/icons/index';
+
+const actions = [
+	{ name: 'Thích', icon: <IThumbsUp3 /> },
+	{ name: 'Bình Luận', icon: <IMessage /> },
+	{ name: 'Chia sẽ', icon: <IShare /> },
+];
+
+const ActionFeed = ({ action }) => {
+	return (
+		<div className='w-full space-x-2 flex flex-row items-center justify-center'>
+			<div className='w-[20px] h-[20px] text-[#a8abaf] '>{action.icon}</div>
+			<span className='text-[16px] font-medium'>{action.name}</span>
+		</div>
+	);
+};
 
 function NewsFeed() {
 	const truncate = (des) => {
@@ -7,7 +22,7 @@ function NewsFeed() {
 	};
 
 	return (
-		<div className='w-full bg-[#242526] mt-[23px] rounded-xl '>
+		<div className='w-full bg-[#242526] mt-[23px] rounded-xl overflow-hidden'>
 			<div className='pt-[12px] p-[16px] pb-0 flex flex-row mb-[12px]'>
 				<div className='w-[40px] h-[40px] rounded-full overflow-hidden mr-4'>
 					<img src={avatar} width={40} height={40} />
@@ -42,8 +57,8 @@ function NewsFeed() {
 				/>
 			</div>
 			<div className='h-[78px] w-full bg-[#3a3b3c] p-[2px] px-[12px]'>
-				<span className='uppercase text-[#95979b] text-[13px] leading-[17px]'>techrum.vn</span>
-				<span className='w-full flex flex-wrap leading-[22px] text-[18px] text-[#d2d4d8] font-semibold'>
+				<span className='uppercase text-[#e1e3e8] text-[13px] leading-[17px]'>techrum.vn</span>
+				<span className='w-full flex flex-wrap leading-[22px] text-[18px] text-[#e1e3e8] font-semibold'>
 					Thông tin mới nhất về mẫu iPhone sử dụng cổng sạc "USB-C" của Apple
 				</span>
 				<span className='leading-[20px] text-[14px] text-[#95979b]'>
@@ -51,6 +66,23 @@ function NewsFeed() {
 						'Trước đây, việc iPhone chuyển sang sử dụng cổng sạc USB-C dường như là "một điều không thể sảy ra" nhưng theo bối cảnh hiện tại cùng với sức ép từ Liên minh châu Âu thì điều đó lại đang dần trở thành hiện thực, mặc dù sẽ',
 					)}
 				</span>
+			</div>
+			<div className=' mx-[16px] '>
+				<div className='flex flex-row justify-between py-[10px]'>
+					<div className='flex flex-row items-center text-[#95979b] space-x-2'>
+						<div className='w-[18px] h-[18px] '>
+							<IThumbsUp />
+						</div>
+						<span className='font-medium text-[16px]'>64</span>
+					</div>
+					<div className='text-[#95979b] text-[16px] font-medium'>2 bình luận</div>
+				</div>
+				<div className='border-b-[1px] border-[#393a3b]'></div>
+				<div className='h-[52px] w-full flex flex-row'>
+					{actions.map((action, index) => (
+						<ActionFeed action={action} key={index} />
+					))}
+				</div>
 			</div>
 		</div>
 	);

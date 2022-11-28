@@ -8,7 +8,7 @@ function GeneralApp() {
   return (
     <>
       <TopNav />
-      <div className='flex flex-row bg-[#18191a] justify-between'>
+      <div className='flex flex-row bg-[#18191a] justify-between relative'>
         <LeftNav />
         <MainFeed />
         <RightNav />

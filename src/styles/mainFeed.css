@@ -1,21 +1,31 @@
-.bg-img-1{
-    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/ym/r/Olodd3YjlR3.png");
-    background-size:33px 550px;
-    width:24px;
-    height:24px;
-    background-repeat:no-repeat;
-    display:inline-block;
-    background-position:0 -33px;
+.bg-img-1 {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/ym/r/Olodd3YjlR3.png');
+	background-size: 33px 550px;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-position: 0 -33px;
+}
+
+.bg-img-2 {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/kqgn9ZM1Gm2.png');
+	background-position: 0px -213px;
+	background-size: 25px 809px;
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 .action-feed-icon-1 {
-   background-position:0 -33px;
+	background-position: 0 -33px;
 }
 
 .action-feed-icon-2 {
-    background-position:0 -233px;
+	background-position: 0 -233px;
 }
 
 .action-feed-icon-3 {
-    background-position:0 -183px;
+	background-position: 0 -183px;
 }

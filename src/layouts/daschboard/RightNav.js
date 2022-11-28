@@ -7,7 +7,7 @@ function RightNav() {
 
 
   return (
-    <div className='w-[360px] p-2 text-[#e1e3e8]'>
+    <div className='w-[360px] p-2 text-[#e1e3e8] sticky'>
       <div className='flex flex-row justify-between  mt-[20px] w-full'>
         <span className='leading-[21px] text-[16px] font-medium text-[#e1e3e8]'>Người liên hệ</span>
         <span className='flex flex-row space-x-3 justify-center items-center pt-1'>
