@@ -1,10 +1,11 @@
-import { TopFeed, ActionsFeed } from '../../components/dashboard';
+import { TopFeed, ActionsFeed, NewsFeed } from '../../components/dashboard';
 
 function MainFeed() {
   return (
-    <div className='w-[680px] h-[1000px] text-[#b0b3b8] overflow-hidden '>
+    <div className='w-[680px] text-[#b0b3b8] overflow-hidden '>
       <TopFeed/>
       <ActionsFeed/>
+      <NewsFeed/>
     </div>
   )
 }
