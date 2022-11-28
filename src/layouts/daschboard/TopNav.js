@@ -1,6 +1,7 @@
 import {
   IHome, IWatch, IGroup, IGame, IMarketplace, IMenu, ISearch, IUser, IMessenger, INotification, ILogo
 } from '../../theme/icons/index';
+import avatar from '../../assets/images/avatar3.jpg'
 
 const menuIcon = [
   { name: 'home', icon: <IHome /> },
@@ -47,8 +48,8 @@ function TopNav() {
         <span className='left-icon-item'>
           <INotification />
         </span>
-        <span className='left-icon-item'>
-          <IUser />
+        <span className=''>
+          <img src={avatar} alt='avatar' className='rounded-full' width={40} height={40}/>
         </span>
       </span>
     </div>

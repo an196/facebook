@@ -39,7 +39,7 @@ function LeftNav() {
                 <img src={item.src} width={36} height={36} />
               }
             </span>
-            <span>{item.title}</span>
+            <span className="w-full flex flex-wrap">{item.title}</span>
           </li>
         ))}
       </ul>
