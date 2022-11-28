@@ -28,7 +28,7 @@ const items = [
 
 function LeftNav() {
   return (
-    <div className='text-[#e1e3e8] overflow-y-auto p-[18px] mt-[10px]'>
+    <div className='text-[#e1e3e8] flex-initial overflow-y-auto p-[18px] mt-[10px] h-[100vh] w-[360px]'>
       <ul className='w-[344px]'>
         {items.map((item, index) => (
           <li className='flex flex-row space-x-3 items-center h-[52px]' key={index}>
