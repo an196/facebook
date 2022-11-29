@@ -29,7 +29,7 @@ function NewsFeed({news}) {
 						<strong className='text-[16px] text-[##efefef]'>{news.name}</strong>
 					</span>
 					<div className='flex flex-row items-center space-x-1 mt-[4px]'>
-						<span className='text-[12px] text-[##efefef]'>1 giờ</span>
+						<span className='text-[12px] text-[#efefef]'>1 giờ</span>
 						<span className='-mt-[8px]'> . </span>
 						<span className='w-[12px] h-[12px] '>
 							<IEarth />

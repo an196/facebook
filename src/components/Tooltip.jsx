@@ -15,7 +15,7 @@ function Tooltip({ message, position, distance, children  }) {
 	};
 
 	return (
-		<div className='relative flex flex-col items-center group h-full duration-500 delay-500 ease-linear' >
+		<div className='relative flex flex-col items-center group h-full ' >
 			{children}
 			<div className={`absolute flex flex-col items-center hidden mb-6 group-hover:flex ${getPositon(position)}`}>
 				<span

@@ -1,4 +1,5 @@
-
+import { useState } from "react";
+import { IDownArrow, IUpArrow } from "../../theme/icons";
 
 const items = [
   { title: 'Bạn bè', style: 'left-nav-icon-1 bg-img-a', type: 'icon' },
@@ -28,25 +29,57 @@ const items = [
   { title: 'Yêu thích', type: 'img', src: 'https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/mAnT0r8GSOm.png' },
 ]
 
+
+
+const ItemRow = ({ item }) => {
+  return (
+    <li className='flex flex-row space-x-3 items-center pl-[6px] h-[52px] hover:bg-[#7c7c7c5a] rounded-xl transition ease-in-out'>
+      <span className='w-[36px] h-[36px]'>
+        {item.type === 'icon' ?
+          <i data-visualcompletion='css-img' className={`left-nav-icon ${item.style} `}></i>
+          :
+          <img src={item.src} width={36} height={36} />
+        }
+      </span>
+      <span className="w-full flex flex-wrap font-medium">{item.title}</span>
+    </li>
+  )
+}
+
 function LeftNav() {
+  const [isViewmore, setViewmore] = useState(false);
+
+  const ViewMore = () => {
+    return (
+      <li className='flex flex-row space-x-3 items-center pl-[6px] h-[52px] hover:bg-[#7c7c7c5a] rounded-xl transition ease-in-out cursor-pointer'
+        onClick={() => setViewmore(!isViewmore)}
+      >
+        <span className='w-[36px] h-[36px] flex items-center justify-center rounded-full bg-[#303031]'>
+          <span className="w-[20px] h-[20px]">
+            {!isViewmore ? <IDownArrow /> : <IUpArrow />}
+
+          </span>
+        </span>
+        <span className="font-medium w-full">{!isViewmore ? 'Xem Thêm' : 'Ẩn bớt'}</span>
+      </li>
+    )
+  }
+
   return (
     <div className='text-[#e1e3e8] flex-initial h-[100vh] w-[360px] '>
-        <ul className='w-[360px] flex-initial  overflow-y-auto p-[18px] mt-[10px] h-[100vh]'>
-       
-          {items.map((item, index) => (
-            <li className='flex flex-row space-x-3 items-center h-[52px]' key={index}>
-              <span className='w-[36px] h-[36px]'>
-                {item.type === 'icon' ?
-                  <i data-visualcompletion='css-img' className={`left-nav-icon ${item.style} `}></i>
-                  :
-                  <img src={item.src} width={36} height={36} />
-                }
-              </span>
-              <span className="w-full flex flex-wrap">{item.title}</span>
-            </li>
-          ))}
-      
-        </ul>
+      <ul className='w-[360px] flex-initial  overflow-y-auto p-[12px] mt-[10px] h-[100vh]'>
+        {
+          !isViewmore ?
+            items.slice(0, 5).map((item, index) => (
+              <ItemRow key={index} item={item} />
+            ))
+            :
+            items.map((item, index) => (
+              <ItemRow key={index} item={item} />
+            ))
+        }
+        <ViewMore />
+      </ul>
     </div>
   );
 }

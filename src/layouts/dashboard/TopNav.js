@@ -36,14 +36,15 @@ function TopNav() {
       <span className='w-[680px] flex flex-row h-full justify-around items-center text-[#b0b3b8]' id='area2'>
         {
           menuIcon.map((item, index) => (
-            <span key={index} className={`flex w-full h-full justify-center items-center cursor-pointer ${index === -1 && 'menu-item-active'}`}>
+            <span key={index} className={`${index === 0 && 'menu-item-active'} flex w-full h-full justify-center items-center cursor-pointer 
+            `}>
               <Tooltip
                 // options
                 message={item.title}
                 position="bottom"
                 distance={55}
               >
-                <span className={`w-[130px] flex justify-center items-center h-full `} >
+                <span className={`w-[130px] flex justify-center items-center h-full hover:bg-[#303031] rounded-xl`} >
                   <span className='menu-item'>
                     {item.icon}
                   </span>
@@ -57,7 +58,7 @@ function TopNav() {
         {
           leftIcons.map((icon, idx) => (
             <Tooltip key={idx} message={icon.name} position="bottom" distance={55}>
-              <span className='left-icon-item' >
+              <span className='left-icon-item hover:bg-[#525151]' >
                 {icon.icon}
               </span>
             </Tooltip>
