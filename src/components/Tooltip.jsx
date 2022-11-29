@@ -1,15 +1,10 @@
-import { useEffect, useRef } from 'react';
-
-function Tooltip({ message, position, children }) {
-	const tooltip = useRef();
-	let coordinates;
-
+function Tooltip({ message, position, distance, children  }) {
 	const getPositon = (position) => {
 		switch (position) {
 			case 'top':
 				return '';
 			case 'bottom':
-				return `-bottom-[${tooltip.current.offsetHeight}px]`;
+				return `-bottom-[${distance}px]`;
 			case 'left':
 				return '';
 			case 'right':
@@ -20,7 +15,7 @@ function Tooltip({ message, position, children }) {
 	};
 
 	return (
-		<div className='relative flex flex-col items-center group h-full' ref={tooltip}>
+		<div className='relative flex flex-col items-center group h-full duration-500 delay-500 ease-linear' >
 			{children}
 			<div className={`absolute flex flex-col items-center hidden mb-6 group-hover:flex ${getPositon(position)}`}>
 				<span

@@ -14,7 +14,7 @@ const actions = [
 const Action = ({ action }) => {
   return (
     <div className='w-[40px] h-[20px] flex justify-center items-center'>
-      <div className='w-[30px] h-[30px] flex justify-center items-center hover:bg-[#303031] rounded-full'>
+      <div className='w-[30px] h-[30px] flex justify-center items-center hover:bg-[#303031] rounded-full '>
         <div className='w-[20px] h-[16px] mt-[1px]'> {action.icon}</div>
       </div>
     </div>
