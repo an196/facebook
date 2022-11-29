@@ -38,7 +38,10 @@ function RightNav() {
         {
           users.map((user, idx) => (
             <div className='flex flex-row space-x-3 items-center ' key={idx}>
-              <img src={avatar} alt='avatar' className='rounded-full' width={36} height={36} />
+              <span className='relative'>
+                <img src={avatar} alt='avatar' className='rounded-full' width={36} height={36} />
+                <div className='h-[12px] w-[12px] bg-[#31a24c] absolute bottom-0 right-0 rounded-full border-[2px] border-[#18191a]'></div>
+              </span>
               <span className='leading-[20px] text-[16px] font-medium'>{user.name}</span>
             </div>
           ))

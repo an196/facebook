@@ -47,7 +47,7 @@ const CreateStory = () => {
 				className='w-[40px] h-[40px] bg-[#2e89ff] flex items-center justify-center m-auto -mt-[20px] relative !z-10 rounded-full
         border-[4px] border-[#242526]'
 			>
-				<div className='w-[20px] h-[20px]  text-white'>
+				<div className='w-[20px] h-[20px]  text-white cursor-pointer'>
 					<ICirclePlus />
 				</div>
 			</div>

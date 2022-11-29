@@ -29,8 +29,6 @@ const items = [
   { title: 'Yêu thích', type: 'img', src: 'https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/mAnT0r8GSOm.png' },
 ]
 
-
-
 const ItemRow = ({ item }) => {
   return (
     <li className='flex flex-row space-x-3 items-center pl-[6px] h-[52px] hover:bg-[#7c7c7c5a] rounded-xl transition ease-in-out'>
@@ -57,7 +55,6 @@ function LeftNav() {
         <span className='w-[36px] h-[36px] flex items-center justify-center rounded-full bg-[#303031]'>
           <span className="w-[20px] h-[20px]">
             {!isViewmore ? <IDownArrow /> : <IUpArrow />}
-
           </span>
         </span>
         <span className="font-medium w-full">{!isViewmore ? 'Xem Thêm' : 'Ẩn bớt'}</span>
