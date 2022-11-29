@@ -1,3 +1,5 @@
+
+
 const items = [
   { title: 'Bạn bè', style: 'left-nav-icon-1 bg-img-a', type: 'icon' },
   { title: 'Đã lưu', style: 'left-nav-icon-2 bg-img-a', type: 'icon' },
@@ -28,21 +30,23 @@ const items = [
 
 function LeftNav() {
   return (
-    <div className='text-[#e1e3e8] flex-initial overflow-y-auto p-[18px] mt-[10px] h-[100vh] w-[360px]'>
-      <ul className='w-[344px]'>
-        {items.map((item, index) => (
-          <li className='flex flex-row space-x-3 items-center h-[52px]' key={index}>
-            <span className='w-[36px] h-[36px]'>
-              {item.type === 'icon' ?
-                <i data-visualcompletion='css-img' className={`left-nav-icon ${item.style} `}></i>
-                :
-                <img src={item.src} width={36} height={36} />
-              }
-            </span>
-            <span className="w-full flex flex-wrap">{item.title}</span>
-          </li>
-        ))}
-      </ul>
+    <div className='text-[#e1e3e8] flex-initial h-[100vh] w-[360px] '>
+        <ul className='w-[360px] flex-initial  overflow-y-auto p-[18px] mt-[10px] h-[100vh]'>
+       
+          {items.map((item, index) => (
+            <li className='flex flex-row space-x-3 items-center h-[52px]' key={index}>
+              <span className='w-[36px] h-[36px]'>
+                {item.type === 'icon' ?
+                  <i data-visualcompletion='css-img' className={`left-nav-icon ${item.style} `}></i>
+                  :
+                  <img src={item.src} width={36} height={36} />
+                }
+              </span>
+              <span className="w-full flex flex-wrap">{item.title}</span>
+            </li>
+          ))}
+      
+        </ul>
     </div>
   );
 }

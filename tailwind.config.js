@@ -5,8 +5,16 @@ module.exports = {
     extend: {
       zIndex: {
         '1000000': '1000000',
-      }
+      },
+      colors: {
+        custom: {
+            DEFAULT: '#a5b3b8',
+            light: '#a5b3b8'
+        }
+    }
     },
   },
-  plugins: [],
+  plugins: [
+   
+  ],
 }

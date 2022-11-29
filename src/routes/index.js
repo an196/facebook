@@ -2,7 +2,7 @@ import { Suspense, lazy } from "react";
 import React from 'react'
 import { Navigate, useRoutes } from 'react-router-dom';
 
-import DashboardLayout from '../layouts/daschboard'
+import DashboardLayout from '../layouts/dashboard'
 import LoadingScreen from "../components/LoadingScreen";
 import { DEFAULT_PATH } from "../config";
 

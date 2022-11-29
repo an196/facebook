@@ -2,13 +2,14 @@ import {
   IHome, IWatch, IGroup, IGame, IMarketplace, IMenu, ISearch, IUser, IMessenger, INotification, ILogo2
 } from '../../theme/icons/index';
 import avatar from '../../assets/images/avatar3.jpg'
+import { Tooltip } from '../../components';
 
 const menuIcon = [
-  { name: 'home', icon: <IHome /> },
-  { name: 'watch', icon: <IWatch /> },
-  { name: 'group', icon: <IGroup /> },
-  { name: 'game', icon: <IGame /> },
-  { name: 'matketplace', icon: <IMarketplace /> },
+  { name: 'home', title: 'Trang chủ', icon: <IHome /> },
+  { name: 'watch', title: 'Watch', icon: <IWatch /> },
+  { name: 'matketplace', title: 'Marketplace', icon: <IMarketplace /> },
+  { name: 'group', title: 'Nhóm', icon: <IGroup /> },
+  { name: 'game', title: 'Trò chơi', icon: <IGame /> },
 ]
 
 const leftIcons = [
@@ -35,10 +36,14 @@ function TopNav() {
       <span className='w-[680px] flex flex-row h-full justify-around items-center text-[#b0b3b8]' id='area2'>
         {
           menuIcon.map((item, index) => (
-            <span key={index} className={`flex w-full h-full justify-center items-center ${index === 0 && 'menu-item-active'}`}>
-              <span className='menu-item'>
-                {item.icon}
-              </span>
+            <span key={index} className={`flex w-full h-full justify-center items-center cursor-pointer`}>
+              <Tooltip message={item.title} position={'bottom'}>
+                <span className={`w-[130px] flex justify-center items-center h-full  ${index === 0 && 'menu-item-active'}`} >
+                  <span className='menu-item'>
+                    {item.icon}
+                  </span>
+                </span>
+              </Tooltip>
             </span>
           ))
         }
@@ -46,7 +51,7 @@ function TopNav() {
       <span className='flex flex-row justify-end items-center space-x-2 w-[360px]' id='area3'>
         {
           leftIcons.map((icon, idx) => (
-            <span className='left-icon-item'>
+            <span className='left-icon-item' key={idx}>
               {icon.icon}
             </span>
           ))

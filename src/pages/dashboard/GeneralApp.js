@@ -1,8 +1,8 @@
 import React from 'react'
-import TopNav from '../../layouts/daschboard/TopNav';
-import RightNav from '../../layouts/daschboard/RightNav';
-import LeftNav from '../../layouts/daschboard/LeftNav';
-import MainFeed from '../../layouts/daschboard/MainFeed';
+import TopNav from '../../layouts/dashboard/TopNav';
+import RightNav from '../../layouts/dashboard/RightNav';
+import LeftNav from '../../layouts/dashboard/LeftNav';
+import MainFeed from '../../layouts/dashboard/MainFeed';
 
 function GeneralApp() {
   return (
