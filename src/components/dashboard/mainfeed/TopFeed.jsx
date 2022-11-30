@@ -10,9 +10,11 @@ const LSubSec = [
 
 const SubSection = ({ subSection }) => {
 	return (
-		<div className={`w-[210px] h-[60px] justify-center items-center flex space-x-2 ${subSection.current && 'menu-item-active'}`}>
+		<div className={`w-[210px] h-[60px]  p-[4px]   ${subSection.current && 'menu-item-active'}`}>
+			<span className={`w-full h-full  flex justify-center items-center space-x-2 ${!subSection.current && 'hover:bg-[#303031] rounded-xl'}`}>
 			<div className='w-[20px] h-[20px]'>{subSection.icon}</div>
 			<div> {subSection.name}</div>
+			</span>
 		</div>
 	);
 };
@@ -21,7 +23,7 @@ const Story = () => {
 	return (
 		<div className='relative w-[112.5px] h-[200px] mr-[8px] float-left'>
 			<div className='relative rounded-xl overflow-hidden'>
-				<img src={storyImage} width={112.5} height={200} />
+				<img className='hover:scale-105 transition-all duration-500 ease-linear' src={storyImage} width={112.5} height={200} />
 			</div>
 			<div className='absolute w-[64px] h-[64px] top-0 p-[12px]'>
 				<div className=' w-[40px] h-[40px] rounded-full overflow-hidden border-[4px] border-[#2374E1]'>
@@ -40,8 +42,8 @@ const Story = () => {
 const CreateStory = () => {
 	return (
 		<div className='float-left w-[112.5px] h-[200px] mr-[8px]'>
-			<div className=' rounded-t-xl overflow-hidden !z-0'>
-				<img src={avatar} className='w-[112.5px] h-[148px]' alt='avatar' />
+			<div className='rounded-t-xl overflow-hidden !z-0 relative'>
+				<img src={avatar} className='w-[112.5px] h-[148px] hover:scale-105 transition-all duration-500 ease-linear' alt='avatar' />
 			</div>
 			<div
 				className='w-[40px] h-[40px] bg-[#2e89ff] flex items-center justify-center m-auto -mt-[20px] relative !z-10 rounded-full
@@ -61,7 +63,7 @@ const CreateStory = () => {
 function TopFeed() {
 	return (
 		<div className='w-full h-[301px] bg-[#242526] mt-[23px] rounded-xl '>
-			<div className='flex flex-row h-[60px] border-b-[1px] border-[#393a3b] px-[16px]'>
+			<div className='flex flex-row h-[60px] border-b-[1px] border-[#393a3b] px-[16px] '>
 				{LSubSec.map((subsec, index) => (
 					<SubSection subSection={subsec} key={index} />
 				))}

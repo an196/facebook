@@ -87,8 +87,8 @@ export const ILogo = () => {
 }
 
 export const ILogo2 = () => {
-    return(
-        <svg  width="100%" height="100%"  viewBox="17006.82 17511.1 8157.8 8100.8" xmlns="http://www.w3.org/2000/svg"><linearGradient x1="21085.72" x2="21085.72" y1="18249.39" y2="25150.62"><stop offset="0" stopColor="#00b2ff"/><stop offset="1" stopColor="#006aff"/></linearGradient><path d="M21085.72 18309.17c1811.95 0 3280.83 1468.88 3280.83 3280.83s-1468.88 3280.83-3280.83 3280.83-3280.83-1468.88-3280.83-3280.83 1468.88-3280.83 3280.83-3280.83z" fill="url(#a)"/><path d="M21512.01 24843.29v-2534.17h714.43l94.7-891.91h-809.13l1.2-446.44c0-232.63 22.1-357.22 356.24-357.22h446.68v-892.06h-714.59c-858.35 0-1160.42 432.65-1160.42 1160.34v535.45h-535.07v891.99h535.07v2498.09c208.45 41.53 423.95 63.47 644.6 63.47a3310.9 3310.9 0 0 0 426.29-27.54z" fill="#fff" fillRule="nonzero"/></svg>
+    return (
+        <svg width="100%" height="100%" viewBox="17006.82 17511.1 8157.8 8100.8" xmlns="http://www.w3.org/2000/svg"><linearGradient x1="21085.72" x2="21085.72" y1="18249.39" y2="25150.62"><stop offset="0" stopColor="#00b2ff" /><stop offset="1" stopColor="#006aff" /></linearGradient><path d="M21085.72 18309.17c1811.95 0 3280.83 1468.88 3280.83 3280.83s-1468.88 3280.83-3280.83 3280.83-3280.83-1468.88-3280.83-3280.83 1468.88-3280.83 3280.83-3280.83z" fill="url(#a)" /><path d="M21512.01 24843.29v-2534.17h714.43l94.7-891.91h-809.13l1.2-446.44c0-232.63 22.1-357.22 356.24-357.22h446.68v-892.06h-714.59c-858.35 0-1160.42 432.65-1160.42 1160.34v535.45h-535.07v891.99h535.07v2498.09c208.45 41.53 423.95 63.47 644.6 63.47a3310.9 3310.9 0 0 0 426.29-27.54z" fill="#fff" fillRule="nonzero" /></svg>
     )
 }
 
@@ -200,12 +200,32 @@ export const IShare = () => {
 
 export const IDownArrow = () => {
     return (
-<svg fill="currentColor" viewBox="0 0 16 16" width="100%" height="100%"><g fillRule="evenodd" transform="translate(-448 -544)"><path fillRule="nonzero" d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z"></path></g></svg>
+        <svg fill="currentColor" viewBox="0 0 16 16" width="100%" height="100%"><g fillRule="evenodd" transform="translate(-448 -544)"><path fillRule="nonzero" d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z"></path></g></svg>
     )
 }
 
 export const IUpArrow = () => {
-    return(
+    return (
         <svg fill="currentColor" viewBox="0 0 20 20" width="100%" height="100%" ><path d="M15.47 12.2 10 6.727 4.53 12.2a.75.75 0 0 1-1.06-1.061l6-6a.751.751 0 0 1 1.06 0l6 6a.75.75 0 0 1-1.06 1.061z"></path></svg>
+    )
+}
+
+export const ILeftArrow = () => {
+    return (
+        <svg fill="currentColor" viewBox="0 0 20 20" width="100%" height="100%"><g fillRule="evenodd" transform="translate(-446 -350)"><g fillRule="nonzero"><path d="M100.249 201.999a1 1 0 0 0-1.415-1.415l-5.208 5.209a1 1 0 0 0 0 1.414l5.208 5.209A1 1 0 0 0 100.25 211l-4.501-4.501 4.5-4.501z" transform="translate(355 153.5)"></path><path d="M107.666 205.5H94.855a1 1 0 1 0 0 2h12.813a1 1 0 1 0 0-2z" transform="translate(355 153.5)"></path></g></g></svg>
+    )
+}
+
+export const ICancel = () => {
+    return (
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="100%" height="100%" viewBox="0 0 57.000000 60.000000"
+            fill="currentColor"
+            preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,60.000000) scale(0.100000,-0.100000)"
+                fill="#currentColor" stroke="none">
+                <path d="M51 526 c-17 -20 -5 -38 78 -121 39 -38 71 -76 71 -85 0 -9 -32 -47 -71 -85 -83 -83 -95 -101 -78 -121 6 -8 16 -14 21 -14 6 0 47 36 92 80 45 44 89 80 97 80 8 0 46 -32 84 -71 83 -83 101 -95 121 -78 8 6 14 16 14 21 0 6 -36 47 -80 92 -44 45 -80 89 -80 96 0 7 36 51 80 96 44 45 80 86 80 92 0 5 -6 15 -14 21 -20 17 -38 5 -121 -78 -38 -39 -76 -71 -84 -71 -8 0 -52 36 -97 80 -45 44 -86 80 -92 80 -5 0 -15 -6 -21 -14z"/>
+            </g>
+        </svg>
     )
 }

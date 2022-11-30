@@ -32,7 +32,7 @@ const items = [
 const ItemRow = ({ item }) => {
   return (
     <li className='flex flex-row space-x-3 items-center pl-[6px] h-[52px] hover:bg-[#7c7c7c5a] rounded-xl transition ease-in-out'>
-      <span className='w-[36px] h-[36px]'>
+      <span className='w-[36px] h-[36px] flex-none'>
         {item.type === 'icon' ?
           <i data-visualcompletion='css-img' className={`left-nav-icon ${item.style} `}></i>
           :
@@ -52,8 +52,8 @@ function LeftNav() {
       <li className='flex flex-row space-x-3 items-center pl-[6px] h-[52px] hover:bg-[#7c7c7c5a] rounded-xl transition ease-in-out cursor-pointer'
         onClick={() => setViewmore(!isViewmore)}
       >
-        <span className='w-[36px] h-[36px] flex items-center justify-center rounded-full bg-[#303031]'>
-          <span className="w-[20px] h-[20px]">
+        <span className='w-[36px] h-[36px] flex-none  p-[8px] rounded-full bg-[#303031]'>
+          <span className="">
             {!isViewmore ? <IDownArrow /> : <IUpArrow />}
           </span>
         </span>

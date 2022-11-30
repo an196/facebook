@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import {
   IHome, IWatch, IGroup, IGame, IMarketplace, IMenu, ISearch, IUser, IMessenger, INotification, ILogo2
 } from '../../theme/icons/index';
 import avatar from '../../assets/images/avatar3.jpg'
 import { Tooltip } from '../../components';
+import { SearchBoard } from '../../components/dashboard/leftnav';
 
 const menuIcon = [
   { name: 'home', title: 'Trang chủ', icon: <IHome /> },
@@ -19,19 +21,31 @@ const leftIcons = [
 ]
 
 function TopNav() {
+  const [showSearchBoard, setShowSearchBoard] = useState(false);
+  const [fisrtload, setFirstload] = useState(true);
+
   return (
     <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
       !z-1000000 sticky top-0'>
-      <div className='flex flex-row items-center w-[360px]' id='area1'>
+
+      <div className='flex flex-row items-center w-[360px] relative' id='area1'>
         <span className='w-[45px] h-[45px] p-auto'>
           <ILogo2 />
         </span>
-        <span className='w-[240px] h-[40px] bg-[#3a3b3c] text-[#a5b3b8] flex flex-row p-[12px] items-center rounded-full '>
-          <span className='h-[18px] w-[18px]'>
-            <ISearch />
-          </span>
-          <input className='px-[8px] pt-[7px] pb-[9px] bg-inherit outline-none' placeholder='Tìm kiếm trên Facebook' />
+        <span className='w-[240px] h-[40px] bg-[#3a3b3c] text-[#a5b3b8] flex flex-row p-[12px] items-center rounded-full overflow-hidden z-20'>
+          {
+            (<span className={`h-[18px] w-[18px] cursor-pointer ${showSearchBoard ? 'animate-move-left-2' : (!fisrtload && 'animate-move-right')} `}>
+              <ISearch />
+            </span>)
+          }
+          <input className={`px-[8px] pt-[7px] pb-[9px] bg-inherit outline-none 
+            ${showSearchBoard ? 'animate-move-left' : (!fisrtload && 'animate-move-right')}`}
+            placeholder='Tìm kiếm trên Facebook'
+            onFocus={() => { setShowSearchBoard(true); setFirstload(false) }}
+            onBlur={() => setShowSearchBoard(false)}
+          />
         </span>
+        {showSearchBoard && <SearchBoard />}
       </div>
       <span className='w-[680px] flex flex-row h-full justify-around items-center text-[#b0b3b8]' id='area2'>
         {

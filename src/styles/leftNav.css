@@ -30,6 +30,15 @@
 	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/UUoJFYPOy0f.png');
 }
 
+.bg-img-j {
+	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/PZYo-Qx6hO6.png"); 
+	background-size: auto; 
+	width: 12px; 
+	height: 12px; 
+	background-repeat: no-repeat; 
+	display: inline-block;
+}
+
 .left-nav-icon {
 	background-position: 0 -259px;
 	background-size: 37px 518px;
@@ -111,6 +120,10 @@
 .left-nav-icon-16 {
 	background-position: 0 -333px;
 	background-size: auto;
+}
+
+.left-nav-icon-17 {
+	background-position: 0px -164px; 
 }
 
 
