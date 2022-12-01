@@ -6,6 +6,7 @@ import avatar from '../../assets/images/avatar3.jpg'
 import { Tooltip } from '../../components';
 import { SearchBoard } from '../../components/dashboard/leftnav';
 
+
 const menuIcon = [
   { name: 'home', title: 'Trang chủ', icon: <IHome /> },
   { name: 'watch', title: 'Watch', icon: <IWatch /> },
@@ -27,7 +28,6 @@ function TopNav() {
   return (
     <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
       !z-1000000 sticky top-0'>
-
       <div className='flex flex-row items-center w-[360px] relative' id='area1'>
         <span className='w-[45px] h-[45px] p-auto'>
           <ILogo2 />
@@ -42,10 +42,9 @@ function TopNav() {
             ${showSearchBoard ? 'animate-move-left' : (!fisrtload && 'animate-move-right')}`}
             placeholder='Tìm kiếm trên Facebook'
             onFocus={() => { setShowSearchBoard(true); setFirstload(false) }}
-            onBlur={() => setShowSearchBoard(false)}
           />
         </span>
-        {showSearchBoard && <SearchBoard />}
+        {showSearchBoard && <SearchBoard setShowSearchBoard={setShowSearchBoard} />}
       </div>
       <span className='w-[680px] flex flex-row h-full justify-around items-center text-[#b0b3b8]' id='area2'>
         {

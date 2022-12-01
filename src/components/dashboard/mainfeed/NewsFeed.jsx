@@ -1,6 +1,7 @@
 import avatar from '../../../assets/images/avatar1.png';
 import { IEarth, IThreedots, IThumbsUp, IThumbsUp3, IMessage, IShare } from '../../../theme/icons/index';
 import truncateString from '../../../utils/truncate';
+import  HorizontalLine from '../../HorizontalLine';
 
 const actions = [
 	{ name: 'Thích', icon: <IThumbsUp3 /> },
@@ -75,7 +76,7 @@ function NewsFeed({news}) {
 						<div className='text-[#95979b] text-[16px] font-normal'>{news.shared} chia sẻ</div>
 					</div>
 				</div>
-				<div className='border-b-[1px] border-[#393a3b]'></div>
+				<HorizontalLine/>
 				<div className='h-[52px] w-full flex flex-row'>
 					{actions.map((action, index) => (
 						<ActionFeed action={action} key={index} />

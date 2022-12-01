@@ -1,6 +1,7 @@
 import { INews, IReels, ICameraPlus, ICirclePlus } from '../../../theme/icons/index';
 import storyImage from '../../../assets/images/story.png';
 import avatar from '../../../assets/images/avatar3.jpg';
+import HorizontalLine from '../../HorizontalLine';
 
 const LSubSec = [
 	{ name: 'Tin', icon: <INews />, current: true },
@@ -63,11 +64,12 @@ const CreateStory = () => {
 function TopFeed() {
 	return (
 		<div className='w-full h-[301px] bg-[#242526] mt-[23px] rounded-xl '>
-			<div className='flex flex-row h-[60px] border-b-[1px] border-[#393a3b] px-[16px] '>
+			<div className='flex flex-row h-[60px]  px-[16px] '>
 				{LSubSec.map((subsec, index) => (
 					<SubSection subSection={subsec} key={index} />
 				))}
 			</div>
+			<HorizontalLine/>
 			<div className='mt-[16px] w-max ml-[16px]'>
 				<CreateStory />
 				<Story />

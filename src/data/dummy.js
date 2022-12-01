@@ -8,6 +8,33 @@ export const users = [
     { name: 'Nguyễn Tiến Thành' },
 ]
 
+export const searchHistory = [
+    { 
+        name:'Tommy',
+        img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
+        type: 'friend',
+        relation: 'Bạn bè',
+    },
+    { 
+        name:'Hồ Thảo Diệu',
+        img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
+        type: 'friend',
+        relation: 'Bạn bè',
+    },
+    { 
+        name:'Bùi Hồng Ân',
+        img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
+        type: '',
+        relation: '',
+    },
+    { 
+        name:'Kim Nhựt Trường',
+        img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
+        type: 'friend',
+        relation: 'Bạn bè',
+    },
+]
+
 export const newsFeeds = [
     {
         imgProfile: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.6435-1/165930642_5309335065775313_238085367114043880_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=104&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=wgfA3LsYj0oAX9kCoJ3&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfA28ExTi8ytepMg9tSUYuq0rHIDs_rv1HqpnoFSZ1DkxQ&oe=63ACD72F', 
@@ -66,5 +93,4 @@ export const newsFeeds = [
         commented: 2,
         shared: 2
     }
-
 ]
