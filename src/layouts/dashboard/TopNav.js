@@ -21,6 +21,47 @@ const leftIcons = [
   { name: 'notification', icon: <INotification /> },
 ]
 
+const MiddleButton = ({ item, index }) => {
+  return (
+    <span className={`${index === 0 && 'menu-item-active'} flex w-full h-full justify-center items-center cursor-pointer 
+    `}>
+      <Tooltip
+        // options
+        message={item.title}
+        position="bottom"
+        distance={55}
+      >
+        <span className={`w-[130px] flex justify-center items-center h-full hover:bg-[#303031] rounded-xl`} >
+          <span className='menu-item'>
+            {item.icon}
+          </span>
+        </span>
+      </Tooltip>
+    </span>
+  )
+}
+
+const LeftButton = ({ idx, icon, num }) => {
+  return (
+    <Tooltip key={idx} message={icon.name} position="bottom" distance={55}>
+      <span className='left-icon-item hover:bg-[#525151] relative' >
+        <div className='h-full w-full '>
+          {icon.icon}
+
+        </div>
+        {
+          icon.name === 'notification' &&
+          <div className='absolute top-0 right-0 w-[19px] h-[19px] bg-[#e41e3f] rounded-full flex items-center justify-center 
+            translate-x-[25%] translate-y-[-25%]'>
+            <span className='text-[12px] font-bold'>{num || 2}</span>
+          </div>
+        }
+
+      </span>
+    </Tooltip>
+  )
+}
+
 function TopNav() {
   const [showSearchBoard, setShowSearchBoard] = useState(false);
   const [fisrtload, setFirstload] = useState(true);
@@ -49,35 +90,17 @@ function TopNav() {
       <span className='w-[680px] flex flex-row h-full justify-around items-center text-[#b0b3b8]' id='area2'>
         {
           menuIcon.map((item, index) => (
-            <span key={index} className={`${index === 0 && 'menu-item-active'} flex w-full h-full justify-center items-center cursor-pointer 
-            `}>
-              <Tooltip
-                // options
-                message={item.title}
-                position="bottom"
-                distance={55}
-              >
-                <span className={`w-[130px] flex justify-center items-center h-full hover:bg-[#303031] rounded-xl`} >
-                  <span className='menu-item'>
-                    {item.icon}
-                  </span>
-                </span>
-              </Tooltip>
-            </span>
+            <MiddleButton key={index} item={item} index={index} />
           ))
         }
       </span>
-      <span className='flex flex-row justify-end items-center space-x-2 w-[360px]' id='area3'>
+      <span className='flex flex-row justify-end items-center space-x-2 w-[360px] cursor-pointer' id='area3'>
         {
           leftIcons.map((icon, idx) => (
-            <Tooltip key={idx} message={icon.name} position="bottom" distance={55}>
-              <span className='left-icon-item hover:bg-[#525151]' >
-                {icon.icon}
-              </span>
-            </Tooltip>
+            <LeftButton key={idx} idx={idx} icon={icon} />
           ))
         }
-        <span className=''>
+        <span className='cursor-pointer'>
           <img src={avatar} alt='avatar' className='rounded-full' width={40} height={40} />
         </span>
       </span>

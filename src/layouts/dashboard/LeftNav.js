@@ -8,7 +8,7 @@ function LeftNav() {
   const [ isFullShortLink, setFullShortLink] = useState(false);
 
   return (
-    <div className='text-[#e1e3e8] flex-initial h-[100vh] w-[360px]  overflow-y-auto'>
+    <div className='text-[#e1e3e8] flex-initial h-[100vh] max-w-[360px]  overflow-y-auto'>
       <Section items={shortlinkCategories} isfullItems={isFullCategory} setFullItems={setFullCategory} num={5}/>
       <HorizontalLine />
       <div className='w-[360px] flex-initial  overflow-y-auto px-[12px] mt-[10px]'>

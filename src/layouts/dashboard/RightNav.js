@@ -13,7 +13,7 @@ const actions = [
 
 const Action = ({ action }) => {
   return (
-    <div className='w-[40px] h-[20px] flex justify-center items-center'>
+    <div className='w-[40px] h-[20px] flex justify-center items-center cursor-pointer'>
       <div className='w-[30px] h-[30px] flex justify-center items-center hover:bg-[#303031] rounded-full '>
         <div className='w-[20px] h-[16px] mt-[1px]'> {action.icon}</div>
       </div>
@@ -37,7 +37,7 @@ function RightNav() {
       <div className='w-full space-y-[16px] mt-[16px]'>
         {
           users.map((user, idx) => (
-            <div className='flex flex-row space-x-3 items-center ' key={idx}>
+            <div className='flex flex-row space-x-3 items-center cursor-pointer' key={idx}>
               <span className='relative flex-none'>
                 <img src={avatar} alt='avatar' className='rounded-full' width={36} height={36} />
                 <div className='h-[12px] w-[12px] bg-[#31a24c] absolute bottom-0 right-0 rounded-full border-[2px] border-[#18191a]'></div>
