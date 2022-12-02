@@ -19,7 +19,7 @@ const Action = ({ action }) => {
 
 function ActionsFeed() {
 	return (
-		<div className='w-full bg-[#242526] mt-[23px] rounded-xl h-[123px] pb-[10px] pl-[16px] pr-[16px]' >
+		<div className='w-full bg-[#242526] mt-[23px] rounded-xl h-[123px] pb-[10px] pl-[16px] pr-[16px] pt-[12px]' >
 			<div className='flex flex-row space-x-4'>
 				<img src={avatar} className='w-[40px] h-[40px] rounded-full mr-[8px]' />
 				<div className=' bg-[#3a3b3c] text-[#a5b3b8] h-[40px] w-full  rounded-full flex items-center p-[8px]'>
@@ -29,7 +29,7 @@ function ActionsFeed() {
 				</div>
 			</div>
 			<div style={{ height: '1px', backgroundColor: '#393a3b', marginTop: '12px' }}></div>
-			<div className='flex flex-row ' style={{ padding: '8px', marginTop: '8px' }}>
+			<div className='flex flex-row p-[8px]'>
 				{actions.map((action, index) => (
 					<Action key={index} action={action} />
 				))}

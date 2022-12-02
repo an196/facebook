@@ -47,7 +47,6 @@ const LeftButton = ({ idx, icon, num }) => {
       <span className='left-icon-item hover:bg-[#525151] relative' >
         <div className='h-full w-full '>
           {icon.icon}
-
         </div>
         {
           icon.name === 'notification' &&
@@ -56,9 +55,8 @@ const LeftButton = ({ idx, icon, num }) => {
             <span className='text-[12px] font-bold'>{num || 2}</span>
           </div>
         }
-
       </span>
-    </Tooltip>
+  </Tooltip>
   )
 }
 

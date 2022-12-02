@@ -1,3 +1,5 @@
+import { ISearch } from "../theme/icons"
+
 export const users = [
     { name: 'Nguyễn Tiến Thành' },
     { name: 'Nguyễn Tiến Thành' },
@@ -22,6 +24,11 @@ export const searchHistory = [
         relation: 'Bạn bè',
     },
     { 
+        name:'intern reactjs hcm',
+        link: '',
+        type: 'last-search',
+    },
+    { 
         name:'Bùi Hồng Ân',
         img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
         type: '',
@@ -32,6 +39,27 @@ export const searchHistory = [
         img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
         type: 'friend',
         relation: 'Bạn bè',
+    },
+]
+
+export const suggestPage = [
+    { 
+        name:'NextJS Việt Nam',
+        img: 'https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/MtsecJOii_h.png',
+        type: 'group',
+        relation: 'Nhóm của bạn',
+    },
+    { 
+        name:'Cộng đồng Front-end(HTML/CSS/JS) Việt Nam',
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/240655429_4059163764195718_3652059374269714525_n.jpg?stp=c27.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=ac9ee4&_nc_ohc=iCYrKndf5_4AX8NcqDT&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfDbl5YWnTqi09WaUGmsVTOHy4bw_k16y8yNh5LkC8OQ5A&oe=638D86CE',
+        type: 'group',
+        relation: 'Nhóm của bạn',
+    },
+    { 
+        name:'IELTS Zone',
+        img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/308638448_1137412176980908_1594412049582260048_n.png?stp=c23.0.50.50a_cp0_dst-png_p50x50&_nc_cat=103&ccb=1-7&_nc_sid=ac9ee4&_nc_ohc=5lhYOiYvHxIAX9yoO6S&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfDeNVf0uRNaWnDjXTXQgDgP80j4F9Xl_eFRPoZfRIowZg&oe=638E33DA',
+        type: 'group',
+        relation: 'Nhóm của bạn',
     },
 ]
 

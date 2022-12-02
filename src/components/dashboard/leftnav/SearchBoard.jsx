@@ -1,22 +1,50 @@
 import React from 'react';
-import avatar from '../../../assets/images/avatar3.jpg';
-import { SearchInput } from '../topnav';
-import { ILeftArrow, ICancel } from '../../../theme/icons';
-import { searchHistory } from '../../../data/dummy';
+import { ILeftArrow, ICancel, IClock } from '../../../theme/icons';
+import { searchHistory, suggestPage } from '../../../data/dummy';
+import typeDefined from '../../../constant/type';
 
-const RowItem = ({ history }) => {
+const Section = ({ item, title, editable, enableDelete }) => {
 	return (
-		<div className='h-[52px] p-[8px] w-[300px] hover:bg-[#303031] rounded-xl'>
-			<div className='flex flex-row w-full items-center space-x-3 text-[#e1e3e8] cursor-pointer'>
-				<span className='w-[36px] h-[36px] rounded-full overflow-hidden '>
-					<img src={history.img} width={36} height={36} />
-				</span>
+		<>
+			<span className='flex flex-row justify-between items-center  text-[#d5d7dc] mb-[12px]'>
+				<span className='font-semibold text-[18px]'>{title}</span>
+				{editable && (
+					<div className=' p-[6px] rounded-sm  hover:bg-[#444445] text-center h-full leading-none cursor-pointer'>
+						<span className='font-normal p-[3px] text-[16px]  leading-none  text-[#428feb] '>Chỉnh sửa</span>
+					</div>
+				)}
+			</span>
+			<div className='pb-[8px]'>
+				{item.map((history, idx) => (
+					<RowItem history={history} key={idx} enableDelete={enableDelete} />
+				))}
+			</div>
+		</>
+	);
+};
 
-				<span className='flex flex-col h-[36px] grow justify-center'>
+const RowItem = ({ history, enableDelete, type }) => {
+	return (
+		<div className=' p-[8px] w-[300px] hover:bg-[#303031] rounded-xl'>
+			<div className='flex flex-row w-full items-center space-x-3 text-[#e1e3e8] cursor-pointer'>
+				<div className={`w-[36px]  rounded-full overflow-hidden bg-[#18191a]`}>
+					{history.type && history.type === typeDefined.lastSearch ? (
+						<div className='w-[20px] h-[20px] m-[8px]'>
+							<IClock />
+						</div>
+					) : (
+						<img src={history.img} width={36} height={36} />
+					)}
+				</div>
+				<span className='flex flex-col grow justify-center'>
 					<span className='text-[14px] font-semibold'>{history.name}</span>
 					{history.relation && <span className='text-[12px] text-[#b0b3b8]'>{history.relation}</span>}
 				</span>
-				<span className='w-[32px] h-[32px] p-[10px] rounded-full hover:bg-[#444445]'>
+				<span
+					className={`w-[32px] h-[32px] p-[10px] rounded-full hover:bg-[#444445] ${
+						enableDelete ? 'opacity-100' : 'opacity-0'
+					}`}
+				>
 					<span className='w-[12px] h-[12px] text-[#e1e3e8]'>
 						<ICancel />
 					</span>
@@ -36,20 +64,8 @@ function SearchBoard({ setShowSearchBoard }) {
 			>
 				<ILeftArrow />
 			</div>
-
-			<div className='mt-[16px]'>
-				<span className='flex flex-row justify-between items-center  text-[#d5d7dc] mb-[12px]'>
-					<span className='font-semibold text-[18px]'>Tìm kiếm gần đây</span>
-					<div className=' p-[6px] rounded-sm  hover:bg-[#444445] text-center h-full leading-none cursor-pointer'>
-						<span className='font-normal p-[3px] text-[16px]  leading-none  text-[#428feb] '>Chỉnh sửa</span>
-					</div>
-				</span>
-				<div className='pb-[8px]'>
-					{searchHistory.map((history, idx) => (
-						<RowItem history={history} key={idx} />
-					))}
-				</div>
-			</div>
+			<Section item={searchHistory} editable={true} title={'Tìm kiếm gần đây'} enableDelete={true} />
+			<Section item={suggestPage} editable={false} title={'Tìm kiếm gần đây'} enableDelete={false} />
 		</div>
 	);
 }
