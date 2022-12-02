@@ -3,7 +3,9 @@ import {
   IHome, IWatch, IGroup, IGame, IMarketplace, IMenu, ISearch, IUser, IMessenger, INotification, ILogo2
 } from '../../theme/icons/index';
 import avatar from '../../assets/images/avatar3.jpg'
-import { Tooltip } from '../../components';
+import {
+  Tooltip,
+} from 'react-tippy';
 import { SearchBoard } from '../../components/dashboard/leftnav';
 
 
@@ -27,11 +29,9 @@ const MiddleButton = ({ item, index }) => {
     `}>
       <Tooltip
         // options
-        message={item.title}
-        position="bottom"
-        distance={55}
+        title={item.name}
       >
-        <span className={`w-[130px] flex justify-center items-center h-full hover:bg-[#303031] rounded-xl`} >
+        <span className={`w-[130px] flex justify-center items-center h-[55px] hover:bg-[#303031] rounded-xl`} >
           <span className='menu-item'>
             {item.icon}
           </span>
@@ -43,9 +43,9 @@ const MiddleButton = ({ item, index }) => {
 
 const LeftButton = ({ idx, icon, num }) => {
   return (
-    <Tooltip key={idx} message={icon.name} position="bottom" distance={55}>
-      <span className='left-icon-item hover:bg-[#525151] relative' >
-        <div className='h-full w-full '>
+    <Tooltip key={idx}  title={icon.name}>
+      <span className='left-icon-item hover:bg-[#525151] flex relative' >
+        <div className='h-[20px] w-[20px] '>
           {icon.icon}
         </div>
         {
@@ -56,7 +56,7 @@ const LeftButton = ({ idx, icon, num }) => {
           </div>
         }
       </span>
-  </Tooltip>
+    </Tooltip>
   )
 }
 

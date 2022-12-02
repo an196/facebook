@@ -23,7 +23,7 @@ const Section = ({ item, title, editable, enableDelete }) => {
 	);
 };
 
-const RowItem = ({ history, enableDelete, type }) => {
+const RowItem = ({ history, enableDelete }) => {
 	return (
 		<div className=' p-[8px] w-[300px] hover:bg-[#303031] rounded-xl'>
 			<div className='flex flex-row w-full items-center space-x-3 text-[#e1e3e8] cursor-pointer'>
@@ -64,8 +64,9 @@ function SearchBoard({ setShowSearchBoard }) {
 			>
 				<ILeftArrow />
 			</div>
+			<div className='mt-[10px]'></div>
 			<Section item={searchHistory} editable={true} title={'Tìm kiếm gần đây'} enableDelete={true} />
-			<Section item={suggestPage} editable={false} title={'Tìm kiếm gần đây'} enableDelete={false} />
+			<Section item={suggestPage} editable={false} title={'Gợi ý cho bạn'} enableDelete={false} />
 		</div>
 	);
 }

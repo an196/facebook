@@ -255,3 +255,16 @@ export const IClock = () => {
         </svg>
     )
 }
+
+export const IDownTriangle = () => {
+    return (
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="100%" height="100%" viewBox="0 0 40.000000 40.000000"
+            preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,40.000000) scale(0.100000,-0.100000)"
+                fill="currentColor" stroke="none">
+                <path d="M40 255 c0 -18 19 -44 67 -90 37 -36 74 -65 83 -65 9 0 47 30 84 66 49 48 66 71 64 87 -3 21 -7 22 -150 25 l-148 3 0 -26z" />
+            </g>
+        </svg>
+    )
+}

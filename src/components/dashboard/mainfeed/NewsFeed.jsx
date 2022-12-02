@@ -1,26 +1,28 @@
-import avatar from '../../../assets/images/avatar1.png';
 import { IEarth, IThreedots, IThumbsUp, IThumbsUp3, IMessage, IShare } from '../../../theme/icons/index';
 import truncateString from '../../../utils/truncate';
 import  HorizontalLine from '../../HorizontalLine';
+import CommentSection from './CommentSection';
 
 const actions = [
 	{ name: 'Thích', icon: <IThumbsUp3 /> },
-	{ name: 'Bình Luận', icon: <IMessage /> },
-	{ name: 'Chia sẽ', icon: <IShare /> },
+	{ name: 'Bình luận', icon: <IMessage /> },
+	{ name: 'Chia sẻ', icon: <IShare /> },
 ];
 
 const ActionFeed = ({ action }) => {
 	return (
-		<div className='w-full space-x-2 flex flex-row items-center justify-center'>
+		<div className='w-full  flex flex-row  py-[6px] px-[2px] '>
+			<div className='w-full flex flex-row space-x-2 items-center justify-center hover:bg-[#3a3b3c] cursor-pointer rounded-md'>
 			<div className='w-[20px] h-[20px] text-[#a8abaf] '>{action.icon}</div>
-			<span className='text-[16px] font-medium'>{action.name}</span>
+			<span className='text-[16px] font-medium tracking-tight'>{action.name}</span>
+			</div>
 		</div>
 	);
 };
 
 function NewsFeed({news}) {
 	return (
-		<div className='w-full bg-[#242526] mt-[23px] rounded-xl overflow-hidden'>
+		<div className='w-full bg-[#242526] mt-[23px] rounded-xl flex flex-col h-min'>
 			<div className='pt-[12px] p-[16px] pb-0 flex flex-row mb-[12px]'>
 				<div className='w-[40px] h-[40px] rounded-full overflow-hidden mr-4'>
 					<img src={news.imgProfile} width={40} height={40} />
@@ -76,13 +78,21 @@ function NewsFeed({news}) {
 						<div className='text-[#95979b] text-[16px] font-normal'>{news.shared} chia sẻ</div>
 					</div>
 				</div>
+				<div className='h-[52px] p-[4px]'>
 				<HorizontalLine/>
-				<div className='h-[52px] w-full flex flex-row'>
+				<div className=' w-full h-full flex flex-row'>
 					{actions.map((action, index) => (
 						<ActionFeed action={action} key={index} />
 					))}
 				</div>
+				<HorizontalLine/>
+				</div>
 			</div>
+
+			{/* Comment Section */}
+			
+			<CommentSection/>
+			
 		</div>
 	);
 }
