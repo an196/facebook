@@ -3,7 +3,7 @@ import storyImage from '../../../assets/images/story.png';
 
 function Story() {
 	return (
-		<div className='relative w-[112.5px] h-[200px] mr-[8px] float-left flex-none'>
+		<div className='relative w-[112.5px] h-[200px] mr-[8px] float-left flex-none cursor-pointer'>
 			<div className='relative rounded-xl overflow-hidden '>
 				<img
 					className='hover:scale-105 transition-all duration-500 ease-linear w-[112.5px] h-[200px]'

@@ -27,6 +27,14 @@
 	display: inline-block;
 }
 
+.bg-img-4 {
+	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/3lbR-C3QcHo.png"); 
+	width: 16px; 
+	height: 16px; 
+	background-repeat: no-repeat; 
+	display: inline-block;
+}
+
 .action-feed-icon-1 {
 	background-position: 0 -33px;
 }
@@ -62,4 +70,9 @@
 .img-icon-camera {
 	background-position: 0px -391px;
 	background-color: var(--filter-secondary-icon);
+}
+
+.img-icon-threedots {
+	background-position: -34px -147px; 
+	background-size: auto; 
 }

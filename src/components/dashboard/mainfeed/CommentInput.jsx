@@ -19,8 +19,12 @@ const IconComment = ({icon}) => {
 	return (
 		<span className='mx-[6px] cursor-pointer'>
 			<Tooltip title={icon.lable}>
-				<div className='filter-icon flex-none'>
-					<i data-visualComplete className={icon.icon}></i>
+				<div className='filter-icon flex-none group relative'>
+					<i className={icon.icon}></i>
+					<div className='absolute w-[28px] h-[28px] flex -top-[4px] -left-[6px] -z-10 rounded-full group-hover:bg-black
+						items-center opacity-20 '>
+						<div></div>
+					</div>
 				</div>
 			</Tooltip>
 		</span>
@@ -35,7 +39,7 @@ function CommentInput() {
 			</div>
 			<form className='flex flex-row bg-[#3a3b3c] h-[36px] w-full px-[12px] py-[8px] rounded-full overflow-hidden'>
 				<input className='bg-inherit outline-none text-[15px] grow' placeholder='Viết bình luận công khai...' />
-				<div className='flex flex-row'>
+				<div className='flex flex-row '>
 					{icons.map((icon, idx) => (
 						<IconComment key={idx} icon={icon}/>
 					))}
