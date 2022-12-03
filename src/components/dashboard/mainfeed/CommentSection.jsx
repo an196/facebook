@@ -25,10 +25,10 @@ const CommentSection = React.forwardRef(({ props, ref }) => {
 
 	return (
 		<div className='py-[5px] px-[16px]' ref={ref}>
-			<div className='flex justify-end w-full h-[28px] items-center cursor-pointer mb-[5px] space-x-1 '>
-				<div className='relative'>
+			<div className='flex justify-end items-center w-full h-[28px] cursor-pointer mb-[5px] '>
+				<div className='relative flex items-center space-x-1'>
 					<span className='font-semibold tracking-tight '>Bình luận liên quan nhất</span>
-					<i className='bg-img-5 img-icon-downarrow filter-icon w-[16px] h-[16px] mt-1 ' 
+					<i className='bg-img-5 img-icon-downarrow filter-icon w-[16px] h-[16px] mt-1' 
 						onClick={() => setShowFilterComment(!showFilterComment)}
 					>
 					</i>

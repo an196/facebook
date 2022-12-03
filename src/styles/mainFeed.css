@@ -43,6 +43,15 @@
 	display: inline-block;
 }
 
+.bg-img-6 {
+	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/7VNAMSZgEK5.png"); 
+	background-size: auto; 
+	width: 20px; 
+	height: 20px; 
+	background-repeat: no-repeat; 
+	display: inline-block;
+}
+
 .action-feed-icon-1 {
 	background-position: 0 -33px;
 }
@@ -88,4 +97,8 @@
 .img-icon-downarrow {
 	background-position: 0px -164px; 
 	background-size: 189px 190px; 
+}
+
+.img-icon-pencil {
+	background-position: 0px -739px; 
 }
