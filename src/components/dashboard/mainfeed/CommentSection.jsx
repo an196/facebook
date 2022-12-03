@@ -1,48 +1,50 @@
+import React, { useRef, useState } from 'react';
+
 import CommentInput from './CommentInput';
 import UserComment from './UserComment';
 import CommentReply from './CommentReply';
+import FiltCommentBoard from './FiltCommentBoard';
+
 import { userComments } from '../../../data/dummy';
 
-function CommentSection() {
+const CommentViewMore = ({ scrollTo }) => {
+	return (
+		<div className='pb-[8px]'>
+			<span className='h-[32px] w-full'>
+				<div className='text-[15px] font-medium hover:underline cursor-pointer'>Xem thêm bình luận</div>
+			</span>
+			<div className='text-[15px] font-medium hover:underline cursor-pointer' onClick={() => scrollTo('top')}>
+				Viết bình luận...
+			</div>
+		</div>
+	);
+};
+
+const CommentSection = React.forwardRef(({ props, ref }) => {
+	const [showFilterComment , setShowFilterComment] = useState(false);
 
 	return (
-		<div className='py-[5px] px-[16px]'>
-			<div className='flex justify-end w-full h-[28px]'>
-				<span className='font-semibold tracking-tight '>Bình luận liên quan nhất</span>
+		<div className='py-[5px] px-[16px]' ref={ref}>
+			<div className='flex justify-end w-full h-[28px] items-center cursor-pointer mb-[5px] space-x-1 '>
+				<div className='relative'>
+					<span className='font-semibold tracking-tight '>Bình luận liên quan nhất</span>
+					<i className='bg-img-5 img-icon-downarrow filter-icon w-[16px] h-[16px] mt-1 ' 
+						onClick={() => setShowFilterComment(!showFilterComment)}
+					>
+					</i>
+					{showFilterComment && <FiltCommentBoard show={setShowFilterComment}/>}
+				</div>
 			</div>
 			<CommentInput />
 			{userComments.map((comment, idx) => (
-				<div key={idx} >
+				<div key={idx}>
 					<UserComment comment={comment} />
-					{comment?.reply && (
-						// <ul className='pl-[16px]'>
-						// 	{comment?.reply.map((comment1, idx) => (
-						// 		<li className='flex flex-col relative' key={idx}>
-						// 			<div className='flex flex-row relative'>
-						// 				<div className='w-[26px] h-[22px] border-l-2 border-b-2 border-[#3a3b3c] mr-[6px] rounded-bl-[10px]'></div>
-						// 				<UserComment comment={comment1} />
-						// 				{idx > 0 && <div className='absolute w-[2px] bg-[#3a3b3c] h-full left-0 -top-[100%]'></div>}
-						// 			</div>
-						// 			{/* <ul className='pl-[48px]'>
-						// 				{comment1 &&
-						// 					comment1?.reply.map((comment2, idx2) => (
-						// 						<li className='flex flex-row relative' key={idx2}>
-						// 							{console.log(comment1)}
-						// 							<div className='w-[26px] h-[22px] border-l-2 border-b-2 border-[#3a3b3c] mr-[6px] rounded-bl-[10px]'></div>
-						// 							<UserComment comment={comment2} />
-						// 							{idx2 > 0 && <div className='absolute w-[2px] bg-[#3a3b3c] h-full left-0 -top-[100%]'></div>}
-						// 						</li>
-						// 					))}
-						// 			</ul> */}
-						// 		</li>
-						// 	))}
-						// </ul>
-						 <CommentReply comments={comment.reply}/>
-					)}
+					{comment?.reply && <CommentReply comments={comment.reply} />}
 				</div>
 			))}
+			<CommentViewMore />
 		</div>
 	);
-}
+});
 
 export default CommentSection;

@@ -95,7 +95,7 @@ function TopFeed() {
 			</div>
 			<HorizontalLine />
 			<div className='relative w-[680px] flex h-auto '>
-				<div className='mt-[16px] w-[680px] flex h-auto relative  overscroll-x-auto overflow-auto' ref={rowRef}>
+				<div className='mt-[16px] w-[680px] flex h-auto relative overscroll-x-auto overflow-auto' ref={rowRef}>
 					<div className='w-max flex h-auto'>
 						<CrtStoryBtn />
 						<Story />

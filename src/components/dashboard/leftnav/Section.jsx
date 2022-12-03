@@ -3,7 +3,7 @@ import ViewMore from './ViewMore'
 
 function Section({items, isfullItems,setFullItems, num}) {
   return (
-    <ul className='w-[360px] flex-initial p-[12px]'>
+    <ul className='max-w-[360px] flex flex-initial flex-col p-[12px]'>
     {
           !isfullItems ?
             items.slice(0, num).map((item, index) => (

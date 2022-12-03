@@ -1,8 +1,6 @@
 import React from 'react';
 import avartar from '../../../assets/images/avatar3.jpg';
-import {
-	Tooltip,
-  } from 'react-tippy';
+import { Tooltip } from 'react-tippy';
 
 const icons = [
 	{ name: 'avatar', icon: 'bg-img-3 img-icon-avatar', lable: 'Bình luận bằng nhãn dán avatar' },
@@ -12,17 +10,16 @@ const icons = [
 	{ name: 'lable', icon: 'bg-img-3 img-icon-lable', lable: 'Bình luận bằng nhãn dán' },
 ];
 
-
-
-
-const IconComment = ({icon}) => {
+const IconComment = ({ icon }) => {
 	return (
 		<span className='mx-[6px] cursor-pointer'>
 			<Tooltip title={icon.lable}>
 				<div className='filter-icon flex-none group relative'>
 					<i className={icon.icon}></i>
-					<div className='absolute w-[28px] h-[28px] flex -top-[4px] -left-[6px] -z-10 rounded-full group-hover:bg-black
-						items-center opacity-20 '>
+					<div
+						className='absolute w-[28px] h-[28px] flex -top-[4px] -left-[6px] -z-10 rounded-full group-hover:bg-black
+						items-center opacity-20 '
+					>
 						<div></div>
 					</div>
 				</div>
@@ -31,9 +28,9 @@ const IconComment = ({icon}) => {
 	);
 };
 
-function CommentInput() {
+const CommentInput = React.forwardRef((props, ref) => {
 	return (
-		<div className='flex flex-row'>
+		<div className='flex flex-row' id='comment-input' ref={ref}>
 			<div className='w-[32px] h-[32px] rounded-full overflow-hidden mr-[6px]'>
 				<img src={avartar} alt='avatar' />
 			</div>
@@ -41,12 +38,12 @@ function CommentInput() {
 				<input className='bg-inherit outline-none text-[15px] grow' placeholder='Viết bình luận công khai...' />
 				<div className='flex flex-row '>
 					{icons.map((icon, idx) => (
-						<IconComment key={idx} icon={icon}/>
+						<IconComment key={idx} icon={icon} />
 					))}
 				</div>
 			</form>
 		</div>
 	);
-}
+})
 
-export default CommentInput;
+export default CommentInput ;

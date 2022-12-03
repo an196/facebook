@@ -2,7 +2,7 @@ import React from 'react';
 import UserComment from './UserComment';
 
 function CommentReply({ comments, child = false }) {
-	console.log(comments);
+	
 	return (
 		<ul className={`${!child ? 'pl-[16px]' : 'pl-[48px]'} `}>
 			{comments?.map((comment, idx) => (

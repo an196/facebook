@@ -22,7 +22,7 @@ const ActionFeed = ({ action }) => {
 
 function NewsFeed({news}) {
 	return (
-		<div className='w-full bg-[#242526] mt-[23px] rounded-xl flex flex-col h-min'>
+		<div className='w-full bg-[#242526] mt-[23px] rounded-xl flex flex-col h-min overscroll-auto'>
 			<div className='pt-[12px] p-[16px] pb-0 flex flex-row mb-[12px]'>
 				<div className='w-[40px] h-[40px] rounded-full overflow-hidden mr-4'>
 					<img src={news.imgProfile} width={40} height={40} />
