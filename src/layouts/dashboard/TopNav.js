@@ -7,6 +7,7 @@ import {
   Tooltip,
 } from 'react-tippy';
 import { SearchBoard } from '../../components/dashboard/leftnav';
+import { MenuBoard, ChatBoard, NotificationBoard } from '../../components/dashboard/topnav';
 
 
 const menuIcon = [
@@ -18,9 +19,9 @@ const menuIcon = [
 ]
 
 const leftIcons = [
-  { name: 'menu', icon: <IMenu /> },
-  { name: 'messenger', icon: <IMessenger /> },
-  { name: 'notification', icon: <INotification /> },
+  { name: 'menu', icon: <IMenu />, board: <MenuBoard/> },
+  { name: 'messenger', icon: <IMessenger />, board: <ChatBoard/> },
+  { name: 'notification', icon: <INotification />, board: <NotificationBoard/> },
 ]
 
 const MiddleButton = ({ item, index }) => {
@@ -37,14 +38,17 @@ const MiddleButton = ({ item, index }) => {
           </span>
         </span>
       </Tooltip>
+      {item.board}
     </span>
   )
 }
 
-const LeftButton = ({ idx, icon, num }) => {
+const RightBtn = ({ idx, icon, num }) => {
+  const [show ,setShow] = useState(false);
+
   return (
-    <Tooltip key={idx}  title={icon.name}>
-      <span className='left-icon-item hover:bg-[#525151] flex relative' >
+    <Tooltip key={idx} title={icon.name}>
+      <span className='left-icon-item hover:bg-[#525151] flex relative' onClick={()=> setShow(!show)}>
         <div className='h-[20px] w-[20px] '>
           {icon.icon}
         </div>
@@ -56,6 +60,7 @@ const LeftButton = ({ idx, icon, num }) => {
           </div>
         }
       </span>
+      <>{show && icon.board}</>
     </Tooltip>
   )
 }
@@ -92,10 +97,10 @@ function TopNav() {
           ))
         }
       </span>
-      <span className='flex flex-row justify-end items-center space-x-2 w-[360px] cursor-pointer' id='area3'>
+      <span className='flex flex-row justify-end items-center space-x-2 w-[360px] cursor-pointer relative' id='area3'>
         {
           leftIcons.map((icon, idx) => (
-            <LeftButton key={idx} idx={idx} icon={icon} />
+            <RightBtn key={idx} idx={idx} icon={icon} />
           ))
         }
         <span className='cursor-pointer'>

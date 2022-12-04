@@ -19,12 +19,16 @@ const Action = ({ action }) => {
 
 function ActionsFeed() {
 	return (
-		<div className='w-full bg-[#242526] mt-[23px] rounded-xl h-[123px] pb-[10px] pl-[16px] pr-[16px] pt-[12px]' >
+		<div className='w-full bg-[#242526] mt-[23px] rounded-xl h-[123px] pb-[10px] pl-[16px] pr-[16px] pt-[12px]'>
 			<div className='flex flex-row space-x-4'>
 				<img src={avatar} className='w-[40px] h-[40px] rounded-full mr-[8px]' />
-				<div className=' bg-[#3a3b3c] text-[#a5b3b8] h-[40px] w-full  rounded-full flex items-center p-[8px]'>
-					<form className='h-[23px] bg-inherit rounded-full w-full m-[10px]'>
-						<input className='bg-inherit w-full outline-none' placeholder='Ân ơi, bạn đang nghĩ gì thế?' />
+				<div className=' bg-[#3a3b3c] text-[#a5b3b8] h-[40px] w-full hover:bg-white/20 group rounded-full flex 
+					items-center p-[8px] cursor-pointer '>
+					<form className='h-[23px] bg-inherit group-hover:bg-transparent rounded-full w-full m-[10px] cursor-pointer'>
+						<input
+							className='bg-inherit w-full  group-hover:bg-transparent outline-none cursor-pointer'
+							placeholder='Ân ơi, bạn đang nghĩ gì thế?'
+						/>
 					</form>
 				</div>
 			</div>

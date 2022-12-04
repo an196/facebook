@@ -9,6 +9,7 @@
 :root {
 	--primary: '#393a3b';
 	--secondary: '#95979b';
+	--filter-primary-icon: invert(89%) sepia(6%) hue-rotate(185deg);
 	--filter-secondary-icon: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%);
 }
 /* Firefox */
@@ -35,6 +36,12 @@
 
 .filter-icon {
 	-webkit-filter: var(--filter-secondary-icon);
+	-webkit-user-select: none;
+	list-style: none;
+}
+
+.filter-icon-2 {
+	-webkit-filter: var(--filter-primary-icon);
 	-webkit-user-select: none;
 	list-style: none;
 }
