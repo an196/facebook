@@ -1,11 +1,11 @@
 .icon-pencil {
-	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/jFANuUzeK0L.png"); 
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/jFANuUzeK0L.png');
 	background-position: 0px -461px;
-	 background-size: auto; 
-	 width: 20px; 
-	 height: 20px; 
-	 background-repeat: no-repeat; 
-	 display: inline-block;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 .icon-book {
@@ -39,9 +39,9 @@
 }
 
 .icon-speaker {
-	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/jFANuUzeK0L.png');
-	background-position: 0px -167px;
-	background-size: auto;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/dewPZ-CQHci.png');
+	background-position: 0px -1113px;
+	background-size: 33px 1814px;
 	width: 20px;
 	height: 20px;
 	background-repeat: no-repeat;
@@ -49,31 +49,71 @@
 }
 
 .icon-group {
-	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/pdNWExZTlZg.png"); 
-	background-position: 0px -248px; 
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/pdNWExZTlZg.png');
+	background-position: 0px -248px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-book-plus {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/jFANuUzeK0L.png');
+	background-position: 0px -251px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-basket {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/pdNWExZTlZg.png');
+	background-position: 0px -626px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-threedots {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/ri3KJWlr3oC.png');
+	background-position: -84px -105px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-four-arrows {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/9OsdOK764p2.png');
+	background-position: 0px -1323px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-double-messages{
+	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/9OsdOK764p2.png"); 
+	background-position: 0px -265px; 
 	background-size: auto; 
-	width: 20px; 
-	height: 20px; 
+	width: 24px; 
+	height: 24px; 
 	background-repeat: no-repeat; 
 	display: inline-block;
 }
 
-.icon-book-plus{
-	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/jFANuUzeK0L.png"); 
-	background-position: 0px -251px; 
+.icon-right-arrow{
+	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/ri3KJWlr3oC.png"); 
+	background-position: -144px -126px; 
 	background-size: auto; 
-	width: 20px; 
-	height: 20px; 
-	background-repeat: no-repeat; 
-	display: inline-block;
-}
-
-.icon-basket{
-	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/pdNWExZTlZg.png"); 
-	background-position: 0px -626px; 
-	background-size: auto; 
-	width: 20px; 
-	height: 20px; 
+	width: 16px; 
+	height: 16px; 
 	background-repeat: no-repeat; 
 	display: inline-block;
 }
@@ -94,6 +134,16 @@
 	animation-duration: 0.75s;
 	animation-name: kf-move-3;
 	animation-fill-mode: forwards;
+}
+
+.icon-pencil-2{
+	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/9OsdOK764p2.png"); 
+	background-position: 0px -1593px; 
+	background-size: auto; 
+	width: 16px; 
+	height: 16px; 
+	background-repeat: no-repeat; 
+	display: inline-block;
 }
 
 @keyframes kf-move-1 {

@@ -7,8 +7,8 @@
 }
 
 :root {
-	--primary: '#393a3b';
-	--secondary: '#95979b';
+	--primary: #393a3b;
+	--secondary: #95979b;
 	--filter-primary-icon: invert(89%) sepia(6%) hue-rotate(185deg);
 	--filter-secondary-icon: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%);
 }
@@ -21,6 +21,7 @@
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
 	width: 15px;
+	
 }
 
 *::-webkit-scrollbar-track {

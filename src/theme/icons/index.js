@@ -274,3 +274,9 @@ export const ITriangle = () => {
         <svg width="100%" height="100%"  viewBox="0 0 21 12"  fill="currentColor" ><path d="M20.685.12c-2.229.424-4.278 1.914-6.181 3.403L5.4 10.94c-2.026 2.291-5.434.62-5.4-2.648V.12h20.684z"></path></svg>
     )
 }
+
+export const ITicket = () => {
+    return(
+        <svg  height="100%"  width="100%" viewBox="2 2 20 20" fill="currentColor"  xmlns="http://www.w3.org/2000/svg"><title>Đã gửi</title><path d="m12 2a10 10 0 1 0 10 10 10.011 10.011 0 0 0 -10-10zm0 18.5a8.5 8.5 0 1 1 8.5-8.5 8.51 8.51 0 0 1 -8.5 8.5z"></path><path d="m15.982 8.762-5.482 5.487-2.482-2.478a.75.75 0 0 0 -1.06 1.06l3.008 3.008a.748.748 0 0 0 1.06 0l6.016-6.016a.75.75 0 0 0 -1.06-1.061z"></path></svg>
+    )
+}
