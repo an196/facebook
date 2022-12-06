@@ -97,10 +97,11 @@ const RightMenu = () => {
 
 function MenuBoard() {
 	return (
-		<div className='absolute right-0 top-12 z-50 flex flex-col max-w-[607px] flex-initial  h-[752px] rounded-md text-[#e4e6eb] bg-[#323436]'>
+		<div className='absolute right-0 top-12 z-50 flex flex-col max-w-[607px] flex-initial h-[752px] rounded-md 
+			text-[#e4e6eb] bg-[#323436] pl-2'>
 			<div className='text-[24px] font-bold  w-full py-4 px-4'>Menu</div>
-			<div className='h-[752px]  w-full ml-[7px] '>
-				<div className='flex flex-col relative overflow-y-auto overscroll-contain h-[680px] '>
+			<div className='h-[752px]  w-full '>
+				<div className='flex flex-col relative overflow-y-auto overscroll-y-contain overflow-x-clip h-[680px] '>
 					<div className='flex flex-col relative grow'>
 						<div className='block w-[592px]  '>
 							<div className='flex flex-row items-stretch justify-center'>

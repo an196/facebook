@@ -87,16 +87,16 @@ function TopFeed() {
 	};
 
 	return (
-		<div className='w-full h-[301px] bg-[#242526] mt-[23px] rounded-xl '>
+		<div className='w-full pb-[1px] bg-[#242526] mt-[23px] rounded-xl '>
 			<div className='flex flex-row h-[60px]  px-[16px] '>
 				{LSubSec.map((subsec, index) => (
 					<SubSection subSection={subsec} key={index} />
 				))}
 			</div>
 			<HorizontalLine />
-			<div className='relative w-[680px] flex h-auto '>
-				<div className='mt-[16px] w-[680px] flex h-auto relative overscroll-x-auto overflow-auto' ref={rowRef}>
-					<div className='w-max flex h-auto'>
+			<div className='relative w-[680px] my-4 h-[200px] flex'>
+				<div className=' w-[680px] h-full flex flex-col overflow-x-auto hidden-scrollbar overflow-y-hidden' ref={rowRef}>
+					<div className='flex flex-row relative h-[200px] space-x-2 ' >
 						<CrtStoryBtn />
 						<Story />
 						<Story />
@@ -106,6 +106,15 @@ function TopFeed() {
 						<Story />
 						<Story />
 						<Story />
+						<Story />
+						<Story />
+						<Story />
+						<Story />
+						<Story />
+						<Story />
+						<Story />
+						<Story />
+						<div className='w-2 flex-none'></div>
 					</div>
 				</div>
 				<RightButton />
