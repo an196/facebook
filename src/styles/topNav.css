@@ -98,23 +98,23 @@
 	display: inline-block;
 }
 
-.icon-double-messages{
-	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/9OsdOK764p2.png"); 
-	background-position: 0px -265px; 
-	background-size: auto; 
-	width: 24px; 
-	height: 24px; 
-	background-repeat: no-repeat; 
+.icon-double-messages {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/9OsdOK764p2.png');
+	background-position: 0px -265px;
+	background-size: auto;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
 	display: inline-block;
 }
 
-.icon-right-arrow{
-	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/ri3KJWlr3oC.png"); 
-	background-position: -144px -126px; 
-	background-size: auto; 
-	width: 16px; 
-	height: 16px; 
-	background-repeat: no-repeat; 
+.icon-right-arrow {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/ri3KJWlr3oC.png');
+	background-position: -144px -126px;
+	background-size: auto;
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
 	display: inline-block;
 }
 
@@ -136,14 +136,44 @@
 	animation-fill-mode: forwards;
 }
 
-.icon-pencil-2{
-	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/9OsdOK764p2.png"); 
-	background-position: 0px -1593px; 
-	background-size: auto; 
-	width: 16px; 
-	height: 16px; 
-	background-repeat: no-repeat; 
+.icon-pencil-2 {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/9OsdOK764p2.png');
+	background-position: 0px -1593px;
+	background-size: auto;
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
 	display: inline-block;
+}
+
+.icon-group-blue {
+	height: 28px;
+	width: 28px;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/ocBsNQPbn07.png');
+	background-position: 0px -986px;
+	background-size: auto;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-message-news {
+	height: 28px;
+	width: 28px;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/ocBsNQPbn07.png');
+	background-position: 0px -1508px;
+	background-size: auto;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+/* class */
+.limit-line {
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 @keyframes kf-move-1 {

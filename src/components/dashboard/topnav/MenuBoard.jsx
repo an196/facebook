@@ -19,7 +19,7 @@ const itemsCreate2 = [
 
 const LeftMenu = () => {
 	return (
-		<div className='m-2 pt-0 '>
+		<div className='m-2 pt-0 mt-0'>
 			<div className='w-[360px] bg-[#242526] rounded-md block '>
 				<div className='p-4 pb-2'>
 					<div className='flex flex-row items-center bg-[#3a3b3c] rounded-full'>
@@ -72,7 +72,7 @@ const RightMenu = () => {
 	return (
 		<div className='block relative flex-none '>
 			<div className='block sticky top-0 '>
-				<div className='flex relative m-2 '>
+				<div className='flex relative m-2 mt-0 '>
 					<div className=' bg-[#242526] rounded-md w-[200px] '>
 						<div className='px-1 py-2'>
 							<p className='text-[20px] font-bold p-[6px]'>Tạo</p>

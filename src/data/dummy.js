@@ -204,3 +204,69 @@ export const userComments = [
         ]
     },
 ]
+
+export const notifications = [
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'unseen',
+		type: 'group',
+		time: '1 giờ',
+	},
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'seen',
+		type: 'notification',
+		time: '2 giờ',
+	},
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'unseen',
+		type: 'group',
+		time: '5 giờ',
+	},
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'seen',
+		type: 'group',
+		time: '5 giờ',
+	},
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'unseen',
+		type: 'notification',
+		time: '5 giờ',
+	},
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'unseen',
+		type: 'notification',
+		time: '5 giờ',
+	},
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'unseen',
+		type: 'group',
+		time: '5 giờ',
+	},
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'unseen',
+		type: 'notification',
+		time: '5 giờ',
+	},
+	{
+		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+		status: 'unseen',
+		type: 'group',
+		time: '5 giờ',
+	},
+]

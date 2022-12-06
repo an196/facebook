@@ -114,6 +114,8 @@ function TopFeed() {
 						<Story />
 						<Story />
 						<Story />
+						<Story />
+						<Story />
 						<div className='w-2 flex-none'></div>
 					</div>
 				</div>
