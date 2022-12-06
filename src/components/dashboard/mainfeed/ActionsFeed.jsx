@@ -12,7 +12,7 @@ const Action = ({ action }) => {
 			<div style={{ width: '24px', height: '24px', marginRight: '8px' }}>
 				<i data-visualcompletion='css-img' className={`${action.icon}`}></i>
 			</div>
-			<span>{action.name}</span>
+			<span className='text-[15px] font-semibold'>{action.name}</span>
 		</span>
 	);
 };

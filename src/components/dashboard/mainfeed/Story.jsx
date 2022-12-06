@@ -3,10 +3,10 @@ import storyImage from '../../../assets/images/story.png';
 
 function Story() {
 	return (
-		<div className='relative w-[112.5px] h-[200px] float-left flex-none cursor-pointer'>
+		<div className='relative w-[112.5px] h-[200px] float-left flex-none cursor-pointer group'>
 			<div className='relative rounded-xl overflow-hidden '>
 				<img
-					className='hover:scale-105 transition-all duration-500 ease-linear w-[112.5px] h-[200px]'
+					className='group-hover:scale-105 transition-all duration-500 ease-linear w-[112.5px] h-[200px]'
 					src={storyImage}
 					width={112.5}
 					height={200}
@@ -22,6 +22,7 @@ function Story() {
 					Huy Đức Lê
 				</div>
 			</div>
+			<div className='absolute w-full h-full group-hover:bg-black/10 top-0 left-0'></div>
 		</div>
 	);
 }
