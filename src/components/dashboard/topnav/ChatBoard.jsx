@@ -1,75 +1,15 @@
-import React from 'react';
+import React, { useRef} from 'react';
 import { ISearch, ITicket } from '../../../theme/icons/index';
 import avatar from '../../../assets/images/avatar3.jpg';
+import { useBoardContext } from '../../../contexts/BoardContext';
+import useBoardHidden from '../../../hooks/useBoardHidden';
+import { messages } from '../../../data/dummy';
 
 const iconsTopLeft = [
 	{ icon: 'icon-threedots' },
 	{ icon: 'icon-four-arrows' },
 	{ icon: 'icon-camera-plus' },
 	{ icon: 'icon-pencil-2' },
-];
-
-const messages = [
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://img.freepik.com/premium-vector/female-user-profile-avatar-is-woman-character-screen-saver-with-emotions_505620-617.jpg?size=338&ext=jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'sent',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'seen',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
 ];
 
 const Bottom = () => {
@@ -163,8 +103,11 @@ const Top = () => {
 };
 
 const SearchInput = () => {
+	const boardRef = useRef();
+	useBoardHidden(boardRef)
+
 	return (
-		<div className='h-[52px]'>
+		<div className='h-[52px]' ref={boardRef}>
 			<div className='my-4 px-4'>
 				<span className='w-full flex flex-row h-9 bg-[#3a3b3c] rounded-full items-center'>
 					<span className='text-[#b0b3b8] pl-[10px]'>
@@ -182,7 +125,7 @@ const SearchInput = () => {
 };
 
 function getStatusMessage(message) {
-	console.log(message);
+	
 	if (message) {
 		let { status, img } = message;
 
@@ -202,8 +145,11 @@ function getStatusMessage(message) {
 }
 
 function ChatBoard() {
+	const { setCurrentBoard } = useBoardContext();
 	return (
-		<div className='absolute w-[360px] h-[801px]  right-0 bg-[#242526] rounded-md z-40'>
+		<div className='absolute w-[360px] h-[801px]  right-0 bg-[#242526] rounded-md z-40'
+			onBlur={() => setCurrentBoard('')}
+		>
 			<div className='w-[360px] h-full flex flex-col'>
 				<Top />
 				<Bottom />

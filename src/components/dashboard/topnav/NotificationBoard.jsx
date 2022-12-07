@@ -1,5 +1,7 @@
 import React from 'react';
+import { useRef } from 'react';
 import { notifications } from '../../../data/dummy';
+import useBoardHidden from '../../../hooks/useBoardHidden';
 
 const status = {
 	seen: 'seen',
@@ -37,8 +39,11 @@ const ItemRow = ({ notification }) => {
 }
 
 function NotificationBoard() {
+	const notifiBoard = useRef();
+	useBoardHidden(notifiBoard);
+
 	return (
-		<div className='absolute right-0 w-[360px] max-h-[801px] bg-[#242526] text-[#e4e6eb] rounded-md'>
+		<div className='absolute right-0 w-[360px] max-h-[801px] bg-[#242526] text-[#e4e6eb] rounded-md' ref={notifiBoard}>
 			<div className='flex flex-col w-full h-full overflow-hidden'>
 				<div className='flex flex-col overflow-y-auto max-h-[801px] pb-4 scroll-smooth'>
 					<span className='relative mt-5  px-4 flex justify-between items-center'>

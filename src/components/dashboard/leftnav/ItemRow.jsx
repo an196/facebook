@@ -14,7 +14,7 @@ function ItemRow({ item, subtitle, headerColor }) {
 					<img className='rounded-lg' src={item.src} width={36} height={36} />
 				)}
 			</span>
-			<span className='flex flex-col'>
+			<span className='flex flex-col grow'>
 				<span className='grow font-medium break-words'>{item.title}</span>
 				{subtitle && <span className='grow font-normal text-[13px] '>{item.subtitle}</span>}
 			</span>

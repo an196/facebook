@@ -9,6 +9,7 @@ import {
 import { SearchBoard } from '../../components/dashboard/leftnav';
 import { MenuBoard, ChatBoard, NotificationBoard } from '../../components/dashboard/topnav';
 
+import { useBoardContext } from '../../contexts/BoardContext';
 
 const menuIcon = [
   { name: 'home', title: 'Trang chủ', icon: <IHome /> },
@@ -19,9 +20,9 @@ const menuIcon = [
 ]
 
 const rightIcons = [
-  { name: 'menu', icon: <IMenu />, board: <MenuBoard/>, action: true },
-  { name: 'messenger', icon: <IMessenger />, board: <ChatBoard/>, action: false },
-  { name: 'notification', icon: <INotification />, board: <NotificationBoard/>, action: false  },
+  { name: 'menu', icon: <IMenu />, board: <MenuBoard /> },
+  { name: 'messenger', icon: <IMessenger />, board: <ChatBoard /> },
+  { name: 'notification', icon: <INotification />, board: <NotificationBoard /> },
 ]
 
 const MiddleButton = ({ item, index }) => {
@@ -43,13 +44,22 @@ const MiddleButton = ({ item, index }) => {
   )
 }
 
-const RightBtn = ({  icon, num, current, setCurrentBoard  }) => {
+const RightBtn = ({ icon, num, current, setCurrentBoard }) => {
+
+  const handleClick = (icon) => {
+    if (current === icon.name)
+      return setCurrentBoard('');
+
+    return setCurrentBoard(icon.name);
+  }
 
   return (
-    <Tooltip  title={icon.name}>
-      <span className={`left-icon-item hover:bg-[#525151] flex relative ${current=== icon.name ? 'bg-[#2d88ff]/20' : ''}`} 
-      onClick={()=>setCurrentBoard(icon.name)}>
-        <div className={`h-[20px] w-[20px] ${current=== icon.name ?'text-[#2d88ff]' : ''}`}>
+    <Tooltip title={icon.name}>
+      <span className={`left-icon-item hover:bg-[#525151] flex relative ${current === icon.name ? 'bg-[#2d88ff]/20' : ''}`}
+        onClick={() => handleClick(icon)}
+        onBlur={() => setCurrentBoard('')}
+      >
+        <div className={`h-[20px] w-[20px] ${current === icon.name ? 'text-[#2d88ff]' : ''}`}>
           {icon.icon}
         </div>
         {
@@ -68,8 +78,8 @@ const RightBtn = ({  icon, num, current, setCurrentBoard  }) => {
 function TopNav() {
   const [showSearchBoard, setShowSearchBoard] = useState(false);
   const [fisrtload, setFirstload] = useState(true);
-  const [ currentBoard, setCurrentBoard] = useState('');
-  
+  const { currentBoard, setCurrentBoard } = useBoardContext();
+
   return (
     <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
       !z-1000000 sticky top-0'>
@@ -78,7 +88,7 @@ function TopNav() {
           <ILogo2 />
         </span>
         <span className='w-[240px] h-[40px] bg-[#3a3b3c] text-[#a5b3b8] flex flex-row p-[12px] items-center rounded-full overflow-hidden z-20'
-          onBlur={()=> setShowSearchBoard(false)}
+           onBlur={() => setShowSearchBoard(false)}
         >
           {
             (<span className={`h-[18px] w-[18px] cursor-pointer ${showSearchBoard ? 'animate-move-left-2' : (!fisrtload && 'animate-move-right')} `}>
@@ -103,7 +113,7 @@ function TopNav() {
       <span className='flex flex-row justify-end items-center space-x-2 w-[360px] cursor-pointer relative' id='area3'>
         {
           rightIcons.map((icon, idx) => (
-            <RightBtn key={idx} icon={icon} current={currentBoard} setCurrentBoard={setCurrentBoard}/>
+            <RightBtn key={idx} icon={icon} current={currentBoard} setCurrentBoard={setCurrentBoard} />
           ))
         }
         <span className='cursor-pointer'>

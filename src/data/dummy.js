@@ -270,3 +270,65 @@ export const notifications = [
 		time: '5 giờ',
 	},
 ]
+export const messages = [
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://img.freepik.com/premium-vector/female-user-profile-avatar-is-woman-character-screen-saver-with-emotions_505620-617.jpg?size=338&ext=jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'sent',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'seen',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'received',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'received',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'received',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'received',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'received',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'received',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'received',
+	},
+	{
+		name: 'Nguyễn Chiến Thắng',
+		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+		submessage: 'Xem tin nhắn đê',
+		status: 'received',
+	},
+];

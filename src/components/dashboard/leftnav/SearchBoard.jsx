@@ -2,6 +2,7 @@ import React from 'react';
 import { ILeftArrow, ICancel, IClock } from '../../../theme/icons';
 import { searchHistory, suggestPage } from '../../../data/dummy';
 import typeDefined from '../../../constant/type';
+import { useBoardContext } from '../../../contexts/BoardContext';
 
 const Section = ({ item, title, editable, enableDelete }) => {
 	return (
@@ -56,6 +57,7 @@ const RowItem = ({ history, enableDelete }) => {
 
 //bg-[#242526]
 function SearchBoard({ setShowSearchBoard }) {
+	const { setCurrentBoard } = useBoardContext();
 	return (
 		<div className='w-[320px] flex-initial top-0 bg-[#242526] absolute  text-black -ml-[16px] z-10 px-[12px]'>
 			<div

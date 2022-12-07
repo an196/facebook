@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{useRef , useEffect} from 'react';
 import { Section } from '../leftnav';
 import { HorizontalLine } from '../../../components';
 import items from '../../../data/menu';
+import { useBoardContext } from '../../../contexts/BoardContext';
+import useBoardHidden from '../../../hooks/useBoardHidden';
 
 const itemsCreate1 = [
 	{ title: 'Đăng', icon: 'icon-pencil' },
@@ -96,9 +98,17 @@ const RightMenu = () => {
 };
 
 function MenuBoard() {
+	const { setCurrentBoard } = useBoardContext();
+
+	const menuRef = useRef();
+	useBoardHidden(menuRef)
+
 	return (
 		<div className='absolute right-0 top-12 z-50 flex flex-col max-w-[607px] flex-initial h-[752px] rounded-md 
-			text-[#e4e6eb] bg-[#323436] pl-2'>
+			text-[#e4e6eb] bg-[#323436] pl-2'
+		
+			ref={menuRef}
+		>
 			<div className='text-[24px] font-bold  w-full py-4 px-4'>Menu</div>
 			<div className='h-[752px]  w-full '>
 				<div className='flex flex-col relative overflow-y-auto overscroll-y-contain overflow-x-clip h-[680px] '>
