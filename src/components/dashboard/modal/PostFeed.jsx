@@ -64,7 +64,7 @@ function PostFeed({setShowPostFeed}) {
 
     return (
         <div className='fixed w-[100vw] h-[100vh] inset-0 bg-black/60 z-40 flex items-center justify-center transition-all 
-            duration-1000 ease-linear'>
+            duration-300 ease-in-out'>
             <div className='w-[500px] bg-[#242526]  block rounded-lg'>
                 <div className='h-[60px] w-full flex items-center justify-center relative'>
                     <span className='text-[20px] font-bold text-[#e4e6eb]'>Tạo bài viết</span>
@@ -114,14 +114,14 @@ function PostFeed({setShowPostFeed}) {
                     <div className={`w-full flex flex-col justify-between pb-2 ${textMode === '' && 'h-[154px]'}`}>
                         <div className={`w-full  ${textMode === '' && 'h-[80px]'}`}>
                             <span className={` font-normal focus:cursor-text outline-none text-[#E4E6EB] pointer-events-auto
-                                break-words whitespace-pre-wrap select-text block
+                                break-words whitespace-pre-wrap select-text block badge
                                 ${textMode !== '' ? 'text-[15px]' : 'text-[24px]'}
                             `}
                                 contentEditable
                                 suppressContentEditableWarning={true}
                                 ref={inputPost}
                                 id='editor-post'
-                            >{content}</span>
+                            ></span>
 
                         </div>
                         <div className={`flex flex-row relative items-center   ${textMode === textmode.size2 && 'justify-end mt-5'}

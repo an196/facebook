@@ -1,2 +1,11 @@
+#editor-post.badge[contenteditable]:empty::before{
+    content: 'Ân ơi, bạn đang nghĩ gì thế?';
+    display: inline-block;
+    color: #a8abaf;;
+}
 
+#editor-post.badge[contenteditable]:empty:focus::before{
+    content: 'Ân ơi, bạn đang nghĩ gì thế?';
+    color: #a8abaf;
+}
 
