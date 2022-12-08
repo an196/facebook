@@ -82,7 +82,7 @@ function TopNav() {
 
   return (
     <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
-      !z-1000000 sticky top-0'>
+      sticky top-0 z-10'>
       <div className='flex flex-row items-center w-[360px] relative' id='area1'>
         <span className='w-[45px] h-[45px] p-auto'>
           <ILogo2 />

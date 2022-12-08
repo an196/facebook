@@ -8,3 +8,7 @@ export { default as NewsFeed} from './mainfeed/NewsFeed.jsx';
 export { default as FeedsBoard} from './mainfeed/FeedsBoard.jsx';
 export { default as Story} from './mainfeed/Story.jsx';
 export { default as SubSection} from './mainfeed/SubSection.jsx';
+
+
+//modal
+export { default as PostFeed} from './modal/PostFeed';

@@ -1,4 +1,6 @@
 import avatar from '../../../assets/images/avatar3.jpg';
+import { useState } from 'react';
+import { PostFeed} from '../../dashboard';
 
 const actions = [
 	{ name: 'Video trực tiếp', icon: 'bg-img-1 action-feed-icon-1' },
@@ -18,7 +20,10 @@ const Action = ({ action }) => {
 };
 
 function ActionsFeed() {
+	const [showPostFeed , setShowPostFeed] = useState(false);
+
 	return (
+		<>
 		<div className='w-full bg-[#242526] mt-[23px] rounded-xl h-[123px] pb-[10px] pl-[16px] pr-[16px] pt-[12px]'>
 			<div className='flex flex-row space-x-4'>
 				<img src={avatar} className='w-[40px] h-[40px] rounded-full mr-[8px]' />
@@ -28,6 +33,7 @@ function ActionsFeed() {
 						<input
 							className='bg-inherit w-full  group-hover:bg-transparent outline-none cursor-pointer'
 							placeholder='Ân ơi, bạn đang nghĩ gì thế?'
+							onFocus={()=> setShowPostFeed(true)}
 						/>
 					</form>
 				</div>
@@ -39,6 +45,10 @@ function ActionsFeed() {
 				))}
 			</div>
 		</div>
+		{
+			showPostFeed && <PostFeed setShowPostFeed={setShowPostFeed}/>
+		}
+		</>
 	);
 }
 
