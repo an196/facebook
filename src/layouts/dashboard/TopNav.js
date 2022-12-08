@@ -7,7 +7,7 @@ import {
   Tooltip,
 } from 'react-tippy';
 import { SearchBoard } from '../../components/dashboard/leftnav';
-import { MenuBoard, ChatBoard, NotificationBoard } from '../../components/dashboard/topnav';
+import { MenuBoard, ChatBoard, NotificationBoard, UserBoard } from '../../components/dashboard/topnav';
 
 import { useBoardContext } from '../../contexts/BoardContext';
 
@@ -23,6 +23,7 @@ const rightIcons = [
   { name: 'menu', icon: <IMenu />, board: <MenuBoard /> },
   { name: 'messenger', icon: <IMessenger />, board: <ChatBoard /> },
   { name: 'notification', icon: <INotification />, board: <NotificationBoard /> },
+  { name: 'user', img: avatar, board: <UserBoard /> },
 ]
 
 const MiddleButton = ({ item, index }) => {
@@ -55,21 +56,31 @@ const RightBtn = ({ icon, num, current, setCurrentBoard }) => {
 
   return (
     <Tooltip title={icon.name}>
-      <span className={`left-icon-item hover:bg-[#525151] flex relative ${current === icon.name ? 'bg-[#2d88ff]/20' : ''}`}
-        onClick={() => handleClick(icon)}
-        onBlur={() => setCurrentBoard('')}
-      >
-        <div className={`h-[20px] w-[20px] ${current === icon.name ? 'text-[#2d88ff]' : ''}`}>
-          {icon.icon}
-        </div>
-        {
-          icon.name === 'notification' &&
-          <div className='absolute top-0 right-0 w-[19px] h-[19px] bg-[#e41e3f] rounded-full flex items-center justify-center 
+      {
+        icon.icon ?
+          <span className={`left-icon-item hover:bg-[#525151] flex relative ${current === icon.name ? 'bg-[#2d88ff]/20' : ''}`}
+            onClick={() => handleClick(icon)}
+            onBlur={() => setCurrentBoard('')}
+          >
+            <div className={`h-[20px] w-[20px] ${current === icon.name ? 'text-[#2d88ff]' : ''}`}>
+              {icon.icon}
+            </div>
+            {
+              icon.name === 'notification' &&
+              <div className='absolute top-0 right-0 w-[19px] h-[19px] bg-[#e41e3f] rounded-full flex items-center justify-center 
             translate-x-[25%] translate-y-[-25%]'>
-            <span className='text-[12px] font-bold'>{num || 2}</span>
-          </div>
-        }
-      </span>
+                <span className='text-[12px] font-bold'>{num || 2}</span>
+              </div>
+            }
+          </span> :
+          <span className='cursor-pointer'
+            onClick={() => handleClick(icon)}
+            onBlur={() => setCurrentBoard('')}
+          >
+            <img src={avatar} alt='avatar' className='rounded-full' width={40} height={40} />
+          </span>
+      }
+
       <>{current === icon.name && icon.board}</>
     </Tooltip>
   )
@@ -88,7 +99,7 @@ function TopNav() {
           <ILogo2 />
         </span>
         <span className='w-[240px] h-[40px] bg-[#3a3b3c] text-[#a5b3b8] flex flex-row p-[12px] items-center rounded-full overflow-hidden z-20'
-           onBlur={() => setShowSearchBoard(false)}
+          onBlur={() => setShowSearchBoard(false)}
         >
           {
             (<span className={`h-[18px] w-[18px] cursor-pointer ${showSearchBoard ? 'animate-move-left-2' : (!fisrtload && 'animate-move-right')} `}>
@@ -116,9 +127,6 @@ function TopNav() {
             <RightBtn key={idx} icon={icon} current={currentBoard} setCurrentBoard={setCurrentBoard} />
           ))
         }
-        <span className='cursor-pointer'>
-          <img src={avatar} alt='avatar' className='rounded-full' width={40} height={40} />
-        </span>
       </span>
     </div>
   )

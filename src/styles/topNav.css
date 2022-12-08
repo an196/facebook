@@ -166,6 +166,56 @@
 	display: inline-block;
 }
 
+.icon-settings {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/jhcL_Di-aU2.png');
+	background-position: -42px -286px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-questions {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/B__LYiWVclj.png');
+	background-position: 0px -322px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-half-moon {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/B__LYiWVclj.png');
+	background-position: 0px -238px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-exclamation-message {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/B__LYiWVclj.png');
+	background-position: 0px -154px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-logout {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/yYY3b-uNdxY.png');
+	background-position: 0px -204px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
 /* class */
 .limit-line {
 	-webkit-line-clamp: 3;
@@ -174,6 +224,16 @@
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.icon-right-arrow {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/jhcL_Di-aU2.png');
+	background-position: 0px -131px;
+	background-size: auto;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 @keyframes kf-move-1 {
