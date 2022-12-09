@@ -1,4 +1,5 @@
 import Router from './routes';
+import './styles/filt.css'
 import './styles/topNav.css'
 import './styles/leftNav.css';
 import './styles/App.css';

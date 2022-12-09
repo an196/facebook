@@ -1,0 +1,20 @@
+.filter-icon {
+	-webkit-filter: var(--filter-secondary-icon);
+	-webkit-user-select: none;
+	list-style: none;
+}
+
+.filter-icon-2 {
+	-webkit-filter: var(--filter-primary-icon);
+	-webkit-user-select: none;
+	list-style: none;
+}
+
+.filt-logo {
+    fill: var(--always-white);
+}
+
+.xe3v8dz{
+    fill: var(--always-white);
+}
+

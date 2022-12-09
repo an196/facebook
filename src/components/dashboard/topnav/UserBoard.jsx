@@ -1,5 +1,8 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import avatar from '../../../assets/images/avatar3.jpg';
+import { contentinfo } from '../../../data/shortlinks';
+import useBoardHidden from '../../../hooks/useBoardHidden';
+import board from '../../../constant/board';
 
 const items = [
     { title: 'Cài đặt & quyền riêng tư', icon: 'icon-settings' },
@@ -7,16 +10,6 @@ const items = [
     { title: 'Màn hình & trợ năng', icon: 'icon-half-moon' },
     { title: 'Đóng góp ý kiến', icon: 'icon-exclamation-message' },
     { title: 'Đăng xuất', icon: 'icon-logout' },
-]
-
-const contentinfo = [
-    { content: 'Quyền riêng tư', link: 'https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0' },
-    { content: 'Điều khoản', link: 'https://www.facebook.com/policies_center/' },
-    { content: 'Quảng cáo', link: 'https://www.facebook.com/business' },
-    { content: 'Lựa chọn quảng cáo', link: 'https://www.facebook.com/help/568137493302217' },
-    { content: 'Cookie', link: 'https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0' },
-    { content: 'Xem thêm', link: '#' },
-    { content: 'Meta © 2022', link: '#' },
 ]
 
 const RowItem = ({ item }) => {
@@ -62,15 +55,14 @@ const Bottom = () => {
         <div className='p-4'>
             <ul className='inline space-x-1'>
                 {contentinfo.map((item, idx) => (
-                    <li className='text-[13px] font-normal inline text-[#b0b3b8]'>
+                    <li className='text-[13px] font-normal inline text-[#b0b3b8]' key={idx}>
                         <a href={item.link} className={` ${item.link !== '#' && 'hover:underline'}`}>{item.content}</a>
                         {
-                            idx !== contentinfo.length &&
+                            idx < contentinfo.length - 1 &&
                             <div className='w-1 h-full inline p-1 relative'>
                                 <div className='w-1 h-1 absolute top-0 right-0' >.</div>
                             </div>
                         }
-
                     </li>
                 ))}
             </ul>
@@ -78,8 +70,13 @@ const Bottom = () => {
     )
 }
 function UserBoard() {
+    const boardRef = useRef();
+	useBoardHidden(boardRef, board.user)
+
     return (
-        <div className='absolute right-0 top-12 z-40 flex flex-col w-[360px] bg-[#242526] text-white  flex-initial rounded-md'>
+        <div className='absolute right-0  z-40 flex flex-col w-[360px] bg-[#242526] text-white  flex-initial rounded-md'
+            ref={boardRef}
+        >
             <Top />
             <div className='w-full'>
                 {items.map((item, idx) => <RowItem key={idx} item={item} />)}

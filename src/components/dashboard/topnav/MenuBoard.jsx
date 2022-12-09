@@ -4,6 +4,7 @@ import { HorizontalLine } from '../../../components';
 import items from '../../../data/menu';
 import { useBoardContext } from '../../../contexts/BoardContext';
 import useBoardHidden from '../../../hooks/useBoardHidden';
+import board from '../../../constant/board';
 
 const itemsCreate1 = [
 	{ title: 'Đăng', icon: 'icon-pencil' },
@@ -101,7 +102,7 @@ function MenuBoard() {
 	const { setCurrentBoard } = useBoardContext();
 
 	const menuRef = useRef();
-	useBoardHidden(menuRef)
+	useBoardHidden(menuRef, board.menu)
 
 	return (
 		<div className='absolute right-0 top-12 z-50 flex flex-col max-w-[607px] flex-initial h-[752px] rounded-md 

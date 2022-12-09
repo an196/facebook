@@ -1,12 +1,12 @@
 import avatar from '../../assets/images/avatar3.jpg';
 import { CameraIcon } from '../../components/dashboard'
-import { ISearch, IThreedots } from '../../theme/icons/index';
+import { ISearch, IThreedots, ICameraPlus2 } from '../../theme/icons/index';
 
 //import dummy data
 import { users } from '../../data/dummy';
 
 const actions = [
-  { title: 'Phòng họp mặt mới', icon: <CameraIcon /> },
+  { title: 'Phòng họp mặt mới', icon: <ICameraPlus2 /> },
   { title: 'Tìm kiếm theo tên và nhóm', icon: <ISearch /> },
   { title: 'Tùy chọn', icon: <IThreedots /> },
 ]
@@ -23,7 +23,7 @@ const Action = ({ action }) => {
 
 function RightNav() {
   return (
-    <div className='w-[360px] h-[100vh] overflow-y-auto p-2 text-[#e1e3e8] flex-initial '>
+    <div className='w-[360px] h-[95vh] overflow-y-auto p-2 text-[#e1e3e8] flex-initial '>
       <div className='flex flex-row justify-between  mt-[20px] w-full'>
         <span className='leading-[21px] text-[16px] font-medium text-[#e1e3e8]'>Người liên hệ</span>
         <span className='flex flex-row space-x-3 justify-center items-center pt-1'>

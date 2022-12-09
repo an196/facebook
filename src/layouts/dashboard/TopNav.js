@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-  IHome, IWatch, IGroup, IGame, IMarketplace, IMenu, ISearch, IUser, IMessenger, INotification, ILogo2
+  IHome, IWatch, IGroup, IGame, IMarketplace, IMenu, ISearch, IUser, IMessenger, INotification, ILogo2, ILogo3
 } from '../../theme/icons/index';
 import avatar from '../../assets/images/avatar3.jpg'
 import {
@@ -10,6 +10,7 @@ import { SearchBoard } from '../../components/dashboard/leftnav';
 import { MenuBoard, ChatBoard, NotificationBoard, UserBoard } from '../../components/dashboard/topnav';
 
 import { useBoardContext } from '../../contexts/BoardContext';
+import board from '../../constant/board';
 
 const menuIcon = [
   { name: 'home', title: 'Trang chủ', icon: <IHome /> },
@@ -20,10 +21,10 @@ const menuIcon = [
 ]
 
 const rightIcons = [
-  { name: 'menu', icon: <IMenu />, board: <MenuBoard /> },
-  { name: 'messenger', icon: <IMessenger />, board: <ChatBoard /> },
-  { name: 'notification', icon: <INotification />, board: <NotificationBoard /> },
-  { name: 'user', img: avatar, board: <UserBoard /> },
+  { name: board.menu, icon: <IMenu />, board: <MenuBoard /> },
+  { name: board.messenger, icon: <IMessenger />, board: <ChatBoard /> },
+  { name: board.notification, icon: <INotification />, board: <NotificationBoard /> },
+  { name: board.user, img: avatar, board: <UserBoard /> },
 ]
 
 const MiddleButton = ({ item, index }) => {
@@ -48,8 +49,13 @@ const MiddleButton = ({ item, index }) => {
 const RightBtn = ({ icon, num, current, setCurrentBoard }) => {
 
   const handleClick = (icon) => {
+    console.log(current)
+
+    console.log(icon)
     if (current === icon.name)
+    {
       return setCurrentBoard('');
+    }
 
     return setCurrentBoard(icon.name);
   }
@@ -95,8 +101,8 @@ function TopNav() {
     <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
       sticky top-0 z-10'>
       <div className='flex flex-row items-center w-[360px] relative' id='area1'>
-        <span className='w-[45px] h-[45px] p-auto'>
-          <ILogo2 />
+        <span className='w-[40px] h-[40px] p-auto filt-logo mr-2'>
+          <ILogo3 />
         </span>
         <span className='w-[240px] h-[40px] bg-[#3a3b3c] text-[#a5b3b8] flex flex-row p-[12px] items-center rounded-full overflow-hidden z-20'
           onBlur={() => setShowSearchBoard(false)}

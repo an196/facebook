@@ -2,6 +2,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { notifications } from '../../../data/dummy';
 import useBoardHidden from '../../../hooks/useBoardHidden';
+import board from '../../../constant/board';
 
 const status = {
 	seen: 'seen',
@@ -40,7 +41,7 @@ const ItemRow = ({ notification }) => {
 
 function NotificationBoard() {
 	const notifiBoard = useRef();
-	useBoardHidden(notifiBoard);
+	useBoardHidden(notifiBoard, board.notification);
 
 	return (
 		<div className='absolute right-0 w-[360px] max-h-[801px] bg-[#242526] text-[#e4e6eb] rounded-md' ref={notifiBoard}>

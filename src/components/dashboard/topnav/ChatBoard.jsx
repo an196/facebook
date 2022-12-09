@@ -1,6 +1,6 @@
 import React, { useRef} from 'react';
 import { ISearch, ITicket } from '../../../theme/icons/index';
-import avatar from '../../../assets/images/avatar3.jpg';
+import board from '../../../constant/board';
 import { useBoardContext } from '../../../contexts/BoardContext';
 import useBoardHidden from '../../../hooks/useBoardHidden';
 import { messages } from '../../../data/dummy';
@@ -103,11 +103,8 @@ const Top = () => {
 };
 
 const SearchInput = () => {
-	const boardRef = useRef();
-	useBoardHidden(boardRef)
-
 	return (
-		<div className='h-[52px]' ref={boardRef}>
+		<div className='h-[52px]'>
 			<div className='my-4 px-4'>
 				<span className='w-full flex flex-row h-9 bg-[#3a3b3c] rounded-full items-center'>
 					<span className='text-[#b0b3b8] pl-[10px]'>
@@ -145,10 +142,14 @@ function getStatusMessage(message) {
 }
 
 function ChatBoard() {
+	const boardRef = useRef();
 	const { setCurrentBoard } = useBoardContext();
+	useBoardHidden(boardRef, board.messenger)
+	
 	return (
 		<div className='absolute w-[360px] h-[801px]  right-0 bg-[#242526] rounded-md z-40'
 			onBlur={() => setCurrentBoard('')}
+			ref={boardRef}
 		>
 			<div className='w-[360px] h-full flex flex-col'>
 				<Top />

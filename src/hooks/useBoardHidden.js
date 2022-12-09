@@ -1,12 +1,14 @@
 import { useEffect } from "react";
 import { useBoardContext } from "../contexts/BoardContext";
 
-const useBoardHidden = (ref) => {
-    const { setCurrentBoard } = useBoardContext();
+const useBoardHidden = (ref, board) => {
+    const { currentBoard,setCurrentBoard } = useBoardContext();
 
     useEffect(() => {
         function handleClickOutside(event) {
             if (ref.current && !ref.current.contains(event.target)) {
+                if(board === currentBoard)
+                    return
                 setCurrentBoard('');
             }
         }
