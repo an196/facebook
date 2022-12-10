@@ -1,20 +1,17 @@
-import { useState} from 'react';
-
-function Tooltip({ message, position, distance, children  }) {
-	const [located, setLocated] = useState();
-
+function Tooltip({ lable, position = 'bottom'}) {
 	return (
-		<div className='relative flex flex-col items-center group h-full w-max' >
-			{children}
-			<div className={`absolute  items-center hidden mb-6 group-hover:flex -${position}-[${distance}px]`}>
-				<span
-					className='relative z-10 p-2 text-xs leading-none text-[#3a3b3c] whitespace-no-wrap font-normal bg-[#e1e3e8] shadow-lg 
-					rounded-md w-max'
-				>
-					{message}
-				</span>
-				{/* <div className='w-3 h-3 -mt-2 rotate-45  bg-[#e1e3e8] '></div> */}
-			</div>
+		<div className={`absolute  w-max flex 
+			${position === 'bottom' && 'top-[100%] left-[50%] -translate-x-[50%]'}
+			${position === 'top' && '-top-[100%] left-[50%] -translate-x-[50%]'}
+			${position === 'left' && 'top-[50%] right-[100%] -translate-y-[50%]'}
+			${position === 'right' && 'top-[50%] left-[100%] -translate-y-[50%]'}
+		`}>
+			<span
+				className='group-hover:opacity-100  opacity-0 flex w-max text-black text-[13px] bg-white/90 
+                py-1 px-2 rounded-md transition-all duration-300 ease-in-out'
+			>
+				{lable}
+			</span>
 		</div>
 	);
 }

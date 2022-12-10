@@ -20,11 +20,11 @@ const CommentViewMore = ({ scrollTo }) => {
 	);
 };
 
-const CommentSection = React.forwardRef(({ props, ref }) => {
+const CommentSection = () => {
 	const [showFilterComment , setShowFilterComment] = useState(false);
 
 	return (
-		<div className='py-[5px] px-[16px]' ref={ref}>
+		<div className='py-[5px] px-[16px]'>
 			<div className='flex justify-end items-center w-full h-[28px] cursor-pointer mb-[5px] '>
 				<div className='relative flex items-center space-x-1'>
 					<span className='font-semibold tracking-tight '>Bình luận liên quan nhất</span>
@@ -45,6 +45,6 @@ const CommentSection = React.forwardRef(({ props, ref }) => {
 			<CommentViewMore />
 		</div>
 	);
-});
+}
 
 export default CommentSection;

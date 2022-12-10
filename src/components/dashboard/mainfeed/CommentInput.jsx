@@ -28,9 +28,9 @@ const IconComment = ({ icon }) => {
 	);
 };
 
-const CommentInput = React.forwardRef((props, ref) => {
+const CommentInput = () => {
 	return (
-		<div className='flex flex-row' id='comment-input' ref={ref}>
+		<div className='flex flex-row' id='comment-input' >
 			<div className='w-[32px] h-[32px] rounded-full overflow-hidden mr-[6px]'>
 				<img src={avartar} alt='avatar' />
 			</div>
@@ -44,6 +44,6 @@ const CommentInput = React.forwardRef((props, ref) => {
 			</form>
 		</div>
 	);
-})
+}
 
 export default CommentInput ;

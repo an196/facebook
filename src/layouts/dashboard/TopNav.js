@@ -1,14 +1,11 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import {
   IHome, IWatch, IGroup, IGame, IMarketplace, IMenu, ISearch, IUser, IMessenger, INotification, ILogo2, ILogo3
 } from '../../theme/icons/index';
 import avatar from '../../assets/images/avatar3.jpg'
-import {
-  Tooltip,
-} from 'react-tippy';
 import { SearchBoard } from '../../components/dashboard/leftnav';
 import { MenuBoard, ChatBoard, NotificationBoard, UserBoard } from '../../components/dashboard/topnav';
-
+import { Tooltip } from '../../components';
 import { useBoardContext } from '../../contexts/BoardContext';
 import board from '../../constant/board';
 
@@ -29,47 +26,39 @@ const rightIcons = [
 
 const MiddleButton = ({ item, index }) => {
   return (
-    <span className={`${index === 0 && 'menu-item-active'} flex w-full h-full justify-center items-center cursor-pointer 
+    <span className={`${index === 0 && 'menu-item-active'} flex w-full h-full justify-center items-center cursor-pointer relative group
     `}>
-      <Tooltip
-        // options
-        title={item.name}
-      >
-        <span className={`w-[130px] flex justify-center items-center h-[55px] hover:bg-[#303031] rounded-xl`} >
-          <span className='menu-item'>
-            {item.icon}
-          </span>
+      <div className='h-full'>
+      <span className={`w-[130px] flex justify-center items-center h-[52px] hover:bg-[#303031] rounded-xl`} >
+        <span className='menu-item'>
+          {item.icon}
         </span>
-      </Tooltip>
+      </span>
+      </div>
       {item.board}
+      <Tooltip lable={item.name} />
     </span>
   )
 }
 
-const RightBtn = ({ icon, num, current, setCurrentBoard }) => {
+const RightBtn = ({ icon, num }) => {
+  let btnRef = useRef();
+  const { currentBoard, setCurrentBoard } = useBoardContext();
 
   const handleClick = (icon) => {
-    console.log(current)
-
-    console.log(icon)
-    if (current === icon.name)
-    {
-      return setCurrentBoard('');
-    }
-
-    return setCurrentBoard(icon.name);
+    setCurrentBoard(icon.name);
   }
 
   return (
-    <Tooltip title={icon.name}>
+    <div>
       {
-        icon.icon ?
-          <span className={`left-icon-item hover:bg-[#525151] flex relative ${current === icon.name ? 'bg-[#2d88ff]/20' : ''}`}
+        icon?.icon ?
+          <div className={`left-icon-item hover:bg-[#525151] flex relative group ${currentBoard === icon.name ? 'bg-[#2d88ff]/20' : ''}`}
             onClick={() => handleClick(icon)}
-            onBlur={() => setCurrentBoard('')}
+            ref={btnRef}
           >
-            <div className={`h-[20px] w-[20px] ${current === icon.name ? 'text-[#2d88ff]' : ''}`}>
-              {icon.icon}
+            <div className={`h-[20px] w-[20px] ${currentBoard === icon.name ? 'text-[#2d88ff]' : ''}`}>
+              {icon?.icon}
             </div>
             {
               icon.name === 'notification' &&
@@ -78,24 +67,24 @@ const RightBtn = ({ icon, num, current, setCurrentBoard }) => {
                 <span className='text-[12px] font-bold'>{num || 2}</span>
               </div>
             }
-          </span> :
-          <span className='cursor-pointer'
+            <Tooltip lable={icon.name} />
+          </div> :
+          <span className='cursor-pointer relative group'
             onClick={() => handleClick(icon)}
-            onBlur={() => setCurrentBoard('')}
           >
             <img src={avatar} alt='avatar' className='rounded-full' width={40} height={40} />
+            <Tooltip lable={icon.name} />
           </span>
       }
 
-      <>{current === icon.name && icon.board}</>
-    </Tooltip>
+      <>{currentBoard === icon.name && icon?.board}</>
+    </div>
   )
 }
 
 function TopNav() {
   const [showSearchBoard, setShowSearchBoard] = useState(false);
   const [fisrtload, setFirstload] = useState(true);
-  const { currentBoard, setCurrentBoard } = useBoardContext();
 
   return (
     <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
@@ -129,8 +118,8 @@ function TopNav() {
       </span>
       <span className='flex flex-row justify-end items-center space-x-2 w-[360px] cursor-pointer relative' id='area3'>
         {
-          rightIcons.map((icon, idx) => (
-            <RightBtn key={idx} icon={icon} current={currentBoard} setCurrentBoard={setCurrentBoard} />
+          rightIcons?.map((icon, idx) => (
+            <RightBtn key={idx} icon={icon} />
           ))
         }
       </span>

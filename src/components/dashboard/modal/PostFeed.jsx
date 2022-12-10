@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { HorizontalLine } from '../../../components';
+import { HorizontalLine, Tooltip } from '../../../components';
 import avatar from '../../../assets/images/avatar3.jpg';
 import { useEffect } from 'react';
 
@@ -24,19 +24,12 @@ const Interaction = ({ interaction }) => {
             <div className='absolute w-full h-full top-0 left-0 '>
                 <div className='w-full h-full group-hover:bg-white/10 rounded-full cursor-pointer'></div>
             </div>
-            <div className='absolute -top-[100%] left-[50%] -translate-x-[50%] w-max flex '>
-                <span
-                    className='group-hover:opacity-100  opacity-0 flex w-max text-black text-[13px] bg-white/90 py-1 px-2 rounded-md
-                    transition-all duration-300 ease-in-out'
-                >
-                    {interaction.title}
-                </span>
-            </div>
+            <Tooltip lable={interaction.title} position={'top'} />
         </div>
     );
 };
 
-function PostFeed({setShowPostFeed}) {
+function PostFeed({ setShowPostFeed }) {
     const [content, setContent] = useState('Ân ơi, bạn đang nghĩ gì thế?');
     const [textMode, setTextMode] = useState('');
     const inputPost = useRef();
@@ -44,8 +37,8 @@ function PostFeed({setShowPostFeed}) {
     useEffect(() => {
         const log = function () {
             const txtlen = inputPost?.current?.textContent.length;
-            if(txtlen < 84)
-            setTextMode('');
+            if (txtlen < 84)
+                setTextMode('');
             if (txtlen > 84) {
                 setTextMode('size1');
             }
@@ -69,7 +62,7 @@ function PostFeed({setShowPostFeed}) {
                 <div className='h-[60px] w-full flex items-center justify-center relative'>
                     <span className='text-[20px] font-bold text-[#e4e6eb]'>Tạo bài viết</span>
                     <div className='absolute w-9 h-9 top-3 right-4 bg-white/20 rounded-full p-2 cursor-pointer'
-                        onClick={()=> setShowPostFeed(false)}
+                        onClick={() => setShowPostFeed(false)}
                     >
                         <i className='icon-cancel filter-icon'></i>
                     </div>
@@ -100,14 +93,7 @@ function PostFeed({setShowPostFeed}) {
                                 <span className='text-[13px] font-semibold text-[#e4e6eb]'>Bạn bè</span>
                                 <i className='icon-down-triangle w-3 h-3 filter-icon-2'></i>
                             </span>
-                            <div className='absolute w-max flex top-[100%] left-[50%] -translate-x-[50%]'>
-                                <span
-                                    className='group-hover:opacity-100 opacity-0 flex w-max bg-white/90 text-black rounded-md
-                                 p-1 transition-all duration-300 ease-in-out text-[13px]'
-                                >
-                                    Bạn bè của bạn
-                                </span>
-                            </div>
+                            <Tooltip lable={' Bạn bè của bạn'} />
                         </div>
                     </div>
                     {/* content */}
@@ -136,14 +122,7 @@ function PostFeed({setShowPostFeed}) {
 
                             <span className='group relative cursor-pointer'>
                                 <i className='icon-happy filter-icon2'></i>
-                                <div className='absolute -top-[100%] left-[50%] -translate-x-[50%] w-max flex '>
-                                    <span
-                                        className='group-hover:opacity-100  opacity-0 flex w-max text-black text-[13px] bg-white/90 
-                                            py-1 px-2 rounded-md transition-all duration-300 ease-in-out'
-                                    >
-                                        emoji
-                                    </span>
-                                </div>
+                                <Tooltip lable={'emoji'} position={'top'} />
                             </span>
 
                         </div>

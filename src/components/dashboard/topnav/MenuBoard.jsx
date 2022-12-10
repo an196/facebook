@@ -99,8 +99,6 @@ const RightMenu = () => {
 };
 
 function MenuBoard() {
-	const { setCurrentBoard } = useBoardContext();
-
 	const menuRef = useRef();
 	useBoardHidden(menuRef, board.menu)
 
