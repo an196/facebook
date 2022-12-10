@@ -1,16 +1,13 @@
-function Tooltip({ lable, position = 'bottom'}) {
+function Tooltip({ lable, position = 'bottom', children }) {
 	return (
-		<div className={`absolute  w-max flex 
-			${position === 'bottom' && 'top-[100%] left-[50%] -translate-x-[50%]'}
-			${position === 'top' && '-top-[100%] left-[50%] -translate-x-[50%]'}
-			${position === 'left' && 'top-[50%] right-[100%] -translate-y-[50%]'}
-			${position === 'right' && 'top-[50%] left-[100%] -translate-y-[50%]'}
-		`}>
-			<span
-				className='group-hover:opacity-100  opacity-0 flex w-max text-black text-[13px] bg-white/90 
-                py-1 px-2 rounded-md transition-all duration-300 ease-in-out'
-			>
-				{lable}
+		<div className="tooltip opacity-80  w-max flex h-full">
+			{children}
+			<span className={`tooltiptext bg-white/90 text-black text-[13px] opacity-80  flex px-2 py-1 rounded-md w-max
+			 	${position === 'bottom' && 'top-[100%] left-[50%] -translate-x-[50%]'}
+			 	${position === 'top' && '-top-[100%] left-[50%] -translate-x-[50%]'}
+			 	${position === 'left' && 'top-[50%] right-[100%] -translate-y-[50%]'}
+			 	${position === 'right' && 'top-[50%] left-[100%] -translate-y-[50%]'}
+			`}>{lable}
 			</span>
 		</div>
 	);

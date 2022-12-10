@@ -26,18 +26,20 @@ const rightIcons = [
 
 const MiddleButton = ({ item, index }) => {
   return (
+    
     <span className={`${index === 0 && 'menu-item-active'} flex w-full h-full justify-center items-center cursor-pointer relative group
-    `}>
+    `}><Tooltip lable={item.name}>
       <div className='h-full'>
-      <span className={`w-[130px] flex justify-center items-center h-[52px] hover:bg-[#303031] rounded-xl`} >
-        <span className='menu-item'>
-          {item.icon}
+        <span className={`w-[130px] flex justify-center items-center h-[52px] hover:bg-[#303031] rounded-xl`} >
+          <span className='menu-item'>
+            {item.icon}
+          </span>
         </span>
-      </span>
       </div>
       {item.board}
-      <Tooltip lable={item.name} />
+      </Tooltip>
     </span>
+   
   )
 }
 
@@ -50,35 +52,37 @@ const RightBtn = ({ icon, num }) => {
   }
 
   return (
-    <div>
-      {
-        icon?.icon ?
-          <div className={`left-icon-item hover:bg-[#525151] flex relative group ${currentBoard === icon.name ? 'bg-[#2d88ff]/20' : ''}`}
-            onClick={() => handleClick(icon)}
-            ref={btnRef}
-          >
-            <div className={`h-[20px] w-[20px] ${currentBoard === icon.name ? 'text-[#2d88ff]' : ''}`}>
-              {icon?.icon}
-            </div>
-            {
-              icon.name === 'notification' &&
-              <div className='absolute top-0 right-0 w-[19px] h-[19px] bg-[#e41e3f] rounded-full flex items-center justify-center 
-            translate-x-[25%] translate-y-[-25%]'>
-                <span className='text-[12px] font-bold'>{num || 2}</span>
+    <>
+      <Tooltip lable={icon.name}>
+        {
+          icon?.icon ?
+            <div className={`left-icon-item hover:bg-[#525151] flex  ${currentBoard === icon.name ? 'bg-[#2d88ff]/20' : ''}`}
+              onClick={() => handleClick(icon)}
+              ref={btnRef}
+            >
+              <div className={`h-[20px] w-[20px] ${currentBoard === icon.name ? 'text-[#2d88ff]' : ''}`}>
+                {icon?.icon}
               </div>
-            }
-            <Tooltip lable={icon.name} />
-          </div> :
-          <span className='cursor-pointer relative group'
-            onClick={() => handleClick(icon)}
-          >
-            <img src={avatar} alt='avatar' className='rounded-full' width={40} height={40} />
-            <Tooltip lable={icon.name} />
-          </span>
-      }
+              {
+                icon.name === 'notification' &&
+                <div className='absolute top-0 right-0 w-[19px] h-[19px] bg-[#e41e3f] rounded-full flex items-center justify-center 
+            translate-x-[25%] translate-y-[-25%]'>
+                  <span className='text-[12px] font-bold'>{num || 2}</span>
+                </div>
+              }
+              {/* <Tooltip lable={icon.name} /> */}
 
-      <>{currentBoard === icon.name && icon?.board}</>
-    </div>
+            </div> :
+            <span className='cursor-pointer relative group'
+              onClick={() => handleClick(icon)}
+            >
+              <img src={avatar} alt='avatar' className='rounded-full' width={40} height={40} />
+            </span>
+        }
+
+        <>{currentBoard === icon.name && icon?.board}</>
+      </Tooltip>
+    </>
   )
 }
 
@@ -88,7 +92,7 @@ function TopNav() {
 
   return (
     <div className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
-      sticky top-0 z-10'>
+      sticky top-0 z-50'>
       <div className='flex flex-row items-center w-[360px] relative' id='area1'>
         <span className='w-[40px] h-[40px] p-auto filt-logo mr-2'>
           <ILogo3 />

@@ -9,17 +9,13 @@ const EditBtn = () => {
   return (
     <div className='fixed bottom-4 right-4 '>
       <div className='w-12 h-12 group relative'>
+        <Tooltip lable={'Tin nhắn mới'} position='left'>
         <div className='w-12 h-12 rounded-full overflow-hidden bg-[#4b4c4f] hover:bg-[#4b4c4f]/80 cursor-pointer flex items-center 
         justify-center'>
           <i className='bg-img-6 img-icon-pencil filter-icon w-[20px] h-[20px]'></i>
-
         </div>
-        <Tooltip lable={'Tin nhắn mới'} position='left' />
+        </Tooltip>
       </div>
-      {/* <div className='absolute top-[25%] opacity-0 -left-[86px] text-black text-[13px] bg-white/90 flex p-1 rounded-md 
-        group-hover:opacity-100 transition-all ease-in duration-300'>
-          Tin nhắn mới
-      </div> */}
     </div>
   )
 }
@@ -34,7 +30,6 @@ function GeneralApp() {
         <RightNav />
         <EditBtn />
       </div>
-
     </>
   )
 }

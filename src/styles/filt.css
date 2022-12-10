@@ -18,3 +18,12 @@
     fill: var(--always-white);
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: ".";    
+    display: block;    
+    height: 0;    
+    overflow: hidden; 
+}
+.clearfix:after { clear: both; }
+

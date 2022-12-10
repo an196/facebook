@@ -19,13 +19,15 @@ const interactions = [
 
 const Interaction = ({ interaction }) => {
     return (
-        <div className='w-9 h-9 relative p-2 flex items-center justify-center group'>
-            <i className={`${interaction.icon} flex-none`}></i>
-            <div className='absolute w-full h-full top-0 left-0 '>
-                <div className='w-full h-full group-hover:bg-white/10 rounded-full cursor-pointer'></div>
+        <Tooltip lable={interaction.title} position={'top'}>
+            <div className='w-9 h-9 relative p-2 flex items-center justify-center group'>
+                <i className={`${interaction.icon} flex-none`}></i>
+                <div className='absolute w-full h-full top-0 left-0 '>
+                    <div className='w-full h-full group-hover:bg-white/10 rounded-full cursor-pointer'></div>
+                </div>
+
             </div>
-            <Tooltip lable={interaction.title} position={'top'} />
-        </div>
+        </Tooltip>
     );
 };
 
@@ -74,26 +76,28 @@ function PostFeed({ setShowPostFeed }) {
                         <div className='w-10 h-10 rounded-full overflow-hidden mr-[11px] cursor-pointer'>
                             <img src={avatar} alt='avatar' />
                         </div>
+
                         <div className='flex flex-col space-y-1 cursor-pointer relative group'>
                             <span aria-label='name' className='text-[15px] font-semibold text-[#e4e6eb]'>
                                 Ân Lê
                             </span>
-                            <span
-                                aria-label='relation'
-                                className='h-6 flex flex-row items-center justify-center space-x-1  py-1 px-2 
-                            bg-white/10 rounded-md'
-                            >
-                                <div className='w-3 h-3 flex items-center justify-center mt-[1px]'>
-                                    <img
-                                        src='https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/zPcex_q0TM1.png'
-                                        alt='relation'
-                                        className='filter-icon-2 cursor-pointer'
-                                    />
-                                </div>
-                                <span className='text-[13px] font-semibold text-[#e4e6eb]'>Bạn bè</span>
-                                <i className='icon-down-triangle w-3 h-3 filter-icon-2'></i>
-                            </span>
-                            <Tooltip lable={' Bạn bè của bạn'} />
+                            <Tooltip lable={' Bạn bè của bạn'} >
+                                <span
+                                    aria-label='relation'
+                                    className='h-6 flex flex-row items-center justify-center space-x-1  py-1 px-2 
+                                    bg-white/10 rounded-md'
+                                >
+                                    <div className='w-3 h-3 flex items-center justify-center mt-[1px]'>
+                                        <img
+                                            src='https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/zPcex_q0TM1.png'
+                                            alt='relation'
+                                            className='filter-icon-2 cursor-pointer'
+                                        />
+                                    </div>
+                                    <span className='text-[13px] font-semibold text-[#e4e6eb]'>Bạn bè</span>
+                                    <i className='icon-down-triangle w-3 h-3 filter-icon-2'></i>
+                                </span>
+                            </Tooltip>
                         </div>
                     </div>
                     {/* content */}
@@ -119,12 +123,11 @@ function PostFeed({ setShowPostFeed }) {
                             >
                                 <img src='https://www.facebook.com/images/composer/SATP_Aa_square-2x.png' alt='' />
                             </div>
-
                             <span className='group relative cursor-pointer'>
-                                <i className='icon-happy filter-icon2'></i>
-                                <Tooltip lable={'emoji'} position={'top'} />
+                                <Tooltip lable={'emoji'} position={'top'}>
+                                    <i className='icon-happy filter-icon2'></i>
+                                </Tooltip>
                             </span>
-
                         </div>
                     </div>
                     {/* bottom */}
@@ -147,7 +150,7 @@ function PostFeed({ setShowPostFeed }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
