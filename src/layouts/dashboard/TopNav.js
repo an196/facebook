@@ -79,9 +79,8 @@ const RightBtn = ({ icon, num }) => {
               <img src={avatar} alt='avatar' className='rounded-full' width={40} height={40} />
             </span>
         }
-
-        <>{currentBoard === icon.name && icon?.board}</>
       </Tooltip>
+      <>{currentBoard === icon.name && icon?.board}</>
     </>
   )
 }

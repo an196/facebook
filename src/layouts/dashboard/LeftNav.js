@@ -1,17 +1,17 @@
 import { useState } from 'react';
-import { HorizontalLine } from '../../components';
+import { Contact, HorizontalLine } from '../../components';
 import { Section } from '../../components/dashboard/leftnav';
-import { shortlinkCategories, shortlinkSuggest, contentinfo } from '../../data/shortlinks';
+import { shortlinkCategories, shortlinkSuggest } from '../../data/shortlinks';
 
 function LeftNav() {
   const [isFullCategory, setFullCategory] = useState(false);
   const [isFullShortLink, setFullShortLink] = useState(false);
 
   return (
-    <div className='h-[94vh] max-w-[360px]   '>
-      <div className='flex flex-col  h-full w-full overflow-hidden '>
-        <div className='text-[#e1e3e8] h-full w-full pr-2 group flex flex-col hover:overflow-y-auto justify-between'>
-          <div className='grow'>
+    <div className='h-[calc(100vh-56px)] w-[360px] flex flex-col visible'>
+      <div className='flex h-full visible overflow-hidden hover:overflow-y-auto '>
+        <div className='text-[#e1e3e8] h-full w-full  group flex flex-col justify-between'>
+          <div className='w-[360px] block'>
             <Section
               items={shortlinkCategories}
               isfullItems={isFullCategory}
@@ -30,23 +30,7 @@ function LeftNav() {
               extend={true}
             />
           </div>
-
-          <div className='p-4'>
-            <ul className='inline space-x-1'>
-              {contentinfo.map((item, idx) => (
-                <li className='text-[13px] font-normal inline text-[#b0b3b8]' key={idx}>
-                  <a href={item.link} className={` ${item.link !== '#' && 'hover:underline'}`}>
-                    {item.content}
-                  </a>
-                  {idx < contentinfo.length - 1 && (
-                    <div className='w-1 h-full inline p-1 relative'>
-                      <div className='w-1 h-1 absolute top-0 right-0'>.</div>
-                    </div>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <Contact />
         </div>
       </div>
     </div>

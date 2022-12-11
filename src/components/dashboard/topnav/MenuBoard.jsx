@@ -103,7 +103,7 @@ function MenuBoard() {
 	useBoardHidden(menuRef, board.menu)
 
 	return (
-		<div className='absolute right-0 top-12 z-50 flex flex-col max-w-[607px] flex-initial h-[752px] rounded-md 
+		<div className='absolute right-0 top-10 z-50 flex flex-col max-w-[607px] flex-initial h-[752px] rounded-md 
 			text-[#e4e6eb] bg-[#323436] pl-2'
 		
 			ref={menuRef}

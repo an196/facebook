@@ -58,7 +58,7 @@ function PostFeed({ setShowPostFeed }) {
     }, [])
 
     return (
-        <div className='fixed w-[100vw] h-[100vh] inset-0 bg-black/60 z-40 flex items-center justify-center transition-all 
+        <div className='fixed w-[100vw] h-[calc(100vh-56px)] inset-0 bg-black/60 z-40 flex items-center justify-center transition-all 
             duration-300 ease-in-out'>
             <div className='w-[500px] bg-[#242526]  block rounded-lg'>
                 <div className='h-[60px] w-full flex items-center justify-center relative'>

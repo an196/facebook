@@ -1,13 +1,15 @@
-function SubSection({ subSection }) {
+function SubSection({ subSection, activeTab, setActiveTab }) {
 	return (
-		<div className={`w-[210px] h-[60px]  p-[4px] cursor-pointer ${subSection.current && 'menu-item-active'}`}>
+		<div className={`flex-1 h-[60px]  p-[4px] cursor-pointer ${subSection.name === activeTab && 'menu-item-active'}`}
+			onClick={()=> setActiveTab(subSection.name)}
+		>
 			<span
 				className={`w-full h-full  flex justify-center items-center space-x-2 ${
-					!subSection.current && 'hover:bg-[#303031] rounded-xl'
+					subSection.name !== activeTab && 'hover:bg-[#303031] rounded-xl'
 				}`}
 			>
 				<div className='w-[20px] h-[20px]'>{subSection.icon}</div>
-				<div className='text-[15px] font-semibold'> {subSection.name}</div>
+				<div className='text-[15px] font-semibold'> {subSection.label}</div>
 			</span>
 		</div>
 	);

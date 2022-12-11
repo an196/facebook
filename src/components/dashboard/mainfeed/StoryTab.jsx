@@ -5,7 +5,7 @@ import { ICirclePlus, ILeftArrow2, IRightArrow } from '../../../theme/icons';
 
 const CrtStoryBtn = () => {
 	return (
-		<div className='ml-[16px] float-left flex-none w-[112.5px] h-[200px] mr-[8px]'>
+		<div className='ml-[16px] float-left flex-none w-[112.5px] h-[200px]'>
 			<div className='rounded-t-xl overflow-hidden !z-0 relative'>
 				<img
 					src={avatar}

@@ -147,7 +147,7 @@ function ChatBoard() {
 	useBoardHidden(boardRef, board.messenger)
 	
 	return (
-		<div className='absolute w-[360px] h-[801px]  right-0 bg-[#242526] rounded-md z-40'
+		<div className='absolute w-[360px] h-[801px] top-10 right-0 bg-[#242526] rounded-md z-50'
 			onBlur={() => setCurrentBoard('')}
 			ref={boardRef}
 		>

@@ -190,13 +190,30 @@
 }
 
 .icon-cancel {
-	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/CY6zPQx2Nkm.png"); 
-	background-position: -21px -105px; 
-	background-size: auto; 
-	width: 20px; 
-	height: 20px; 
-	background-repeat: no-repeat; 
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/CY6zPQx2Nkm.png');
+	background-position: -21px -105px;
+	background-size: auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
 	display: inline-block;
 }
 
-
+.icon-right-triangle {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/CEOv59Ns3Bu.png');
+	background-position: -17px -368px;
+	background-size: auto;
+	width: 12px;
+	height: 12px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.icon-right-arrow2 {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/PV1HcD6M48y.png');
+	background-position: 0px -25px;
+	background-size: auto;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}

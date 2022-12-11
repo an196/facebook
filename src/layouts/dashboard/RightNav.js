@@ -23,7 +23,7 @@ const Action = ({ action }) => {
 
 function RightNav() {
   return (
-    <div className='w-[360px] h-[95vh] overflow-y-auto p-2 text-[#e1e3e8] flex-initial '>
+    <div className='w-[360px] h-[calc(100vh-56px)] overflow-y-auto p-2 text-[#e1e3e8] flex-initial '>
       <div className='flex flex-row justify-between  mt-[20px] w-full'>
         <span className='leading-[21px] text-[16px] font-medium text-[#e1e3e8]'>Người liên hệ</span>
         <span className='flex flex-row space-x-3 justify-center items-center pt-1'>

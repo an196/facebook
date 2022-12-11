@@ -3,6 +3,7 @@ import avatar from '../../../assets/images/avatar3.jpg';
 import { contentinfo } from '../../../data/shortlinks';
 import useBoardHidden from '../../../hooks/useBoardHidden';
 import board from '../../../constant/board';
+import Contact from '../../Contact';
 
 const items = [
     { title: 'Cài đặt & quyền riêng tư', icon: 'icon-settings' },
@@ -50,38 +51,19 @@ const Top = () => {
     )
 }
 
-const Bottom = () => {
-    return (
-        <div className='p-4'>
-            <ul className='inline space-x-1'>
-                {contentinfo.map((item, idx) => (
-                    <li className='text-[13px] font-normal inline text-[#b0b3b8]' key={idx}>
-                        <a href={item.link} className={` ${item.link !== '#' && 'hover:underline'}`}>{item.content}</a>
-                        {
-                            idx < contentinfo.length - 1 &&
-                            <div className='w-1 h-full inline p-1 relative'>
-                                <div className='w-1 h-1 absolute top-0 right-0' >.</div>
-                            </div>
-                        }
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
 function UserBoard() {
     const boardRef = useRef();
 	useBoardHidden(boardRef, board.user)
 
     return (
-        <div className='absolute right-0  z-40 flex flex-col w-[360px] bg-[#242526] text-white  flex-initial rounded-md'
+        <div className='absolute right-0 top-10 z-40 flex flex-col w-[360px] bg-[#242526] text-white  flex-initial rounded-md'
             ref={boardRef}
         >
             <Top />
             <div className='w-full'>
                 {items.map((item, idx) => <RowItem key={idx} item={item} />)}
             </div>
-            <Bottom />
+            <Contact />
         </div>
     )
 }
