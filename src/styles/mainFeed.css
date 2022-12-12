@@ -217,3 +217,13 @@
 	background-repeat: no-repeat;
 	display: inline-block;
 }
+
+.icon-camera-plus-violet {
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/zjEOSoWuM1B.png');
+	background-position: 0px -58px;
+	background-size: auto;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
