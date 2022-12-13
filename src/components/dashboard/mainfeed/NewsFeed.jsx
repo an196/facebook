@@ -50,10 +50,11 @@ function NewsFeed({news}) {
 					{news.message}
 				</div>
 			</div>
-			<div>
+			<div >
 				<img
 					src={news.messageLink.img}
 					alt={news.title}
+					className='object-cover w-full h-[355px]'
 				/>
 			</div>
 			<div className='h-[78px] w-full bg-[#3a3b3c] p-[2px] px-[12px]'>
@@ -92,7 +93,6 @@ function NewsFeed({news}) {
 			{/* Comment Section */}
 			
 			<CommentSection/>
-			
 		</div>
 	);
 }

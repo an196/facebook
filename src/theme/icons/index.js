@@ -94,8 +94,8 @@ export const ILogo2 = () => {
 }
 
 export const ILogo3 = () => {
-    return(
-        <svg viewBox="0 0 36 36"  fill="url(#jsc_c_3p)"  width="100%" height="100%"><defs><linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_c_3p"><stop offset="0%" stopColor="#0062E0"></stop><stop offset="100%" stopColor="#19AFFF"></stop></linearGradient></defs><path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path><path className="xe3v8dz" d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"></path></svg>
+    return (
+        <svg viewBox="0 0 36 36" fill="url(#jsc_c_3p)" width="100%" height="100%"><defs><linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_c_3p"><stop offset="0%" stopColor="#0062E0"></stop><stop offset="100%" stopColor="#19AFFF"></stop></linearGradient></defs><path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path><path className="xe3v8dz" d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"></path></svg>
     )
 }
 
@@ -116,7 +116,7 @@ export const ICameraPlus = () => {
 }
 
 export const ICameraPlus2 = () => {
-    return(
+    return (
         <svg fill="currentColor" viewBox="0 0 16 16" width="100%" height="100%" ><g fillRule="evenodd" transform="translate(-448 -544)"><path d="M457.25 552.5H455v2.25a.75.75 0 0 1-1.5 0v-2.25h-2.25a.75.75 0 0 1 0-1.5h2.25v-2.25a.75.75 0 0 1 1.5 0V551h2.25a.75.75 0 0 1 0 1.5m6.38-4.435a.62.62 0 0 0-.64.047l-2.49 1.634v-1.394a1.854 1.854 0 0 0-1.852-1.852l-8.796.002a1.854 1.854 0 0 0-1.851 1.852v6.793c0 1.021.83 1.852 1.852 1.852l1.147-.002h7.648a1.854 1.854 0 0 0 1.852-1.851v-1.392l2.457 1.61a.641.641 0 0 0 .673.071.663.663 0 0 0 .37-.601v-6.167c0-.26-.142-.49-.37-.602"></path></g></svg>
     )
 }
@@ -243,6 +243,16 @@ export const ICancel = () => {
     )
 }
 
+export const ICanCel2 = () => {
+    return (
+        <svg width="100%" height="100%" viewBox="0 0 24 24">
+            <g stroke="#BEC2C9" strokeLinecap="round" strokeWidth="2">
+                <line x1="6" x2="18" y1="6" y2="18"></line>
+                <line x1="6" x2="18" y1="18" y2="6"></line>
+            </g>
+        </svg>
+    )
+}
 export const IRightArrow = () => {
     return (
         <svg fill="currentColor" viewBox="0 0 20 20" width="100%" height="100%" ><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
@@ -283,13 +293,14 @@ export const IDownTriangle = () => {
 }
 
 export const ITriangle = () => {
-    return(
-        <svg width="100%" height="100%"  viewBox="0 0 21 12"  fill="currentColor" ><path d="M20.685.12c-2.229.424-4.278 1.914-6.181 3.403L5.4 10.94c-2.026 2.291-5.434.62-5.4-2.648V.12h20.684z"></path></svg>
+    return (
+        <svg width="100%" height="100%" viewBox="0 0 21 12" fill="currentColor" ><path d="M20.685.12c-2.229.424-4.278 1.914-6.181 3.403L5.4 10.94c-2.026 2.291-5.434.62-5.4-2.648V.12h20.684z"></path></svg>
     )
 }
 
 export const ITicket = () => {
-    return(
-        <svg  height="100%"  width="100%" viewBox="2 2 20 20" fill="currentColor"  xmlns="http://www.w3.org/2000/svg"><title>Đã gửi</title><path d="m12 2a10 10 0 1 0 10 10 10.011 10.011 0 0 0 -10-10zm0 18.5a8.5 8.5 0 1 1 8.5-8.5 8.51 8.51 0 0 1 -8.5 8.5z"></path><path d="m15.982 8.762-5.482 5.487-2.482-2.478a.75.75 0 0 0 -1.06 1.06l3.008 3.008a.748.748 0 0 0 1.06 0l6.016-6.016a.75.75 0 0 0 -1.06-1.061z"></path></svg>
+    return (
+        <svg height="100%" width="100%" viewBox="2 2 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>Đã gửi</title><path d="m12 2a10 10 0 1 0 10 10 10.011 10.011 0 0 0 -10-10zm0 18.5a8.5 8.5 0 1 1 8.5-8.5 8.51 8.51 0 0 1 -8.5 8.5z"></path><path d="m15.982 8.762-5.482 5.487-2.482-2.478a.75.75 0 0 0 -1.06 1.06l3.008 3.008a.748.748 0 0 0 1.06 0l6.016-6.016a.75.75 0 0 0 -1.06-1.061z"></path></svg>
     )
 }
+

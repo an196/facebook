@@ -12,3 +12,8 @@ export { default as SubSection} from './mainfeed/SubSection.jsx';
 
 //modal
 export { default as PostFeed} from './modal/PostFeed';
+
+//window
+export { default as WindowChat} from './windowchat/WindowChat';
+export { default as WindowSendMessage} from './windowchat/WindowSendMessage';
+

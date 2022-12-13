@@ -6,7 +6,7 @@ function Contact() {
         <div className='p-4'>
             <ul className='inline space-x-1'>
                 {contentinfo.map((item, idx) => (
-                    <li className='text-[13px] font-normal inline text-[#b0b3b8]' key={idx}>
+                    <li className='text-[13px] font-normal inline text-secondaryText' key={idx}>
                         <a href={item.link} className={` ${item.link !== '#' && 'hover:underline'}`}>
                             {item.content}
                         </a>

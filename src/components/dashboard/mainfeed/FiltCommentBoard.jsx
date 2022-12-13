@@ -16,7 +16,7 @@ const FilterItem = ({ item, show }) => {
             onClick={()=>show(false)}
         >
 			<span className='text-[15px] font-medium leading-[20px]'>{item.title}</span>
-			<span className='text-[12px] font-normal leading-[16px] text-[#b0b3b8]'>{item.subtitle}</span>
+			<span className='text-[12px] font-normal leading-[16px] text-secondaryText'>{item.subtitle}</span>
             <div className='hover:bg-[#e4e6eb]/10 w-full h-full absolute top-0 left-0 p-2 rounded-lg'></div>
 		</div>
 	);

@@ -8,7 +8,7 @@ function RightScrollBtn({hdlSlideStory, isMoved}) {
             <div className='w-[48px] h-[48px] p-[12px] rounded-full bg-[#3e4042] hover:bg-[#494c4e] overflow-hidden
 					active:bg-[#3e4042] active:w-[46px] active:h-[46px] active:p-[11px]  active:translate-x-[-1px] active:translate-y-[1px]'
             >
-                <div className='w-[24px] h-[24px] text-[#b0b3b8]'>
+                <div className='w-[24px] h-[24px] text-secondaryText'>
                     <IRightArrow />
                 </div>
             </div>

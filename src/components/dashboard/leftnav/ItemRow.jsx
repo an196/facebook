@@ -15,8 +15,8 @@ function ItemRow({ item, subtitle, headerColor }) {
 				)}
 			</span>
 			<span className='flex flex-col grow'>
-				<span className='grow font-medium break-words'>{item.title}</span>
-				{subtitle && <span className='grow font-normal text-[13px] '>{item.subtitle}</span>}
+				<span className='grow font-medium break-words text-primaryText'>{item.title}</span>
+				{subtitle && <span className='grow font-normal text-[13px] text-secondaryText'>{item.subtitle}</span>}
 			</span>
 		</li>
 	);

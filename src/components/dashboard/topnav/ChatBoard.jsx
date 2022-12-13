@@ -30,7 +30,7 @@ const UserMessages = ({ message }) => {
 			</div>
 			<div className='text-[#e4e6eb] text-[15px] font-medium grow flex flex-col'>
 				<span>{message.name}</span>
-				<span className='text-[13px] font-normal text-[#b0b3b8]'>{message.submessage}</span>
+				<span className='text-[13px] font-normal text-secondaryText'>{message.submessage}</span>
 			</div>
 			{getStatusMessage(message)}
 			<div className='absolute w-full h-full top-0 -left-3 px-2 '>
@@ -107,13 +107,13 @@ const SearchInput = () => {
 		<div className='h-[52px]'>
 			<div className='my-4 px-4'>
 				<span className='w-full flex flex-row h-9 bg-[#3a3b3c] rounded-full items-center'>
-					<span className='text-[#b0b3b8] pl-[10px]'>
+					<span className='text-secondaryText pl-[10px]'>
 						<div className='w-4 h-9'>
 							<ISearch />
 						</div>
 					</span>
 					<form action='#' className='pt-[7px] px-[6px] pb-[9px] grow shrink'>
-						<span className='text-[#b0b3b8] text-[15px] font-normal bg-[#3a3b3c]'>Tìm kiếm trên Messenger</span>
+						<span className='text-secondaryText text-[15px] font-normal bg-[#3a3b3c]'>Tìm kiếm trên Messenger</span>
 					</form>
 				</span>
 			</div>
@@ -134,7 +134,7 @@ function getStatusMessage(message) {
 			);
 		if (status === 'sent')
 			return (
-				<i className='text-[#b0b3b8] w-3 h-3'>
+				<i className='text-secondaryText w-3 h-3'>
 					<ITicket />
 				</i>
 			);

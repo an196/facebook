@@ -13,7 +13,7 @@ function Story() {
 				/>
 			</div>
 			<div className='absolute w-[64px] h-[64px] top-0 p-[12px]'>
-				<div className=' w-[40px] h-[40px] rounded-full overflow-hidden border-[4px] border-[#2374E1]'>
+				<div className=' w-[40px] h-[40px] rounded-full overflow-hidden border-[4px] border-accent'>
 					<img src={avatar} width={40} height={40} />
 				</div>
 			</div>

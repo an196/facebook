@@ -39,7 +39,7 @@ const RowItem = ({ history, enableDelete }) => {
 				</div>
 				<span className='flex flex-col grow justify-center'>
 					<span className='text-[14px] font-semibold'>{history.name}</span>
-					{history.relation && <span className='text-[12px] text-[#b0b3b8]'>{history.relation}</span>}
+					{history.relation && <span className='text-[12px] text-secondaryText'>{history.relation}</span>}
 				</span>
 				<span
 					className={`w-[32px] h-[32px] p-[10px] rounded-full hover:bg-[#444445] ${

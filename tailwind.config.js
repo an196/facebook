@@ -26,7 +26,23 @@ module.exports = {
         custom: {
           DEFAULT: '#a5b3b8',
           light: '#a5b3b8'
-        }
+        },
+        
+        primaryText: '#E4E6EB',
+        secondaryText: '#B0B3B8',
+
+        // link
+        blueLink: '#4599FF',
+        accent: '#2e89ff',
+
+        // icon
+        primaryIcon: '#E4E6EB',
+        secondaryIcon: '#B0B3B8',
+
+        // background
+        primaryButtonBackground: '#2374E1',
+        messageCardBackground: '#242526',
+
       }
     },
   },

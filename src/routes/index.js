@@ -6,7 +6,7 @@ import DashboardLayout from '../layouts/dashboard'
 import LoadingScreen from "../components/LoadingScreen";
 import { DEFAULT_PATH } from "../config";
 
-const Loadalbe = (Component) => (props) => {
+const Loadable = (Component) => (props) => {
     return (
         <Suspense fallback={<LoadingScreen/>}>
             <Component {...props} />
@@ -30,10 +30,10 @@ function Router() {
     ])
 }
 
-const GeneralApp = Loadalbe(
+const GeneralApp = Loadable(
     lazy(() => import('../pages/dashboard/GeneralApp'))
 )
 
-const Page404 = Loadalbe(lazy(() => import('../pages/Page404')));
+const Page404 = Loadable(lazy(() => import('../pages/Page404')));
 
 export default Router;

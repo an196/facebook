@@ -24,8 +24,8 @@ const ItemRow = ({ notification }) => {
 				<div className={`absolute bottom-0 right-0 z-20  ${notification.type === typeNotificaiton.group ? 'icon-group-blue': 'icon-message-news'}`}></div>
 			</div>
 			<div className='text-[#e4e6eb] text-[15px] font-normal grow flex flex-col  flex-wrap overflow-hidden'>
-				<span className={`break-words limit-line decoration-auto ${notification.status === status.unseen ? 'text-[#e4e6eb]': 'text-[#b0b3b8]'}`}>{notification.message}</span>
-				<span className={`text-[13px] font-semibold ${notification.status === status.unseen ? 'text-[#2e89ff]': 'text-[#b0b3b8]'}`}>{notification.time}</span>
+				<span className={`break-words limit-line decoration-auto ${notification.status === status.unseen ? 'text-[#e4e6eb]': 'text-secondaryText'}`}>{notification.message}</span>
+				<span className={`text-[13px] font-semibold ${notification.status === status.unseen ? 'text-[#2e89ff]': 'text-secondaryText'}`}>{notification.time}</span>
 			</div>
 			<div className='flex items-center justify-center'>
 				<div className={`w-3 h-3 rounded-full bg-[#2e89ff]  ${notification.status === status.unseen ? 'opacity-100': 'opacity-0'}`}>
