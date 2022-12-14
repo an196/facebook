@@ -42,7 +42,7 @@ module.exports = {
         // background
         primaryButtonBackground: '#2374E1',
         messageCardBackground: '#242526',
-
+        commentBackground: '#3A3B3C',
       }
     },
   },

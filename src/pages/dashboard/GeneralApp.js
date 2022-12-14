@@ -4,19 +4,19 @@ import RightNav from '../../layouts/dashboard/RightNav';
 import LeftNav from '../../layouts/dashboard/LeftNav';
 import MainFeed from '../../layouts/dashboard/MainFeed';
 import { Tooltip } from '../../components';
-import { WindowSendMessage } from '../../components/dashboard';
+import { WindowChat, WindowSendMessage } from '../../components/dashboard';
 
-const EditBtn = ({setShow, show}) => {
- 
+const EditBtn = ({ setShow, show }) => {
+
 
   return (
     <div className='fixed bottom-4 right-6 ' onClick={() => setShow(!show)} >
       <div className='w-12 h-12 group relative'>
         <Tooltip lable={'Tin nhắn mới'} position='left'>
-        <div className='w-12 h-12 rounded-full overflow-hidden bg-[#4b4c4f] hover:bg-[#4b4c4f]/80 cursor-pointer flex items-center 
+          <div className='w-12 h-12 rounded-full overflow-hidden bg-[#4b4c4f] hover:bg-[#4b4c4f]/80 cursor-pointer flex items-center 
         justify-center'>
-          <i className='bg-img-6 img-icon-pencil filter-icon w-[20px] h-[20px]'></i>
-        </div>
+            <i className='bg-img-6 img-icon-pencil filter-icon w-[20px] h-[20px]'></i>
+          </div>
         </Tooltip>
       </div>
     </div>
@@ -24,7 +24,8 @@ const EditBtn = ({setShow, show}) => {
 }
 
 function GeneralApp() {
-  const [show, setShow ] = useState(true);
+  const [show, setShow] = useState(false);
+  const [showWindowChat, setShowWindowChat] = useState(true);
 
   return (
     <>
@@ -33,8 +34,13 @@ function GeneralApp() {
         <LeftNav />
         <MainFeed />
         <RightNav />
-        <EditBtn setShow={setShow} show={show}/>
-        {show && <WindowSendMessage setShow={setShow}/>}
+        <EditBtn setShow={setShow} show={show} />
+
+
+      </div>
+      <div className='block absolute bottom-0 right-[72px]'>
+        {show && <WindowSendMessage setShow={setShow} />}
+        {showWindowChat && <WindowChat />}
       </div>
     </>
   )

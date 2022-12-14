@@ -18,6 +18,11 @@
     fill: var(--always-white);
 }
 
+.x1xgahvj {
+    fill: var(--positive);
+}
+
+
 .clearfix:before,
 .clearfix:after {
     content: ".";    

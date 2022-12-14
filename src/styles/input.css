@@ -9,3 +9,13 @@
     color: #a8abaf;
 }
 
+#editor-chat.badge[contenteditable]:empty::before{
+    content: 'Aa';
+    display: inline-block;
+    color: #a8abaf;;
+}
+
+#editor-chat.badge[contenteditable]:empty:focus::before{
+    content: 'Aa';
+    color: #a8abaf;
+}

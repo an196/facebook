@@ -20,7 +20,7 @@ const Sugesstion = () => {
 
 function WindowSendMessage({setShow}) {
   return (
-    <div className='block absolute bottom-0 right-20 w-[338px] h-[455px] rounded-t-lg overflow-hidden'>
+    <div className=' w-[338px] h-[455px] rounded-t-lg overflow-hidden float-right  mr-4'>
       <div className='w-full h-full bg-messageCardBackground flex-col'>
         <div className='h-12 p-2 flex flex-row items-center justify-between text-primaryText text-[15px] font-medium'>
           <span>Tin nhắn mới</span>

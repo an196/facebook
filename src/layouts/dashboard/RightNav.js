@@ -14,7 +14,7 @@ const Action = ({ action }) => {
   return (
     <div className='w-[40px] h-[20px] flex justify-center items-center cursor-pointer'>
       <div className='w-[30px] h-[30px] flex justify-center items-center hover:bg-[#303031] rounded-full '>
-        <div className='w-[20px] h-[15px] mt-[1px]'> {action.icon}</div>
+        <div className='w-[20px] h-[15px] '> {action.icon}</div>
       </div>
     </div>
   )
@@ -25,7 +25,7 @@ function RightNav() {
     <div className='w-[360px] h-[calc(100vh-56px)]  p-2 text-[#e1e3e8] flex-none '>
       <div className='flex flex-row justify-between  mt-[20px] w-full'>
         <span className='leading-[21px] text-[15px] font-medium text-secondaryText'>Người liên hệ</span>
-        <span className='flex flex-row space-x-3 justify-center items-center pt-1'>
+        <span className='flex flex-row space-x-3 justify-center items-center'>
           {
             actions.map((action, idx) => (
               <Action action={action} key={idx} />

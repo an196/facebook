@@ -120,7 +120,7 @@ export const newsFeeds = [
         type: 'post',
         messageLink: {
             original: 'Techrum.vn',
-            img: 'https://external.fsgn5-9.fna.fbcdn.net/emg1/v/t13/11927337956530456587?url=https%3A%2F%2Fphoto.techrum.vn%2Fimages%2F2022%2F11%2F28%2Fthong-tin-moi-nhat-ve-iphone-su-dung-cong-usb-c-TECHRUM-covera507d3a61dd8ac98.jpg&fb_obo=1&utld=techrum.vn&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1280x668_q75&ccb=13-1&oh=06_AbGcgaORz2aUnpV6SCJifEx-HrldJwmmraphh1m6X1kL0w&oe=638647BE&_nc_sid=aeaded',
+            img: 'https://external.fsgn5-9.fna.fbcdn.net/emg1/v/t13/15117205045534559463?url=https%3A%2F%2Fphoto.techrum.vn%2Fimages%2F2022%2F12%2F03%2Fdigiarty-software-giveaway-noel-2022-TECHRUM-cover8f214169a559904c.jpg&fb_obo=1&utld=techrum.vn&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75&ccb=13-1&oh=06_AbEz_Y7GR4XOaCV2gf7rrtR34-VFnneA8GuX-pSb0ri35A&oe=6399D43E&_nc_sid=16545a',
             title: 'Thông tin mới nhất về mẫu iPhone sử dụng cổng sạc "USB-C" của Apple',
             abbreviation: 'Trước đây, việc iPhone chuyển sang sử dụng cổng sạc USB-C dường như là "một điều không thể sảy ra" nhưng theo bối cảnh hiện tại cùng với sức ép từ Liên minh châu Âu thì điều đó lại đang dần trở thành hiện thực, mặc dù sẽ',
         },
@@ -139,7 +139,7 @@ export const newsFeeds = [
         type: 'post',
         messageLink: {
             original: 'Techrum.vn',
-            img: 'https://external.fsgn5-9.fna.fbcdn.net/emg1/v/t13/11927337956530456587?url=https%3A%2F%2Fphoto.techrum.vn%2Fimages%2F2022%2F11%2F28%2Fthong-tin-moi-nhat-ve-iphone-su-dung-cong-usb-c-TECHRUM-covera507d3a61dd8ac98.jpg&fb_obo=1&utld=techrum.vn&stp=c0.5000x0.5000f_dst-jpg_flffffff_p1280x668_q75&ccb=13-1&oh=06_AbGcgaORz2aUnpV6SCJifEx-HrldJwmmraphh1m6X1kL0w&oe=638647BE&_nc_sid=aeaded',
+            img: 'https://external.fsgn5-9.fna.fbcdn.net/emg1/v/t13/15117205045534559463?url=https%3A%2F%2Fphoto.techrum.vn%2Fimages%2F2022%2F12%2F03%2Fdigiarty-software-giveaway-noel-2022-TECHRUM-cover8f214169a559904c.jpg&fb_obo=1&utld=techrum.vn&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75&ccb=13-1&oh=06_AbEz_Y7GR4XOaCV2gf7rrtR34-VFnneA8GuX-pSb0ri35A&oe=6399D43E&_nc_sid=16545a',
             title: 'Thông tin mới nhất về mẫu iPhone sử dụng cổng sạc "USB-C" của Apple',
             abbreviation: 'Trước đây, việc iPhone chuyển sang sử dụng cổng sạc USB-C dường như là "một điều không thể sảy ra" nhưng theo bối cảnh hiện tại cùng với sức ép từ Liên minh châu Âu thì điều đó lại đang dần trở thành hiện thực, mặc dù sẽ',
         },

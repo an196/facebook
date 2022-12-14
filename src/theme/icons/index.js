@@ -217,6 +217,12 @@ export const IDownArrow = () => {
     )
 }
 
+export const IDownArrow2 = () => {
+    return (
+        <svg height="10px" viewBox="0 0 18 10" width="10px"><path clipRule="evenodd" d="M1 2.414A1 1 0 012.414 1L8.293 6.88a1 1 0 001.414 0L15.586 1A1 1 0 0117 2.414L9.707 9.707a1 1 0 01-1.414 0L1 2.414z" fill="var(--disabled-icon)" fillRule="evenodd"></path>
+        </svg>
+    )
+}
 export const IUpArrow = () => {
     return (
         <svg fill="currentColor" viewBox="0 0 20 20" width="100%" height="100%" ><path d="M15.47 12.2 10 6.727 4.53 12.2a.75.75 0 0 1-1.06-1.061l6-6a.751.751 0 0 1 1.06 0l6 6a.75.75 0 0 1-1.06 1.061z"></path></svg>
@@ -245,14 +251,15 @@ export const ICancel = () => {
 
 export const ICanCel2 = () => {
     return (
-        <svg width="100%" height="100%" viewBox="0 0 24 24">
-            <g stroke="#BEC2C9" strokeLinecap="round" strokeWidth="2">
+        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="currentColor">
+            <g stroke="var(--disabled-icon)" strokeLinecap="round" strokeWidth="2">
                 <line x1="6" x2="18" y1="6" y2="18"></line>
                 <line x1="6" x2="18" y1="18" y2="6"></line>
             </g>
         </svg>
     )
 }
+
 export const IRightArrow = () => {
     return (
         <svg fill="currentColor" viewBox="0 0 20 20" width="100%" height="100%" ><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
@@ -303,4 +310,6 @@ export const ITicket = () => {
         <svg height="100%" width="100%" viewBox="2 2 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>Đã gửi</title><path d="m12 2a10 10 0 1 0 10 10 10.011 10.011 0 0 0 -10-10zm0 18.5a8.5 8.5 0 1 1 8.5-8.5 8.51 8.51 0 0 1 -8.5 8.5z"></path><path d="m15.982 8.762-5.482 5.487-2.482-2.478a.75.75 0 0 0 -1.06 1.06l3.008 3.008a.748.748 0 0 0 1.06 0l6.016-6.016a.75.75 0 0 0 -1.06-1.061z"></path></svg>
     )
 }
+
+
 
