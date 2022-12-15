@@ -227,3 +227,13 @@
 	background-repeat: no-repeat;
 	display: inline-block;
 }
+
+/* class */
+.truncate-news-shared {
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}

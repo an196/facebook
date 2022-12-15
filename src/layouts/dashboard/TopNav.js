@@ -66,12 +66,11 @@ const RightBtn = ({ icon, num }) => {
               {
                 icon.name === 'notification' &&
                 <div className='absolute top-0 right-0 w-[19px] h-[19px] bg-[#e41e3f] rounded-full flex items-center justify-center 
-            translate-x-[25%] translate-y-[-25%]'>
+                  translate-x-[25%] translate-y-[-25%]'>
                   <span className='text-[12px] font-bold'>{num || 2}</span>
                 </div>
               }
-              {/* <Tooltip lable={icon.name} /> */}
-
+             
             </div> :
             <span className='cursor-pointer relative group'
               onClick={() => handleClick(icon)}

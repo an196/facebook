@@ -30,24 +30,18 @@ export const shortlinkSuggest = [
   { title: 'React developers', type: 'img', src: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t1.6435-9/57028953_862333840770277_4039706141079371776_n.jpg?stp=c48.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=105&ccb=1-7&_nc_sid=ac9ee4&_nc_ohc=-6RL5YSQNsgAX8buNDd&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfCfAM1kiQ1ch7kRJbywCoIpsRwkK_vV4pwmQ0heO7hFVw&oe=63AF73B1' },
   { title: 'Reactjs Developers', type: 'img', src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/72580117_2449937788595820_5737933847685758976_n.png?stp=c23.0.50.50a_cp0_dst-png_p50x50&_nc_cat=102&ccb=1-7&_nc_sid=ac9ee4&_nc_ohc=O1tlUxTXMFYAX8eKSpJ&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfDvSM0JNqXKM9U5L1uN3UTeA09zfY1AO9Hvm3P0kRUVMg&oe=63AF9355' },
   { title: 'ARK Survival Evolved Mobile Việt Nam', type: 'img', src: 'https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.6435-9/149943525_279673823583430_7759212049587034440_n.jpg?stp=c8.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=108&ccb=1-7&_nc_sid=ac9ee4&_nc_ohc=jRBuFVGQDA4AX8_zjaP&_nc_ht=scontent.fsgn5-6.fna&oh=00_AfDzTL5DHa7KkZRrNed5KT-Qsrz0UPawXs9nYO0pW0nJWw&oe=63AF881B' },
-  { title: 'Dragon City', type: 'img', src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.2081-6/28129135_1686685264729832_3956709029115330560_n.png?stp=c6.6.31.31a_dst-png_p36x36&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=VGz4nNC6K6IAX8jmFDU&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfCGFP-KPwxV-RlAHgcJSBr21N_jbzSP5vKmgCPdcz4qdg&oe=638D5969' },
-  { title: 'League of Angels II', type: 'img', src: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.2081-6/29664458_691820704542140_5298117093357518848_n.png?stp=c6.6.31.31a_dst-png_p36x36&_nc_cat=104&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=GGsgb8Mwqm8AX_tpB9z&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfCp17Nbo5Kv4iqXhdltY18CPGtpy2eP-03D8ABIY9QvGQ&oe=638D4836' },
-  { title: 'Monster Legends', type: 'img', src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.2081-6/23208225_710802079111693_5864116142846509056_n.png?stp=c6.6.31.31a_dst-png_p36x36&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=Sh1rAqvggk4AX93Ug9n&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfCadb5Yf2TqRDHW8hbXl9ibqm8qQOeleHlOefmSa0Cgag&oe=638C8973' },
-  { title: 'Pirate Kings', type: 'img', src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.2081-6/11057190_424222837748904_984028909_n.png?stp=c6.6.31.31a_dst-png_p36x36&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=Stoqf-LXreoAX-dwkik&_nc_oc=AQktitC1_dfdlKNyfNLndjGnlHHNrw9RoVrhiu-ALhaT8N-KaP16iHnwqgzJtn1Guu8&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfAnDQYwrf_xol01UEyKHR_BdwHTCO1r96zE7T_KGu1fFA&oe=638D9436' },
+  { title: 'Dragon City', type: 'img', src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.2081-6/28129135_1686685264729832_3956709029115330560_n.png?stp=c6.6.31.31a_dst-png_p36x36&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=Ukf55dKGDcoAX8oSGkH&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfApNTQgA2bwaue29k2bhKV1wraUEljCHO__djThgcH-Lw&oe=639F25A9' },
+  { title: 'League of Angels II', type: 'img', src: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.2081-6/29664458_691820704542140_5298117093357518848_n.png?stp=c6.6.31.31a_dst-png_p36x36&_nc_cat=104&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=JNvsWU-NekoAX8bJ6BD&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfAUhyKWxICVooHqRaVq6yEEtCGZ6f4rE9z9AkgWgKn3sA&oe=639F1476' },
+  { title: 'Monster Legends', type: 'img', src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.2081-6/23208225_710802079111693_5864116142846509056_n.png?stp=c6.6.31.31a_dst-png_p36x36&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=HWFKCt-_MQoAX98jQnm&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBcmTjubFArc-FKYBytoiozabZ12Az5JAZjw06-LbILrg&oe=63A04FF3' },
+  { title: 'Pirate Kings', type: 'img', src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.2081-6/11057190_424222837748904_984028909_n.png?stp=c6.6.31.31a_dst-png_p36x36&_nc_cat=1&ccb=1-7&_nc_sid=eaa83b&_nc_ohc=D2w3PDsNea8AX8BSV2B&_nc_oc=AQnXVAW58nQDSuonGtxh1fYywYc2ym-ctjzwt4srE6N2sq2J-Qce0IJuCv51Fmy7edY&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfA8CyGWVmdWwclMqo2zpzheVzevwQTalN8NFdtBv0QJGQ&oe=639F6076' },
 ]
 
 export const contentinfo = [
-  {
-    content: 'Quyền riêng tư',
-    link: 'https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0',
-  },
+  { content: 'Quyền riêng tư', link: 'https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0' },
   { content: 'Điều khoản', link: 'https://www.facebook.com/policies_center/' },
   { content: 'Quảng cáo', link: 'https://www.facebook.com/business' },
   { content: 'Lựa chọn quảng cáo', link: 'https://www.facebook.com/help/568137493302217' },
-  {
-    content: 'Cookie',
-    link: 'https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0',
-  },
+  { content: 'Cookie', link: 'https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0' },
   { content: 'Xem thêm', link: '#' },
   { content: 'Meta © 2022', link: '#' },
 ];

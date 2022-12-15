@@ -2,7 +2,6 @@ import React from 'react';
 import UserComment from './UserComment';
 
 function CommentReply({ comments, child = false }) {
-	
 	return (
 		<ul className={`${!child ? 'pl-[16px]' : 'pl-[48px]'} `}>
 			{comments?.map((comment, idx) => (
@@ -13,7 +12,7 @@ function CommentReply({ comments, child = false }) {
 						{idx > 0 && <div className='absolute w-[2px] bg-[#3a3b3c] h-full left-0 -top-[100%]'></div>}
 					</div>
 					{comment?.reply && <CommentReply comments={comment.reply} child={true} />}
-					{comment?.reply && !child &&<div className='absolute w-[2px] bg-[#3a3b3c] h-full left-0 top-[16px]'> </div>}
+					{comment?.reply && !child && <div className='absolute w-[2px] bg-[#3a3b3c] h-full left-0 top-[16px]'> </div>}
 				</li>
 			))}
 		</ul>

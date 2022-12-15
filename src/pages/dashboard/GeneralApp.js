@@ -5,6 +5,7 @@ import LeftNav from '../../layouts/dashboard/LeftNav';
 import MainFeed from '../../layouts/dashboard/MainFeed';
 import { Tooltip } from '../../components';
 import { WindowChat, WindowSendMessage } from '../../components/dashboard';
+import { useChatContext } from '../../contexts/ChatContext';
 
 const EditBtn = ({ setShow, show }) => {
 
@@ -14,7 +15,7 @@ const EditBtn = ({ setShow, show }) => {
       <div className='w-12 h-12 group relative'>
         <Tooltip lable={'Tin nhắn mới'} position='left'>
           <div className='w-12 h-12 rounded-full overflow-hidden bg-[#4b4c4f] hover:bg-[#4b4c4f]/80 cursor-pointer flex items-center 
-        justify-center'>
+            justify-center'>
             <i className='bg-img-6 img-icon-pencil filter-icon w-[20px] h-[20px]'></i>
           </div>
         </Tooltip>
@@ -25,7 +26,7 @@ const EditBtn = ({ setShow, show }) => {
 
 function GeneralApp() {
   const [show, setShow] = useState(false);
-  const [showWindowChat, setShowWindowChat] = useState(true);
+ const {showWindow} = useChatContext();
 
   return (
     <>
@@ -40,7 +41,7 @@ function GeneralApp() {
       </div>
       <div className='block absolute bottom-0 right-[72px]'>
         {show && <WindowSendMessage setShow={setShow} />}
-        {showWindowChat && <WindowChat />}
+        {showWindow && <WindowChat />}
       </div>
     </>
   )

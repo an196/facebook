@@ -1,50 +1,11 @@
-import { IEarth, IThreedots, IThumbsUp, IThumbsUp3, IMessage, IShare } from '../../../theme/icons/index';
-import truncateString from '../../../utils/truncate';
-import  HorizontalLine from '../../HorizontalLine';
 import CommentSection from './CommentSection';
-
-const actions = [
-	{ name: 'Thích', icon: <IThumbsUp3 /> },
-	{ name: 'Bình luận', icon: <IMessage /> },
-	{ name: 'Chia sẻ', icon: <IShare /> },
-];
-
-const ActionFeed = ({ action }) => {
-	return (
-		<div className='w-full  flex flex-row  py-[6px] px-[2px] '>
-			<div className='w-full flex flex-row space-x-2 items-center justify-center hover:bg-[#3a3b3c] cursor-pointer rounded-md'>
-			<div className='w-[20px] h-[20px] text-[#a8abaf] '>{action.icon}</div>
-			<span className='text-[16px] font-medium tracking-tight'>{action.name}</span>
-			</div>
-		</div>
-	);
-};
+import HeaderFeed from './HeaderFeed';
+import ReactionSection from './ReactionSection';
 
 function NewsFeed({news}) {
 	return (
 		<div className='w-full bg-[#242526] mt-[23px] rounded-xl flex flex-col h-min overscroll-auto'>
-			<div className='pt-[12px] p-[16px] pb-0 flex flex-row mb-[12px]'>
-				<div className='w-[40px] h-[40px] rounded-full overflow-hidden mr-4'>
-					<img src={news.imgProfile} width={40} height={40} />
-				</div>
-				<div className='flex flex-col grow'>
-					<span className='h-[20px]'>
-						<strong className='text-[16px] text-[##efefef]'>{news.name}</strong>
-					</span>
-					<div className='flex flex-row items-center space-x-1 mt-[4px]'>
-						<span className='text-[12px] text-[#efefef]'>1 giờ</span>
-						<span className='-mt-[8px]'> . </span>
-						<span className='w-[12px] h-[12px] '>
-							<IEarth />
-						</span>
-					</div>
-				</div>
-				<div className='w-[36px] h-[36px] flex items-center justify-center '>
-					<div className='w-[20px] h-[20px]'>
-						<IThreedots />
-					</div>
-				</div>
-			</div>
+			<HeaderFeed news={news} />
 			<div className='p-[16px] pt-0'>
 				<div className='m-[5px] mt-0 text-[#e1e3e4] font-normal'>
 					{news.message}
@@ -62,36 +23,13 @@ function NewsFeed({news}) {
 				<span className='w-full flex flex-wrap leading-[22px] text-[18px] text-[#e1e3e8] font-semibold'>
 					{news.messageLink.title}
 				</span>
-				<span className='leading-[20px] text-[14px] text-[#95979b]'>
-					{truncateString( news.messageLink.abbreviation ,92)}
+				<span className='leading-[20px] text-[14px] text-[#95979b] truncate-news-shared '>
+					{ news.messageLink.abbreviation}
 				</span>
 			</div>
-			<div className=' mx-[16px] '>
-				<div className='flex flex-row justify-between py-[10px]'>
-					<div className='flex flex-row items-center text-[#95979b] space-x-2'>
-						<div className='w-[18px] h-[18px] '>
-							<IThumbsUp />
-						</div>
-						<span className='font-medium text-[16px]'>{news.actions.liked}</span>
-					</div>
-					<div className='flex flex-row space-x-2'>
-						<div className='text-[#95979b] text-[16px] font-normal'>{news.commented} bình luận</div>
-						<div className='text-[#95979b] text-[16px] font-normal'>{news.shared} chia sẻ</div>
-					</div>
-				</div>
-				<div className='h-[52px] p-[4px]'>
-				<HorizontalLine/>
-				<div className=' w-full h-full flex flex-row'>
-					{actions.map((action, index) => (
-						<ActionFeed action={action} key={index} />
-					))}
-				</div>
-				<HorizontalLine/>
-				</div>
-			</div>
+			<ReactionSection news={news}/>
 
 			{/* Comment Section */}
-			
 			<CommentSection/>
 		</div>
 	);

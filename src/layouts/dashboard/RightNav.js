@@ -3,6 +3,7 @@ import { ISearch, IThreedots, ICameraPlus2 } from '../../theme/icons/index';
 
 //import dummy data
 import { users } from '../../data/dummy';
+import { useChatContext } from '../../contexts/ChatContext';
 
 const actions = [
   { title: 'Phòng họp mặt mới', icon: <ICameraPlus2 /> },
@@ -20,6 +21,7 @@ const Action = ({ action }) => {
   )
 }
 function RightNav() {
+  const { setShowWindow } = useChatContext();
   return (
     <div className='block sticky top-0 hover:overflow-y-auto w-[360px] overflow-hidden'>
     <div className='w-[360px] h-[calc(100vh-56px)]  p-2 text-[#e1e3e8] flex-none '>
@@ -36,7 +38,9 @@ function RightNav() {
       <div className='w-full mt-[15px]'>
         {
           users.map((user, idx) => (
-            <div className='h-[56px] flex items-center hover:bg-white/10 rounded-md px-2 duration-300 transition-all ease-in-out'>
+            <div className='h-[56px] flex items-center hover:bg-white/10 rounded-md px-2 duration-300 transition-all ease-in-out'
+              onClick={()=> setShowWindow(true)}
+            >
               <div className='flex flex-row space-x-3 items-center cursor-pointer' key={idx}>
                 <span className='relative flex-none'>
                   <img src={avatar} alt='avatar' className='rounded-full' width={36} height={36} />

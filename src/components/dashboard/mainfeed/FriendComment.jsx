@@ -1,8 +1,8 @@
 import avatar from '../../../assets/images/avatar3.jpg';
 
-function UserComment({comment}) {
-	return (
-		<div className='flex flex-row mt-[8px] group relative'>
+function FriendComment({comment}) {
+  return (
+    <div className='flex flex-row mt-[8px] group relative'>
 			<div className='w-[32px] h-[32px] rounded-full flex-none overflow-hidden mr-[6px]'>
 				<img src={avatar} alt='avatar' />
 			</div>
@@ -27,11 +27,8 @@ function UserComment({comment}) {
 					<span className='text-[12px] font-normal hover:underline cursor-pointer'>{comment.timeComment}</span>
 				</div>
 			</div>
-            {
-                comment?.reply &&   <div className='absolute w-[2px] bg-[#3a3b3c] h-full left-[16px] top-[16px]'> </div>
-            }
 		</div>
-	);
+  )
 }
 
-export default UserComment;
+export default FriendComment

@@ -1,7 +1,8 @@
 import  { useRef } from 'react';
 import NewsFeed from "./NewsFeed"
 
-import { newsFeeds} from '../../../data/dummy';
+import { friendFeeds, newsFeeds} from '../../../data/dummy';
+import FriendFeed from './FriendFeed';
 
 function FeedsBoard() {
 
@@ -12,7 +13,7 @@ function FeedsBoard() {
                 <NewsFeed key={idx} news={news} />
             ))
         }
-       
+        <FriendFeed news={friendFeeds[0]}/>
     </div>
   )
 }

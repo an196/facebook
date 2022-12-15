@@ -97,7 +97,7 @@ export const newsFeeds = [
         name: 'Techrum.vn',
         postTime: 'Tue Nov 29 2022 09:54:58 GMT+0700 (Indochina Time)',
         message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
-        status: 'post',
+        status: 'publish',
         type: 'post',
         messageLink: {
             original: 'Techrum.vn',
@@ -116,7 +116,7 @@ export const newsFeeds = [
         name: 'Techrum.vn',
         postTime: 'Tue Nov 29 2022 09:54:58 GMT+0700 (Indochina Time)',
         message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
-        status: 'post',
+        status: 'publish',
         type: 'post',
         messageLink: {
             original: 'Techrum.vn',
@@ -135,7 +135,7 @@ export const newsFeeds = [
         name: 'Techrum.vn',
         postTime: 'Tue Nov 29 2022 09:54:58 GMT+0700 (Indochina Time)',
         message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
-        status: 'post',
+        status: 'publish',
         type: 'post',
         messageLink: {
             original: 'Techrum.vn',
@@ -149,6 +149,28 @@ export const newsFeeds = [
         commented: 2,
         shared: 2
     }
+]
+
+export const friendFeeds = [
+    {
+        imgProfile: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.30808-1/241222333_967757587290042_7371355489603781813_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=8NUU4mGvdpUAX93Umcw&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfBk5eESVGFb-e9PyK8FZsNTaaZyXDPODv8B3RslZaGy4A&oe=639ECC55',
+        name: 'Ái Bùi',
+        postTime: 'Tue Nov 29 2022 09:54:58 GMT+0700 (Indochina Time)',
+        message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
+        status: 'friend',
+        type: 'post',
+        images:[
+            'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/317627721_1258202191578912_1368064564384227729_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=86n5y41ig6EAX9dACL0&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfAS8LAfDB3_7DHHHEFd8x4vr7ZdfR-g3meGkzytMvJWQQ&oe=63A03484',
+            'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/318313545_1258151588250639_4322090724507527701_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=qAMq2RGS25wAX_JYJ_8&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfAbl8B_V0JXeaNoLwhz2OURa9yYZC0s3e8DOI0e2FQ-Ug&oe=63A0215B',
+            'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.30808-6/318136758_1258202268245571_7235108657310529896_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=IFlYe7RXsskAX-AJxZD&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfDa-YNh_84lvZkX2rphwRGukyRQ8f3Zy9-lz-O7yzGb6g&oe=639F2705',
+            'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/318085097_1258202521578879_6604481942453635891_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=o_d2DCQp_O0AX8TI_dV&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfAFbbH88gv0PbW79dKQ4GX9Cz9Zo_-v5l-AgiFv6IpqSQ&oe=639F3692',
+        ],
+        actions: {
+            liked: 2
+        },
+        commented: 2,
+        shared: 2
+    },
 ]
 
 export const userComments = [
