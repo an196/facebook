@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import CommentInput from './CommentInput'
-import CommentReply from './CommentReply'
-import UserComment from './UserComment'
-import { userComments } from '../../../data/dummy'
+import { friendComments } from '../../../data/dummy'
 import FriendComment from './FriendComment'
 import FriendReply from './FriendReply'
 function FriendCommentSection() {
-
-
     return (
         <div className='py-[5px] px-[16px]'>
             <div className='flex justify-between items-center w-full h-[28px] cursor-pointer mb-[5px] '>
@@ -21,7 +17,7 @@ function FriendCommentSection() {
                 </div>
             </div>
             <CommentInput />
-            {userComments.map((comment, idx) => (
+            {friendComments.map((comment, idx) => (
 				<div key={idx}>
 					<FriendComment comment={comment} />
 					{comment?.reply && <FriendReply comments={comment.reply} />}

@@ -43,6 +43,9 @@ module.exports = {
         primaryButtonBackground: '#2374E1',
         messageCardBackground: '#242526',
         commentBackground: '#3A3B3C',
+      },
+      animation: {
+        ticker: '0s ease 0s 1 nomal none running none',
       }
     },
   },

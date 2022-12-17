@@ -1,4 +1,3 @@
-import { ISearch } from "../theme/icons"
 
 export const users = [
     { name: 'Nguyễn Tiến Thành' },
@@ -159,7 +158,7 @@ export const friendFeeds = [
         message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
         status: 'friend',
         type: 'post',
-        images:[
+        images: [
             'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/317627721_1258202191578912_1368064564384227729_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=86n5y41ig6EAX9dACL0&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfAS8LAfDB3_7DHHHEFd8x4vr7ZdfR-g3meGkzytMvJWQQ&oe=63A03484',
             'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/318313545_1258151588250639_4322090724507527701_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=qAMq2RGS25wAX_JYJ_8&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfAbl8B_V0JXeaNoLwhz2OURa9yYZC0s3e8DOI0e2FQ-Ug&oe=63A0215B',
             'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.30808-6/318136758_1258202268245571_7235108657310529896_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=IFlYe7RXsskAX-AJxZD&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfDa-YNh_84lvZkX2rphwRGukyRQ8f3Zy9-lz-O7yzGb6g&oe=639F2705',
@@ -170,6 +169,19 @@ export const friendFeeds = [
         },
         commented: 2,
         shared: 2
+    },
+]
+
+export const friendComments = [
+    {
+        name: 'Nguyễn Thanh Trúc',
+        img: 'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/312227319_797881398139500_4522884389247688875_n.jpg?stp=cp0_dst-jpg_p32x32&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=3q0vovIiL4YAX8ZL1Jl&_nc_ht=scontent.fsgn5-14.fna&oh=00_AfBHs0a91uWbk9VRBAzihu0eYbq3IbEgflHHghGGkXX4cA&oe=639FF328',
+        timeComment: '9 giờ',
+        content: 'Vào rạng sáng nay',
+        ticker:'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/68837829_2490899397597064_885390216532066304_n.png?stp=dst-png_p240x240&_nc_cat=1&ccb=1-7&_nc_sid=0572db&_nc_ohc=I050_T9VaqAAX8jcKp7&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfDioSLeNi86zarQo69AUcnS6OClRc75bS3x9_qvXxr7qA&oe=63A23448',
+        video: '',
+        gif: '',
+        reply: [],
     },
 ]
 
@@ -224,7 +236,7 @@ export const userComments = [
                     },
                 ]
             },
-            
+
             {
                 name: 'Ng.Trần Lê Dương',
                 img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/315418083_177437744872747_8232011748455814230_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=c6021c&_nc_ohc=LlQGPtbI4PMAX-UDOa7&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfCIUqiFktpnvJHPEekIuXcQvvp1XIGfJsNvuZqcsl9qiA&oe=638F577F',
@@ -256,129 +268,129 @@ export const userComments = [
 ]
 
 export const notifications = [
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'unseen',
-		type: 'group',
-		time: '1 giờ',
-	},
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'seen',
-		type: 'notification',
-		time: '2 giờ',
-	},
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'unseen',
-		type: 'group',
-		time: '5 giờ',
-	},
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'seen',
-		type: 'group',
-		time: '5 giờ',
-	},
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'unseen',
-		type: 'notification',
-		time: '5 giờ',
-	},
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'unseen',
-		type: 'notification',
-		time: '5 giờ',
-	},
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'unseen',
-		type: 'group',
-		time: '5 giờ',
-	},
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'unseen',
-		type: 'notification',
-		time: '5 giờ',
-	},
-	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
-		message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
-		status: 'unseen',
-		type: 'group',
-		time: '5 giờ',
-	},
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'unseen',
+        type: 'group',
+        time: '1 giờ',
+    },
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'seen',
+        type: 'notification',
+        time: '2 giờ',
+    },
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'unseen',
+        type: 'group',
+        time: '5 giờ',
+    },
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'seen',
+        type: 'group',
+        time: '5 giờ',
+    },
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'unseen',
+        type: 'notification',
+        time: '5 giờ',
+    },
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'unseen',
+        type: 'notification',
+        time: '5 giờ',
+    },
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'unseen',
+        type: 'group',
+        time: '5 giờ',
+    },
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'unseen',
+        type: 'notification',
+        time: '5 giờ',
+    },
+    {
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
+        status: 'unseen',
+        type: 'group',
+        time: '5 giờ',
+    },
 ]
 export const messages = [
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://img.freepik.com/premium-vector/female-user-profile-avatar-is-woman-character-screen-saver-with-emotions_505620-617.jpg?size=338&ext=jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'sent',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'seen',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
-	{
-		name: 'Nguyễn Chiến Thắng',
-		img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
-		submessage: 'Xem tin nhắn đê',
-		status: 'received',
-	},
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://img.freepik.com/premium-vector/female-user-profile-avatar-is-woman-character-screen-saver-with-emotions_505620-617.jpg?size=338&ext=jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'sent',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'seen',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'received',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'received',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'received',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'received',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'received',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'received',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'received',
+    },
+    {
+        name: 'Nguyễn Chiến Thắng',
+        img: 'https://image.shutterstock.com/mosaic_250/2780032/1714666150/stock-photo-head-shot-portrait-close-up-smiling-confident-businessman-wearing-glasses-looking-at-camera-1714666150.jpg',
+        submessage: 'Xem tin nhắn đê',
+        status: 'received',
+    },
 ];

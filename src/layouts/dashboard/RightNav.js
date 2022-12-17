@@ -40,6 +40,7 @@ function RightNav() {
           users.map((user, idx) => (
             <div className='h-[56px] flex items-center hover:bg-white/10 rounded-md px-2 duration-300 transition-all ease-in-out'
               onClick={()=> setShowWindow(true)}
+              key={idx}
             >
               <div className='flex flex-row space-x-3 items-center cursor-pointer' key={idx}>
                 <span className='relative flex-none'>

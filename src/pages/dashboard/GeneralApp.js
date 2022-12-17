@@ -27,7 +27,6 @@ const EditBtn = ({ setShow, show }) => {
 function GeneralApp() {
   const [show, setShow] = useState(false);
  const {showWindow} = useChatContext();
-
   return (
     <>
       <TopNav />
@@ -36,8 +35,6 @@ function GeneralApp() {
         <MainFeed />
         <RightNav />
         <EditBtn setShow={setShow} show={show} />
-
-
       </div>
       <div className='block absolute bottom-0 right-[72px]'>
         {show && <WindowSendMessage setShow={setShow} />}

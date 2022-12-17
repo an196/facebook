@@ -1,21 +1,22 @@
 import Router from './routes';
-import './styles/filt.css'
-import './styles/topNav.css'
+import './styles/filt.css';
+import './styles/topNav.css';
 import './styles/leftNav.css';
 import './styles/App.css';
 import './styles/input.css';
 import './styles/mainFeed.css';
-import './styles/theme.css'
+import './styles/theme.css';
+import './styles/animation.css';
 import 'react-tippy/dist/tippy.css';
 import 'tippy.js/dist/tippy.css';
 
 function App() {
-  return (
-    <>
-    {''}
-    <Router/> {''}
-    </>
-  );
+	return (
+		<>
+			{''}
+			<Router /> {''}
+		</>
+	);
 }
 
 export default App;
