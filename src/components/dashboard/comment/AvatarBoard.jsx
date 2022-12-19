@@ -7,7 +7,7 @@ function AvatarBoard() {
 		<>
 			<div
 				className='w-[351px] h-[431px] absolute bottom-[100%] right-[100%] translate-x-[16px] -translate-y-[10px] z-50
-                 bg-cardBackground rounded-lg'
+                 bg-cardBackground rounded-lg drop-shadow-[0_0_6px_rgba(0,0,0,0.2)]'
 			>
 				<div className='w-[351px] h-[416px]'>
 					<div className='h-[52px] w-full px-4 py-2 flex flex-row items-center justify-between'>

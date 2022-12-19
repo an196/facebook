@@ -26,7 +26,7 @@ function EmojiBoard() {
 		<>
 			<div
 				className='w-[320px]  absolute bottom-[100%] right-[100%] translate-x-[16px] -translate-y-[10px] z-50
-    bg-cardBackground rounded-lg shadow-2xl'
+    bg-cardBackground rounded-lg shadow-2xl drop-shadow-[0_0_6px_rgba(0,0,0,0.2)]'
 			>
 				<div
 					className='block w-[320px] overflow-y-auto overscroll-contain overflow-x-hidden scroll-smooth mb-1'

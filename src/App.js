@@ -8,6 +8,7 @@ import './styles/mainFeed.css';
 import './styles/theme.css';
 import './styles/srollbar.css';
 import './styles/animation.css';
+import './styles/line.css';
 import 'react-tippy/dist/tippy.css';
 import 'tippy.js/dist/tippy.css';
 

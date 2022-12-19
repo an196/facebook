@@ -17,8 +17,8 @@ const icons = [
 		lable: 'Đính kèm một ảnh hoặc một video',
 		board: <AvatarBoard />,
 	},
-	{ name: 'gif', icon: 'bg-img-3 img-icon-gif', lable: 'Bình luận bằng file GIF', board: <GifBoard />, active: true },
-	{ name: 'lable', icon: 'bg-img-3 img-icon-lable', lable: 'Bình luận bằng nhãn dán', board: <StickerBoard /> },
+	{ name: 'gif', icon: 'bg-img-3 img-icon-gif', lable: 'Bình luận bằng file GIF', board: <GifBoard /> },
+	{ name: 'lable', icon: 'bg-img-3 img-icon-lable', lable: 'Bình luận bằng nhãn dán', board: <StickerBoard />, active: true },
 ];
 
 const IconComment = ({ icon }) => {

@@ -27,7 +27,7 @@ const ItemRow = ({ notification }) => {
 			</div>
 			<div className='text-[#e4e6eb] text-[15px] font-normal grow flex flex-col  flex-wrap overflow-hidden'>
 				<span
-					className={`break-words limit-line decoration-auto ${
+					className={`break-words limit-line-3 decoration-auto ${
 						notification.status === status.unseen ? 'text-[#e4e6eb]' : 'text-secondaryText'
 					}`}
 				>

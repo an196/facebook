@@ -8,7 +8,7 @@ function GifBoard() {
 		<>
 			<div
 				className='absolute w-[274px] h-[352px] bottom-[100%] right-[100%] translate-x-[16px] -translate-y-[10px] z-50
-        bg-cardBackground rounded-lg'
+        bg-cardBackground rounded-lg drop-shadow-[0_0_6px_rgba(0,0,0,0.2)]'
 			>
 				<div className='h-[52px] py-2 px-4'>
 					<SearchInput />
