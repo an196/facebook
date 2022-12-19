@@ -1,26 +1,28 @@
 import React from 'react';
 import avartar from '../../../assets/images/avatar3.jpg';
 import { Tooltip } from '../../../components';
+import { EmojiBoard, AvatarBoard, GifBoard, StickerBoard } from '../../../components/dashboard/comment';
 
 const icons = [
-	{ name: 'avatar', icon: 'bg-img-3 img-icon-avatar', lable: 'Bình luận bằng nhãn dán avatar' },
-	{ name: 'feeling', icon: 'bg-img-3 img-icon-feeling', lable: 'Chèn một biểu tượng cảm xúc' },
-	{ name: 'camera', icon: 'bg-img-3 img-icon-camera', lable: 'Đính kèm một ảnh hoặc một video' },
-	{ name: 'gif', icon: 'bg-img-3 img-icon-gif', lable: 'Bình luận bằng file GIF' },
-	{ name: 'lable', icon: 'bg-img-3 img-icon-lable', lable: 'Bình luận bằng nhãn dán' },
+	{ name: 'avatar', icon: 'bg-img-3 img-icon-avatar', lable: 'Bình luận bằng nhãn dán avatar', board: <AvatarBoard />, },
+	{ name: 'feeling', icon: 'bg-img-3 img-icon-feeling', lable: 'Chèn một biểu tượng cảm xúc', board: <EmojiBoard />, active: true  },
+	{ name: 'camera', icon: 'bg-img-3 img-icon-camera', lable: 'Đính kèm một ảnh hoặc một video', board: <AvatarBoard /> },
+	{ name: 'gif', icon: 'bg-img-3 img-icon-gif', lable: 'Bình luận bằng file GIF', board: <GifBoard /> },
+	{ name: 'lable', icon: 'bg-img-3 img-icon-lable', lable: 'Bình luận bằng nhãn dán', board: <StickerBoard /> },
 ];
 
 const IconComment = ({ icon }) => {
 	return (
-		<span className=' cursor-pointer group relative'>
+		<div className='cursor-pointer group relative w-max h-max'>
 			<Tooltip lable={icon.lable} position='top'>
-			<div className='filter-icon flex-none w-[28px] h-[28px] rounded-full group-hover:bg-black/20 flex items-center justify-center'>
-				<div className='w-4 h-4 flex items-center justify-center'>
-					<i className={icon.icon}></i>
+				<div className='filter-icon flex-none w-[28px] h-[28px] rounded-full group-hover:bg-black/20 flex items-center justify-center'>
+					<div className='w-4 h-4 flex items-center justify-center'>
+						<i className={icon.icon}></i>
+					</div>
 				</div>
-			</div>
 			</Tooltip>
-		</span>
+			{icon.active && icon.board}
+		</div>
 	);
 };
 

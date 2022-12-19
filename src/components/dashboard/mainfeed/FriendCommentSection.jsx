@@ -16,14 +16,14 @@ function FriendCommentSection() {
                     > </i>
                 </div>
             </div>
-            <CommentInput />
+           
             {friendComments.map((comment, idx) => (
 				<div key={idx}>
 					<FriendComment comment={comment} />
 					{comment?.reply && <FriendReply comments={comment.reply} />}
 				</div>
 			))}
-        
+         <CommentInput />
         </div>
     )
 }

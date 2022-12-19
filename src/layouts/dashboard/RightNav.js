@@ -24,9 +24,9 @@ function RightNav() {
   const { setShowWindow } = useChatContext();
   return (
     <div className='block sticky top-0 hover:overflow-y-auto w-[360px] overflow-hidden'>
-    <div className='w-[360px] h-[calc(100vh-56px)]  p-2 text-[#e1e3e8] flex-none '>
+    <div className='w-[360px] h-[calc(100vh-56px)]  p-1 text-[#e1e3e8] flex-none '>
       <div className='flex flex-row justify-between  mt-[20px] w-full'>
-        <span className='leading-[21px] text-[15px] font-medium text-secondaryText'>Người liên hệ</span>
+        <span className='leading-[21px] text-[17px] font-semibold text-secondaryText'>Người liên hệ</span>
         <span className='flex flex-row space-x-3 justify-center items-center'>
           {
             actions.map((action, idx) => (
@@ -35,7 +35,7 @@ function RightNav() {
           }
         </span>
       </div >
-      <div className='w-full mt-[15px]'>
+      <div className='w-full mt-2'>
         {
           users.map((user, idx) => (
             <div className='h-[56px] flex items-center hover:bg-white/10 rounded-md px-2 duration-300 transition-all ease-in-out'

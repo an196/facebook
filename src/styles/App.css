@@ -23,7 +23,8 @@
 	--primary-button-background: #2374E1;
 	--messenger-card-background: #242526;
 	--comment-background: #3A3B3C;
-
+    --card-background: #242526;
+	
 	/* filter */
 	--filter-primary-icon: invert(89%) sepia(6%) hue-rotate(185deg);
 	--filter-secondary-icon: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%);
@@ -38,24 +39,24 @@
 	--always-white: white;
 	--always-black: black;
 }
-/* Firefox */
+Firefox
 * {
 	scrollbar-width: thin;
 	scrollbar-color: var(--secondary) var(--primary);
 }
 
 /* Chrome, Edge and Safari */
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
 }
 
-*::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	background: var(--primary);
 	border-radius: 5px;
 }
 
-*::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	background-color: var(--secondary);
 	border-radius: 14px;
 	border: 1px solid var(--primary);

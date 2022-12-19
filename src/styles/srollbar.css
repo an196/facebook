@@ -1,0 +1,14 @@
+#emoji-board::-webkit-scrollbar {
+    width: 6px;
+}
+
+#emoji-board::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 10px;
+}
+
+#emoji-board::-webkit-scrollbar-thumb {
+	background-color: black;
+	border-radius: 50px;
+	border: 0.1 px solid #8d949e;
+}
