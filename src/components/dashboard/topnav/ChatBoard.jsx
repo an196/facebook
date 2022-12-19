@@ -1,4 +1,4 @@
-import React, { useRef} from 'react';
+import React, { useRef } from 'react';
 import { ISearch, ITicket } from '../../../theme/icons/index';
 import board from '../../../constant/board';
 import { useBoardContext } from '../../../contexts/BoardContext';
@@ -34,7 +34,9 @@ const UserMessages = ({ message }) => {
 			</div>
 			{getStatusMessage(message)}
 			<div className='absolute w-full h-full top-0 -left-3 px-2 '>
-				<div className='w-full h-full group-hover:bg-white/10 rounded-md transition-all duration-75 ease-in'> </div>
+				<div className='w-full h-full group-hover:bg-white/10 rounded-md transition-all duration-75 ease-in'>
+					{' '}
+				</div>
 			</div>
 		</div>
 	);
@@ -50,7 +52,10 @@ const Top = () => {
 							<span className='text-[24px] w-full font-bold text-[#e4e6eb]'>Chat</span>
 							<span className='flex flex-row items-center justify-center'>
 								{iconsTopLeft.map((icon, idx) => (
-									<div className='w-10 h-10 flex items-center justify-center cursor-pointer' key={idx}>
+									<div
+										className='w-10 h-10 flex items-center justify-center cursor-pointer'
+										key={idx}
+									>
 										<div
 											className='w-8 h-8 flex items-center justify-center  rounded-full hover:bg-white/10 transition-all duration-100 
                       						ease-in'
@@ -113,7 +118,9 @@ const SearchInput = () => {
 						</div>
 					</span>
 					<form action='#' className='pt-[7px] px-[6px] pb-[9px] grow shrink'>
-						<span className='text-secondaryText text-[15px] font-normal bg-[#3a3b3c]'>Tìm kiếm trên Messenger</span>
+						<span className='text-secondaryText text-[15px] font-normal bg-[#3a3b3c]'>
+							Tìm kiếm trên Messenger
+						</span>
 					</form>
 				</span>
 			</div>
@@ -122,7 +129,6 @@ const SearchInput = () => {
 };
 
 function getStatusMessage(message) {
-	
 	if (message) {
 		let { status, img } = message;
 
@@ -144,10 +150,11 @@ function getStatusMessage(message) {
 function ChatBoard() {
 	const boardRef = useRef();
 	const { setCurrentBoard } = useBoardContext();
-	useBoardHidden(boardRef, board.messenger)
-	
+	useBoardHidden(boardRef, board.messenger);
+
 	return (
-		<div className='absolute w-[360px] h-[801px] top-10 right-0 bg-[#242526] rounded-md z-50'
+		<div
+			className='absolute w-[360px] h-[801px] top-10 right-0 bg-[#242526] rounded-md z-50'
 			onBlur={() => setCurrentBoard('')}
 			ref={boardRef}
 		>

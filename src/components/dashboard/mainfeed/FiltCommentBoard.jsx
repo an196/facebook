@@ -12,17 +12,18 @@ const items = [
 
 const FilterItem = ({ item, show }) => {
 	return (
-		<div className=' px-[8px] flex flex-col py-[12px] mx-[8px] text-[#e4e6eb] relative group'
-            onClick={()=>show(false)}
-        >
+		<div
+			className=' px-[8px] flex flex-col py-[12px] mx-[8px] text-[#e4e6eb] relative group'
+			onClick={() => show(false)}
+		>
 			<span className='text-[15px] font-medium leading-[20px]'>{item.title}</span>
 			<span className='text-[12px] font-normal leading-[16px] text-secondaryText'>{item.subtitle}</span>
-            <div className='hover:bg-[#e4e6eb]/10 w-full h-full absolute top-0 left-0 p-2 rounded-lg'></div>
+			<div className='hover:bg-[#e4e6eb]/10 w-full h-full absolute top-0 left-0 p-2 rounded-lg'></div>
 		</div>
 	);
 };
 
-function FiltCommentBoard({show}) {
+function FiltCommentBoard({ show }) {
 	return (
 		<>
 			<div className='absolute top-[36px] right-[50%] w-[344px] h-auto flex flex-col bg-[#242526] shadow-lg py-[8px] rounded-lg overflow-hidden shadow-black/50 z-40'>

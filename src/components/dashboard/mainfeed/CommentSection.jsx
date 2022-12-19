@@ -21,18 +21,18 @@ const CommentViewMore = ({ scrollTo }) => {
 };
 
 const CommentSection = () => {
-	const [showFilterComment , setShowFilterComment] = useState(false);
+	const [showFilterComment, setShowFilterComment] = useState(false);
 
 	return (
 		<div className='py-[5px] px-[16px]'>
 			<div className='flex justify-end items-center w-full h-[28px] cursor-pointer mb-[5px] '>
 				<div className='relative flex items-center space-x-1'>
 					<span className='font-semibold tracking-tight '>Bình luận liên quan nhất</span>
-					<i className='bg-img-5 img-icon-downarrow filter-icon w-[16px] h-[16px] mt-1' 
+					<i
+						className='bg-img-5 img-icon-downarrow filter-icon w-[16px] h-[16px] mt-1'
 						onClick={() => setShowFilterComment(!showFilterComment)}
-					>
-					</i>
-					{showFilterComment && <FiltCommentBoard show={setShowFilterComment}/>}
+					></i>
+					{showFilterComment && <FiltCommentBoard show={setShowFilterComment} />}
 				</div>
 			</div>
 			<CommentInput />
@@ -45,6 +45,6 @@ const CommentSection = () => {
 			<CommentViewMore />
 		</div>
 	);
-}
+};
 
 export default CommentSection;

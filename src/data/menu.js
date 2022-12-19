@@ -165,13 +165,13 @@ const otherProducts = [
 ];
 
 const items = [
-	{ name: 'Xã hội', element: socials}, 
-	{ name: 'Giải trí', element: entertainments}, 
-	{ name: 'Mua sắm', element: shops}, 
-	{ name: 'Cá nhân', element: personal}, 
-	{ name: 'Chuyên nghiệp', element: regularity}, 
-	{ name: 'Nguồn nhân lực cho cộng đồng', element: community}, 
-	{ name: 'Sản phẩm khác của Meta', element: otherProducts}
+	{ name: 'Xã hội', element: socials },
+	{ name: 'Giải trí', element: entertainments },
+	{ name: 'Mua sắm', element: shops },
+	{ name: 'Cá nhân', element: personal },
+	{ name: 'Chuyên nghiệp', element: regularity },
+	{ name: 'Nguồn nhân lực cho cộng đồng', element: community },
+	{ name: 'Sản phẩm khác của Meta', element: otherProducts },
 ];
 
 export default items;

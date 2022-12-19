@@ -83,7 +83,10 @@ function MeetingTab() {
 
 	return (
 		<div className='relative w-[680px] my-4 h-[200px] flex'>
-			<div className=' w-[680px] h-full flex flex-col overflow-x-auto hidden-scrollbar overflow-y-hidden' ref={rowRef}>
+			<div
+				className=' w-[680px] h-full flex flex-col overflow-x-auto hidden-scrollbar overflow-y-hidden'
+				ref={rowRef}
+			>
 				<div className='flex flex-row relative h-[200px] space-x-2 ' ref={roomtab}>
 					<div className='w-2 flex-none'></div>
 					<CreatRoom />

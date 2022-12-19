@@ -4,9 +4,8 @@ function ItemRow({ item, subtitle, headerColor }) {
 	return (
 		<li
 			className={`flex flex-row space-x-3 pl-[6px] py-2 hover:bg-[#7c7c7c5a] rounded-xl transition 
-			ease-in-out cursor-pointer w-full ${!subtitle ? 'items-center': 'items-start'} `}
-		>	
-			
+			ease-in-out cursor-pointer w-full ${!subtitle ? 'items-center' : 'items-start'} `}
+		>
 			<span className='w-[36px] h-[36px] flex-none '>
 				{item.type === 'icon' ? (
 					<i data-visualcompletion='css-img' className={`left-nav-icon ${item.style} `}></i>

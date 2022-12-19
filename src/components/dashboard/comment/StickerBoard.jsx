@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function StickerBoard() {
-  return (
-    <div>StickerBoard</div>
-  )
+	return <div>StickerBoard</div>;
 }
 
-export default StickerBoard
+export default StickerBoard;

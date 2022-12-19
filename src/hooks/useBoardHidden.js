@@ -1,25 +1,25 @@
-import { useEffect } from "react";
-import { useBoardContext } from "../contexts/BoardContext";
+import { useEffect } from 'react';
+import { useBoardContext } from '../contexts/BoardContext';
 
 const useBoardHidden = (ref, board) => {
-    const { currentBoard, setCurrentBoard } = useBoardContext();
+	const { currentBoard, setCurrentBoard } = useBoardContext();
 
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if ((ref.current && !ref.current.contains(event.target))) {
-                setCurrentBoard('');
-                return
-            }
-        }
-        // Bind the event listener
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            // Unbind the event listener on clean up
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [ref])
+	useEffect(() => {
+		function handleClickOutside(event) {
+			if (ref.current && !ref.current.contains(event.target)) {
+				setCurrentBoard('');
+				return;
+			}
+		}
+		// Bind the event listener
+		document.addEventListener('mousedown', handleClickOutside);
+		return () => {
+			// Unbind the event listener on clean up
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [ref]);
 
-    return
-}
+	return;
+};
 
-export default useBoardHidden
+export default useBoardHidden;

@@ -1,56 +1,54 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {
-      screens: {
-        '2xl': { 'max': '1400px' },
-        // => @media (max-width: 1400px) { ... }
+	content: ['./src/**/*.{js,jsx,ts,tsx}'],
+	theme: {
+		extend: {
+			screens: {
+				'2xl': { max: '1400px' },
+				// => @media (max-width: 1400px) { ... }
 
-        'xl': { 'max': '1279px' },
-        // => @media (max-width: 1279px) { ... }
+				xl: { max: '1279px' },
+				// => @media (max-width: 1279px) { ... }
 
-        'lg': { 'max': '1023px' },
-        // => @media (max-width: 1023px) { ... }
+				lg: { max: '1023px' },
+				// => @media (max-width: 1023px) { ... }
 
-        'md': { 'max': '767px' },
-        // => @media (max-width: 767px) { ... }
+				md: { max: '767px' },
+				// => @media (max-width: 767px) { ... }
 
-        'sm': { 'max': '639px' },
-        // => @media (max-width: 639px) { ... }
-      },
-      zIndex: {
-        '1000000': '1000000',
-      },
-      colors: {
-        custom: {
-          DEFAULT: '#a5b3b8',
-          light: '#a5b3b8'
-        },
-        
-        primaryText: '#E4E6EB',
-        secondaryText: '#B0B3B8',
+				sm: { max: '639px' },
+				// => @media (max-width: 639px) { ... }
+			},
+			zIndex: {
+				1000000: '1000000',
+			},
+			colors: {
+				custom: {
+					DEFAULT: '#a5b3b8',
+					light: '#a5b3b8',
+				},
 
-        // link
-        blueLink: '#4599FF',
-        accent: '#2e89ff',
+				primaryText: '#E4E6EB',
+				secondaryText: '#B0B3B8',
 
-        // icon
-        primaryIcon: '#E4E6EB',
-        secondaryIcon: '#B0B3B8',
+				// link
+				blueLink: '#4599FF',
+				accent: '#2e89ff',
 
-        // background
-        primaryButtonBackground: '#2374E1',
-        messageCardBackground: '#242526',
-        commentBackground: '#3A3B3C',
-        cardBackground: '#242526',
-      },
-      animation: {
-        ticker: '0s ease 0s 1 nomal none running none',
-      }
-    },
-  },
-  plugins: [
+				// icon
+				primaryIcon: '#E4E6EB',
+				secondaryIcon: '#B0B3B8',
 
-  ],
-}
+				// background
+				primaryButtonBackground: '#2374E1',
+				messageCardBackground: '#242526',
+				commentBackground: '#3A3B3C',
+				cardBackground: '#242526',
+			},
+			animation: {
+				ticker: '0s ease 0s 1 nomal none running none',
+			},
+		},
+	},
+	plugins: [],
+};

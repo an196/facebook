@@ -10,7 +10,6 @@ const Animal = styled.div`
 	width: 16px;
 `;
 
-
 const Apple = styled.div`
 	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/4MTnhTAbgns.png');
 	background-repeat: no-repeat;
@@ -32,8 +31,8 @@ const Umbrella = styled.div`
 `;
 
 const Symbol = styled.div`
-    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/4MTnhTAbgns.png');
-    background-repeat: no-repeat;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/4MTnhTAbgns.png');
+	background-repeat: no-repeat;
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: 0 -76px;
@@ -43,13 +42,13 @@ const Symbol = styled.div`
 `;
 
 const Motion = styled.div`
-    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/4MTnhTAbgns.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 0 -161px;
-    display: block;
-    height: 16px;
-    width: 16px;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/4MTnhTAbgns.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: 0 -161px;
+	display: block;
+	height: 16px;
+	width: 16px;
 `;
 
 const LightBulb = styled.div`
@@ -93,13 +92,13 @@ const Ball = styled.div`
 `;
 
 export default {
-    Animal,
-    Apple,
-    Umbrella,
-    Symbol,
-    Motion,
-    LightBulb,
-    Flag,
-    Clock,
-    Ball,
-}
+	Animal,
+	Apple,
+	Umbrella,
+	Symbol,
+	Motion,
+	LightBulb,
+	Flag,
+	Clock,
+	Ball,
+};

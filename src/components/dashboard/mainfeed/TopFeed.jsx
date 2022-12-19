@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
-import { INews, IReels, ICameraPlus, } from '../../../theme/icons/index';
+import { INews, IReels, ICameraPlus } from '../../../theme/icons/index';
 import HorizontalLine from '../../HorizontalLine';
 import SubSection from './SubSection';
 import StoryTab from './StoryTab';
@@ -20,13 +20,13 @@ function TopFeed() {
 			case 'news':
 				return <StoryTab />;
 			case 'reels':
-				return <ReelsTab />
+				return <ReelsTab />;
 			case 'meetingroom':
-				return <MeetingTab />
+				return <MeetingTab />;
 			default:
-				return <></>
+				return <></>;
 		}
-	}
+	};
 
 	return (
 		<div className='w-full pb-[1px] bg-[#242526] mt-[23px] rounded-xl '>

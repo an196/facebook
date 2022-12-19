@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import FriendComment from './FriendComment';
 
 function FriendReply({ comments, child = false }) {
-    return (
+	return (
 		<ul className={`${!child ? 'pl-[16px]' : 'pl-[48px]'} `}>
 			{comments?.map((comment, idx) => (
 				<li className='flex flex-col relative' key={idx}>
@@ -17,4 +17,4 @@ function FriendReply({ comments, child = false }) {
 	);
 }
 
-export default FriendReply
+export default FriendReply;

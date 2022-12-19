@@ -83,7 +83,9 @@ const NotChat = () => {
 			</div>
 			<span className='text-[15px] font-semibold text-primaryText mb-2 leading-5'>Nguyễn Tiến Thành</span>
 			<span className='text-[13px] font-normal text-secondaryText mb-1 leading-4'>Facebook</span>
-			<span className='text-[13px] font-normal text-secondaryText mb-1 leading-4'>Các bạn là bạn bè trên Facebook</span>
+			<span className='text-[13px] font-normal text-secondaryText mb-1 leading-4'>
+				Các bạn là bạn bè trên Facebook
+			</span>
 			<span className='text-[13px] font-normal text-secondaryText mb-1 leading-4'>Sống tại Hồ Chí Minh</span>
 		</div>
 	);

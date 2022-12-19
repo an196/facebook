@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState } from 'react';
 import Story from './Story';
 import avatar from '../../../assets/images/avatar3.jpg';
 import { ICirclePlus, ILeftArrow2, IRightArrow } from '../../../theme/icons';
@@ -29,13 +29,17 @@ const CrtStoryBtn = () => {
 };
 
 function StoryTab() {
-    const rowRef = useRef();
+	const rowRef = useRef();
 	const [isMoved, setIsMoved] = useState(false);
 
-    const RightButton = () => {
+	const RightButton = () => {
 		return (
-			<div className='absolute top-[76px] right-[24px] z-10 cursor-pointer' onClick={() => hdlSlideStory('right')}>
-				<div className='w-[48px] h-[48px] p-[12px] rounded-full bg-[#3e4042] hover:bg-[#494c4e] overflow-hidden
+			<div
+				className='absolute top-[76px] right-[24px] z-10 cursor-pointer'
+				onClick={() => hdlSlideStory('right')}
+			>
+				<div
+					className='w-[48px] h-[48px] p-[12px] rounded-full bg-[#3e4042] hover:bg-[#494c4e] overflow-hidden
 					active:bg-[#3e4042] active:w-[46px] active:h-[46px] active:p-[11px]  active:translate-x-[-1px] active:translate-y-[1px]'
 				>
 					<div className='w-[24px] h-[24px] text-secondaryText'>
@@ -48,10 +52,14 @@ function StoryTab() {
 
 	const LeftButton = () => {
 		return (
-			<div className={`absolute top-[76px] left-[24px] z-10 cursor-pointer ${!isMoved ? 'opacity-0' : 'opacity-1'} `} 
+			<div
+				className={`absolute top-[76px] left-[24px] z-10 cursor-pointer ${
+					!isMoved ? 'opacity-0' : 'opacity-1'
+				} `}
 				onClick={() => hdlSlideStory('left')}
 			>
-				<div className='w-[48px] h-[48px] p-[12px] rounded-full bg-[#3e4042] hover:bg-[#494c4e] overflow-hidden active:bg-[#3e4042]
+				<div
+					className='w-[48px] h-[48px] p-[12px] rounded-full bg-[#3e4042] hover:bg-[#494c4e] overflow-hidden active:bg-[#3e4042]
 					active:w-[46px] active:h-[46px] active:p-[11px]  active:translate-x-[1px] active:translate-y-[1px]'
 				>
 					<div className='w-[24px] h-[24px] text-secondaryText'>
@@ -61,50 +69,53 @@ function StoryTab() {
 			</div>
 		);
 	};
-    
-    const hdlSlideStory = (direction) => {
-		setIsMoved(true)
+
+	const hdlSlideStory = (direction) => {
+		setIsMoved(true);
 		if (rowRef.current) {
 			const { scrollLeft, clientWidth } = rowRef.current;
-			
+
 			const scrollTo = direction === 'left' ? scrollLeft - clientWidth : scrollLeft + clientWidth;
-			
+
 			rowRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
 
-			if(scrollTo < 0) setIsMoved(false);
+			if (scrollTo < 0) setIsMoved(false);
 		}
 	};
 
-    return (
-        <div className='relative w-[680px] my-4 h-[200px] flex'>
-            <div className=' w-[680px] h-full flex flex-col overflow-x-auto hidden-scrollbar overflow-y-hidden' ref={rowRef}>
-                <div className='flex flex-row relative h-[200px] space-x-2 ' >
-                    <CrtStoryBtn />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <div className='w-2 flex-none'></div>
-                </div>
-            </div>
-            <RightButton />
-            <LeftButton />
-        </div>
-    )
+	return (
+		<div className='relative w-[680px] my-4 h-[200px] flex'>
+			<div
+				className=' w-[680px] h-full flex flex-col overflow-x-auto hidden-scrollbar overflow-y-hidden'
+				ref={rowRef}
+			>
+				<div className='flex flex-row relative h-[200px] space-x-2 '>
+					<CrtStoryBtn />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<Story />
+					<div className='w-2 flex-none'></div>
+				</div>
+			</div>
+			<RightButton />
+			<LeftButton />
+		</div>
+	);
 }
 
-export default StoryTab
+export default StoryTab;

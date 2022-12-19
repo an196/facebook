@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import storyImage from '../../../assets/images/story.png';
 
 function Reels() {
@@ -22,7 +22,7 @@ function Reels() {
 			</div>
 			<div className='absolute w-full h-full group-hover:bg-black/10 top-0 left-0'></div>
 		</div>
-	)
+	);
 }
 
-export default Reels
+export default Reels;

@@ -1,7 +1,8 @@
 function SubSection({ subSection, activeTab, setActiveTab }) {
 	return (
-		<div className={`flex-1 h-[60px]  p-[4px] cursor-pointer ${subSection.name === activeTab && 'menu-item-active'}`}
-			onClick={()=> setActiveTab(subSection.name)}
+		<div
+			className={`flex-1 h-[60px]  p-[4px] cursor-pointer ${subSection.name === activeTab && 'menu-item-active'}`}
+			onClick={() => setActiveTab(subSection.name)}
 		>
 			<span
 				className={`w-full h-full  flex justify-center items-center space-x-2 ${

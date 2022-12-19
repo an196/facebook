@@ -11,24 +11,24 @@
 }
 
 .filt-logo {
-    fill: var(--always-white);
+	fill: var(--always-white);
 }
 
-.xe3v8dz{
-    fill: var(--always-white);
+.xe3v8dz {
+	fill: var(--always-white);
 }
 
 .x1xgahvj {
-    fill: var(--positive);
+	fill: var(--positive);
 }
-
 
 .clearfix:before,
 .clearfix:after {
-    content: ".";    
-    display: block;    
-    height: 0;    
-    overflow: hidden; 
+	content: '.';
+	display: block;
+	height: 0;
+	overflow: hidden;
 }
-.clearfix:after { clear: both; }
-
+.clearfix:after {
+	clear: both;
+}

@@ -6,7 +6,10 @@ function SearchInput() {
 			<span className='h-[18px] w-[18px]'>
 				<ISearch />
 			</span>
-			<input className='px-[8px] pt-[7px] pb-[9px] bg-inherit outline-none' placeholder='Tìm kiếm trên Facebook' />
+			<input
+				className='px-[8px] pt-[7px] pb-[9px] bg-inherit outline-none'
+				placeholder='Tìm kiếm trên Facebook'
+			/>
 		</span>
 	);
 }

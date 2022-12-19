@@ -11,7 +11,9 @@ const Section = ({ item, title, editable, enableDelete }) => {
 				<span className='font-semibold text-[18px]'>{title}</span>
 				{editable && (
 					<div className=' p-[6px] rounded-sm  hover:bg-[#444445] text-center h-full leading-none cursor-pointer'>
-						<span className='font-normal p-[3px] text-[16px]  leading-none  text-[#428feb] '>Chỉnh sửa</span>
+						<span className='font-normal p-[3px] text-[16px]  leading-none  text-[#428feb] '>
+							Chỉnh sửa
+						</span>
 					</div>
 				)}
 			</span>

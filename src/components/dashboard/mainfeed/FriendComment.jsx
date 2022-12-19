@@ -3,12 +3,12 @@ import avatar from '../../../assets/images/avatar3.jpg';
 import useSticker from '../../../hooks/useSticker';
 
 function FriendComment({ comment }) {
-    const stickerRef = useRef();
-    const { doAnimate, wf, hf} = useSticker();
-    
-    useEffect(()=>{
-        doAnimate(stickerRef)
-    }, [])
+	const stickerRef = useRef();
+	const { doAnimate, wf, hf } = useSticker();
+
+	useEffect(() => {
+		doAnimate(stickerRef);
+	}, []);
 
 	return (
 		<div className='flex flex-row mt-[8px] group relative w-full'>
@@ -29,17 +29,20 @@ function FriendComment({ comment }) {
 					</div>
 				</div>
 				<div className='block flex-none'>
-					<div className={`ticker-frame overflow-hidden ${hf && 'h-['+hf+'px]'}`}
-                        style={{width: wf && wf+'px'}}
-                    >
-						<img className='max-w-none' src={comment.ticker || ''} ref={stickerRef}/>
+					<div
+						className={`ticker-frame overflow-hidden ${hf && 'h-[' + hf + 'px]'}`}
+						style={{ width: wf && wf + 'px' }}
+					>
+						<img className='max-w-none' src={comment.ticker || ''} ref={stickerRef} />
 					</div>
 				</div>
 
 				<div className='w-full space-x-[16px] ml-[8px]'>
 					<span className='text-[12px] font-bold hover:underline cursor-pointer'>Thích</span>
 					<span className='text-[12px] font-bold hover:underline cursor-pointer'>Phản hồi</span>
-					<span className='text-[12px] font-normal hover:underline cursor-pointer'>{comment.timeComment}</span>
+					<span className='text-[12px] font-normal hover:underline cursor-pointer'>
+						{comment.timeComment}
+					</span>
 				</div>
 			</div>
 		</div>

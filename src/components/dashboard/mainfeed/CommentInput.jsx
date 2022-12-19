@@ -4,10 +4,20 @@ import { Tooltip } from '../../../components';
 import { EmojiBoard, AvatarBoard, GifBoard, StickerBoard } from '../../../components/dashboard/comment';
 
 const icons = [
-	{ name: 'avatar', icon: 'bg-img-3 img-icon-avatar', lable: 'Bình luận bằng nhãn dán avatar', board: <AvatarBoard />, },
-	{ name: 'feeling', icon: 'bg-img-3 img-icon-feeling', lable: 'Chèn một biểu tượng cảm xúc', board: <EmojiBoard />, active: true  },
-	{ name: 'camera', icon: 'bg-img-3 img-icon-camera', lable: 'Đính kèm một ảnh hoặc một video', board: <AvatarBoard /> },
-	{ name: 'gif', icon: 'bg-img-3 img-icon-gif', lable: 'Bình luận bằng file GIF', board: <GifBoard /> },
+	{
+		name: 'avatar',
+		icon: 'bg-img-3 img-icon-avatar',
+		lable: 'Bình luận bằng nhãn dán avatar',
+		board: <AvatarBoard />,
+	},
+	{ name: 'feeling', icon: 'bg-img-3 img-icon-feeling', lable: 'Chèn một biểu tượng cảm xúc', board: <EmojiBoard /> },
+	{
+		name: 'camera',
+		icon: 'bg-img-3 img-icon-camera',
+		lable: 'Đính kèm một ảnh hoặc một video',
+		board: <AvatarBoard />,
+	},
+	{ name: 'gif', icon: 'bg-img-3 img-icon-gif', lable: 'Bình luận bằng file GIF', board: <GifBoard />, active: true },
 	{ name: 'lable', icon: 'bg-img-3 img-icon-lable', lable: 'Bình luận bằng nhãn dán', board: <StickerBoard /> },
 ];
 
@@ -28,7 +38,7 @@ const IconComment = ({ icon }) => {
 
 const CommentInput = () => {
 	return (
-		<div className='flex flex-row' id='comment-input' >
+		<div className='flex flex-row' id='comment-input'>
 			<div className='w-[32px] h-[32px] rounded-full overflow-hidden mr-[6px]'>
 				<img src={avartar} alt='avatar' />
 			</div>
@@ -42,6 +52,6 @@ const CommentInput = () => {
 			</form>
 		</div>
 	);
-}
+};
 
 export default CommentInput;
