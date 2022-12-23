@@ -9,10 +9,10 @@ function LeftNav() {
 
 	return (
 		<div className='block sticky top-0 '>
-			<div className='h-[calc(100vh-56px)] w-[360px] flex flex-col visible sticky'>
-				<div className='flex h-full visible overflow-hidden hover:overflow-y-auto '>
+			<div className='h-[calc(100vh-56px)] max-w-[360px] grow flex flex-col visible sticky'>
+				<div className='flex h-full visible overflow-hidden overflow-y-auto hide-scrollbar'>
 					<div className='text-[#e1e3e8] h-full w-full  group flex flex-col justify-between'>
-						<div className='w-[360px] block'>
+						<div className='max-w-[360px] block  grow '>
 							<Section
 								items={shortlinkCategories}
 								isfullItems={isFullCategory}

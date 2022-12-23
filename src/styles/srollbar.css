@@ -18,3 +18,29 @@
 	border-radius: 50px;
 	border: 0.1 px solid #8d949e;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+	width: 6px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+	background: transparent !important;;
+	border-radius: 10px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+	background-color: transparent;
+	border-radius: 50px;
+	border: transparent !important;
+}
+
+
+.hide-scrollbar:hover:-webkit-scrollbar-track {
+	background: var(--primary) !important;;
+	border-radius: 10px;
+}
+
+.hide-scrollbar:hover::-webkit-scrollbar-thumb {
+	background-color: var(--secondary);
+	border: var(--primary) !important;
+}

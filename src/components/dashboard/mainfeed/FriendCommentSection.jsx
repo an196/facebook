@@ -3,6 +3,7 @@ import CommentInput from './CommentInput';
 import { friendComments } from '../../../data/dummy';
 import FriendComment from './FriendComment';
 import FriendReply from './FriendReply';
+
 function FriendCommentSection() {
 	return (
 		<div className='py-[5px] px-[16px]'>

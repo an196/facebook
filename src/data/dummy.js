@@ -184,7 +184,18 @@ export const friendComments = [
 		img: 'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/312227319_797881398139500_4522884389247688875_n.jpg?stp=cp0_dst-jpg_p32x32&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=3q0vovIiL4YAX8ZL1Jl&_nc_ht=scontent.fsgn5-14.fna&oh=00_AfBHs0a91uWbk9VRBAzihu0eYbq3IbEgflHHghGGkXX4cA&oe=639FF328',
 		timeComment: '9 giờ',
 		content: 'Vào rạng sáng nay',
-		ticker: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/68837829_2490899397597064_885390216532066304_n.png?stp=dst-png_p240x240&_nc_cat=1&ccb=1-7&_nc_sid=0572db&_nc_ohc=I050_T9VaqAAX8jcKp7&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfDioSLeNi86zarQo69AUcnS6OClRc75bS3x9_qvXxr7qA&oe=63A23448',
+		sticker: {
+			dynamic: true,
+			title: 'Nhãn dán QooBee Agapi Angry, dragon with crossed arms',
+			img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/17636530_1747081108936474_2091496026287374336_n.png?stp=dst-png_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=0572db&_nc_ohc=OOMUbxAUJIgAX-aJ4A9&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfAFW477DIwz5LU9UacvkkzJR6giU_q0cJP2HezPwpM5Gw&oe=63A92885',
+			size: {
+				width: 400,
+				height: 320,
+			},
+			frame: 20,
+			x: 5,
+			y: 4,
+		},
 		video: '',
 		gif: '',
 		reply: [],
@@ -411,3 +422,34 @@ export const messages = [
 		status: 'received',
 	},
 ];
+
+export const historyStickers = [
+	{
+		title:'',
+		img:'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17636511_1747083982269520_8939283933321756672_n.png?stp=dst-png_p280x280&_nc_cat=100&ccb=1-7&_nc_sid=0572db&_nc_ohc=VUSDzxhHN4EAX-rhrbF&_nc_oc=AQkJUJCA-3oW-zTCi0JdwukzrTgHjMOmIpRwsfHdDh9mcCdm10IUFMpyUxOwfQwKWc0&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfDDzCGnStvHfkUdVgDAYX9Enp8r4MycCM-FvzNh1Yz0qQ&oe=63A5E9A6'
+	},
+	{
+		title:'',
+		img:'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17639180_1747082235603028_893175957152595968_n.png?stp=dst-png_p280x280&_nc_cat=107&ccb=1-7&_nc_sid=0572db&_nc_ohc=q6y7hu-PIAQAX94p6z-&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfB5NSsmUPVPd38gcyad9i__k_yED-WLG8kxnstzve7TIg&oe=63A53ABF'
+	},
+	{
+		title:'',
+		img:'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/17636496_1747081475603104_5738142372642947072_n.png?stp=dst-png_p280x280&_nc_cat=111&ccb=1-7&_nc_sid=0572db&_nc_ohc=E7-5qWUrSZwAX9uGGrf&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfDe6K105e5wyYWYfTjJreINtMNgz8njlwlw2F7X9RSaeg&oe=63A63397'
+	},
+	{
+		title:'',
+		img:'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/851586_126362164215247_428974420_n.png?stp=cp0_dst-png_s75x225&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=iY-K3PJbMzIAX8UIedM&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfCDiFpq1TM_EuvxJYj8jS8H0P1EC1Vb44f64sZiuLfDkw&oe=63A5BE0B'
+	},
+	{
+		title:'',
+		img:'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17639065_1747082045603047_5766317340924837888_n.png?stp=dst-png_p280x280&_nc_cat=107&ccb=1-7&_nc_sid=0572db&_nc_ohc=gLdVfA_ftEUAX8zrVIl&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfCrm9os2U96Do_Jrn3dP-3sSSHyyWDVM_7ZHjI3pRDOtw&oe=63A47AA2'
+	},
+	{
+		title:'',
+		img:'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/16344631_1846059619003269_2434487372902039552_n.png?stp=dst-png_p280x280&_nc_cat=104&ccb=1-7&_nc_sid=0572db&_nc_ohc=BRuRO8ycwkwAX9ru8an&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfCyf7ZIkI-wbCeZOKxMOPFMvXHQ8vR68Gx8u5NFxlDg1g&oe=63A4E8E1'
+	},
+	{
+		title:'',
+		img:'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/69243376_2432281837047708_5641969301742157824_n.png?stp=cp0_dst-png_s75x225&_nc_cat=105&ccb=1-7&_nc_sid=ac3552&_nc_ohc=b3cNO7b8c1MAX_vJXc_&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfAl5x5SvOlFSIbXQXGJhJWqtWV0enGIf2QN-ISGRp9EZA&oe=63A5F4B6'
+	},
+]

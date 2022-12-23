@@ -23,9 +23,9 @@ const Action = ({ action }) => {
 function RightNav() {
 	const { setShowWindow } = useChatContext();
 	return (
-		<div className='block sticky top-0 hover:overflow-y-auto max-w-[360px] overflow-hidden'>
-			<div className='w-[360px] h-[calc(100vh-56px)]  p-1 text-[#e1e3e8] flex-none '>
-				<div className='flex flex-row justify-between  mt-[20px] w-full'>
+		<div className='block sticky top-0 grow max-w-[360px] min-w-[280px] overflow-hidden  overflow-y-visible overscroll-contain hide-scrollbar'>
+			<div className=' max-w-[360px] h-[calc(100vh-56px)] p-1 text-[#e1e3e8]'>
+				<div className='flex flex-row justify-between  mt-[20px]'>
 					<span className='leading-[21px] text-[17px] font-semibold text-secondaryText'>Người liên hệ</span>
 					<span className='flex flex-row space-x-3 justify-center items-center'>
 						{actions.map((action, idx) => (

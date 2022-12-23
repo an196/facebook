@@ -137,7 +137,6 @@ function TopNav() {
 				</span>
 				{showSearchBoard && <SearchBoard setShowSearchBoard={setShowSearchBoard} />}
 			</div>
-			<div className='w-8'></div>
 			<span className='w-[680px] flex flex-row h-full justify-around items-center text-secondaryText' id='area2'>
 				{menuIcon.map((item, index) => (
 					<MiddleButton key={index} item={item} index={index} />
