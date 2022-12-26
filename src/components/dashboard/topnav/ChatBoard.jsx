@@ -1,8 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ISearch, ITicket } from '../../../theme/icons/index';
 import board from '../../../constant/board';
 import { useBoardContext } from '../../../contexts/BoardContext';
-import useBoardHidden from '../../../hooks/useBoardHidden';
 import { messages } from '../../../data/dummy';
 
 const iconsTopLeft = [
@@ -148,15 +147,9 @@ function getStatusMessage(message) {
 }
 
 function ChatBoard() {
-	const boardRef = useRef();
-	const { setCurrentBoard } = useBoardContext();
-	useBoardHidden(boardRef, board.messenger);
-
 	return (
 		<div
 			className='absolute w-[360px] h-[801px] top-10 right-0 bg-[#242526] rounded-md !z-200'
-			onBlur={() => setCurrentBoard('')}
-			ref={boardRef}
 		>
 			<div className='w-[360px] h-full flex flex-col'>
 				<Top />

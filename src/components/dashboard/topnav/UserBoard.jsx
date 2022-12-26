@@ -1,8 +1,5 @@
 import React, { useRef } from 'react';
 import avatar from '../../../assets/images/avatar3.jpg';
-import { contentinfo } from '../../../data/shortlinks';
-import useBoardHidden from '../../../hooks/useBoardHidden';
-import board from '../../../constant/board';
 import Contact from '../../Contact';
 
 const items = [
@@ -54,13 +51,9 @@ const Top = () => {
 };
 
 function UserBoard() {
-	const boardRef = useRef();
-	useBoardHidden(boardRef, board.user);
-
 	return (
 		<div
 			className='absolute right-0 top-10 z-40 flex flex-col w-[360px] bg-[#242526] text-white  flex-initial rounded-md'
-			ref={boardRef}
 		>
 			<Top />
 			<div className='w-full'>

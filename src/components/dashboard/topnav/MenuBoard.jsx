@@ -3,8 +3,8 @@ import { Section } from '../leftnav';
 import { HorizontalLine } from '../../../components';
 import items from '../../../data/menu';
 import { useBoardContext } from '../../../contexts/BoardContext';
-import useBoardHidden from '../../../hooks/useBoardHidden';
 import board from '../../../constant/board';
+import useDetectOutside from '../../../hooks/useDetectOutside';
 
 const itemsCreate1 = [
 	{ title: 'Đăng', icon: 'icon-pencil' },
@@ -98,15 +98,11 @@ const RightMenu = () => {
 	);
 };
 
-function MenuBoard() {
-	const menuRef = useRef();
-	useBoardHidden(menuRef, board.menu);
-
+function MenuBoard({}) {
 	return (
 		<div
 			className='absolute right-0 top-10 z-50 flex flex-col max-w-[607px] flex-initial h-[752px] rounded-md 
 			text-[#e4e6eb] bg-[#323436] pl-2'
-			ref={menuRef}
 		>
 			<div className='text-[24px] font-bold  w-full py-4 px-4'>Menu</div>
 			<div className='h-[752px]  w-full '>

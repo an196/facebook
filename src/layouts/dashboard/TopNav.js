@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
 	IHome,
 	IWatch,
@@ -38,9 +38,8 @@ const rightIcons = [
 const MiddleButton = ({ item, index }) => {
 	return (
 		<span
-			className={`${
-				index === 0 && 'menu-item-active'
-			} flex w-full h-full justify-center items-center cursor-pointer relative group
+			className={`${index === 0 && 'menu-item-active'
+				} flex w-full h-full justify-center items-center cursor-pointer relative group
     `}
 		>
 			<Tooltip lable={item.name}>
@@ -57,44 +56,44 @@ const MiddleButton = ({ item, index }) => {
 	);
 };
 
-const RightBtn = ({ icon, num }) => {
+const RightBtn = ({ icon, num, active }) => {
 	let btnRef = useRef();
-	const { currentBoard, setCurrentBoard } = useBoardContext();
+	let boardRef = useRef();
 
-	const handleClick = (icon) => {
-		setCurrentBoard(icon.name);
-	};
+	const {setElementRefs} = useBoardContext();
+
+	useEffect(()=>{
+		setElementRefs(icon.name, btnRef, boardRef);
+	},[])
 
 	return (
-		<>
+		< >
 			<Tooltip lable={icon.name}>
 				{icon?.icon ? (
 					<div
-						className={`left-icon-item hover:bg-[#525151] flex  ${
-							currentBoard === icon.name ? 'bg-[#2d88ff]/20' : ''
-						}`}
-						onClick={() => handleClick(icon)}
+						className={`left-icon-item hover:bg-[#525151] flex  ${active && 'bg-[#2d88ff]/20'
+							}`}
 						ref={btnRef}
 					>
-						<div className={`h-[20px] w-[20px] ${currentBoard === icon.name ? 'text-[#2d88ff]' : ''}`}>
+						<div className={`h-[20px] w-[20px] ${active ? 'text-[#2d88ff]' : ''}`}>
 							{icon?.icon}
 						</div>
 						{icon.name === 'notification' && (
 							<div
 								className='absolute top-0 right-0 w-[19px] h-[19px] bg-[#e41e3f] rounded-full flex items-center justify-center 
-                  translate-x-[25%] translate-y-[-25%]'
+                  				translate-x-[25%] translate-y-[-25%]'
 							>
 								<span className='text-[12px] font-bold'>{num || 2}</span>
 							</div>
 						)}
 					</div>
 				) : (
-					<span className='cursor-pointer relative group' onClick={() => handleClick(icon)}>
+					<span className='cursor-pointer relative group' ref={btnRef}>
 						<img src={avatar} alt='avatar' className='rounded-full' width={40} height={40} />
 					</span>
 				)}
 			</Tooltip>
-			<>{currentBoard === icon.name && icon?.board}</>
+			<div ref={boardRef}>{active && icon?.board}</div>
 		</>
 	);
 };
@@ -102,11 +101,12 @@ const RightBtn = ({ icon, num }) => {
 function TopNav() {
 	const [showSearchBoard, setShowSearchBoard] = useState(false);
 	const [fisrtload, setFirstload] = useState(true);
+	const { stateBoard } = useBoardContext();
 
 	return (
 		<div
 			className='h-[56px] w-full bg-[#242526] justify-between flex-row flex items-center px-[16px] border-b-[1px] border-[#393a3b]
-      sticky top-0 z-50'
+      		sticky top-0 z-50'
 		>
 			<div className='flex flex-row items-center w-[360px] relative' id='area1'>
 				<span className='w-[40px] h-[40px] p-auto filt-logo mr-2'>
@@ -114,20 +114,18 @@ function TopNav() {
 				</span>
 				<span
 					className='w-[240px] h-[40px] bg-[#3a3b3c] text-[#a5b3b8] flex flex-row p-[12px] items-center rounded-full overflow-hidden z-20'
-					onBlur={() => setShowSearchBoard(false)}
 				>
 					{
 						<span
-							className={`h-[18px] w-[18px] cursor-pointer ${
-								showSearchBoard ? 'animate-move-left-2' : !fisrtload && 'animate-move-right'
-							} `}
+							className={`h-[18px] w-[18px] cursor-pointer ${showSearchBoard ? 'animate-move-left-2' : !fisrtload && 'animate-move-right'
+								} `}
 						>
 							<ISearch />
 						</span>
 					}
 					<input
 						className={`px-[8px] pt-[7px] pb-[9px] bg-inherit outline-none 
-            ${showSearchBoard ? 'animate-move-left' : !fisrtload && 'animate-move-right'}`}
+            			${showSearchBoard ? 'animate-move-left' : !fisrtload && 'animate-move-right'}`}
 						placeholder='Tìm kiếm trên Facebook'
 						onFocus={() => {
 							setShowSearchBoard(true);
@@ -147,7 +145,7 @@ function TopNav() {
 				id='area3'
 			>
 				{rightIcons?.map((icon, idx) => (
-					<RightBtn key={idx} icon={icon} />
+					<RightBtn key={idx} icon={icon} active={stateBoard[`${icon.name}`]} />
 				))}
 			</span>
 		</div>

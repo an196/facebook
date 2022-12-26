@@ -341,7 +341,7 @@ export const doveStickers = [
         resize: {
             width: 226,
             height: 226,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/69413914_2432282733714285_6525343520755023872_n.png?stp=cp0_dst-png_s75x225&_nc_cat=100&ccb=1-7&_nc_sid=ac3552&_nc_ohc=e_4Hn7MeResAX9f-Zx_&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfAaMRo-b8jBkOL2EeMZaOutZb2WSdAouk65zuA7i2Dl-A&oe=63A590E4',
+            img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/69222845_2432281470381078_1465568911570239488_n.png?stp=dst-png_p280x280&_nc_cat=104&ccb=1-7&_nc_sid=0572db&_nc_ohc=9F4aHUZrbTUAX_Ntd1B&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfCTH1pvwa6Xxj8ms9cltPO43PNuxl7k8gvxQv1_0OSgIg&oe=63A974A3',
         },
         size: {
             width: 320,

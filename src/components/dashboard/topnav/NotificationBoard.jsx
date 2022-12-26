@@ -1,7 +1,6 @@
 import React from 'react';
 import { useRef } from 'react';
 import { notifications } from '../../../data/dummy';
-import useBoardHidden from '../../../hooks/useBoardHidden';
 import board from '../../../constant/board';
 
 const status = {
@@ -58,7 +57,6 @@ const ItemRow = ({ notification }) => {
 
 function NotificationBoard() {
 	const notifiBoard = useRef();
-	useBoardHidden(notifiBoard, board.notification);
 
 	return (
 		<div

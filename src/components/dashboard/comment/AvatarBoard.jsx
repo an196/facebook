@@ -1,5 +1,5 @@
 import React from 'react';
-import avatars from '../../../data/avatar';
+import {avatarStickers} from '../../../data/sticker/avatarSk';
 import { ITriangle } from '../../../theme/icons';
 
 function AvatarBoard() {
@@ -18,9 +18,9 @@ function AvatarBoard() {
 					</div>
 					<div className='flex flex-col h-[364px] overflow-auto overscroll-contain p-3'>
 						<div className='flex flex-wrap'>
-							{avatars.map((avatar, idx) => (
-								<div className='m-1' key={idx}>
-									<img src={avatar.img} alt={avatar.lable} width={96} height={96} />
+							{avatarStickers.map((avatar, idx) => (
+								<div className='m-1 hover:bg-white/10 rounded-md' key={idx}>
+									<img src={avatar.img} alt={avatar.title} width={96} height={96} />
 								</div>
 							))}
 						</div>

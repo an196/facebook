@@ -151,4 +151,76 @@ export const avatarStickers = [
         title: 'Avatar sitting at a study table, holding a pencil and thinking what to write in the notebook in front of them. There are books on the table and crumbled notebook pages on the floor. A wall calendar with a bulldog\'s portrait has the deadline marked in red',
         img: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/320229858_820775712482516_56286314263686520_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=105&ccb=1-7&_nc_sid=ac3552&_nc_ohc=pzLLfH8fDMcAX_Eo7M2&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfCxnOIhknmiicRpAjAHuTlOQjILXCmjUaV2yQLqZ7eF7w&oe=63A4C21C'
     },
+    {
+        title: 'Avatar looking happy as a plant parent. They\'re lovingly holding three potted plants in their arms.',
+        img: 'https://scontent.fsgn5-6.fna.fbcdn.net/v/t39.1997-6/320234918_6473816012678765_3111007792346997620_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=108&ccb=1-7&_nc_sid=ac3552&_nc_ohc=ekhUIUQwBqMAX9XHJtC&_nc_ht=scontent.fsgn5-6.fna&oh=00_AfAe9ksd84PgkqUxzRAIfgN22N93bEgVASzlChjSkxZeMQ&oe=63AA98C4'
+    },
+    {
+        title: 'Avatar looking energized. They\'re running with their earphones on and listening to music from their phone.',
+        img: 'https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.1997-6/320156747_499733225583966_6446878792284877289_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=110&ccb=1-7&_nc_sid=ac3552&_nc_ohc=YjOVmGEYkBwAX84TsMc&_nc_oc=AQlzYQcUTqunSjHY82szx0AwO3CnfvGPHq9wi8EVhj2dOMNQIEBHQPk_Op2liv2kZ18&_nc_ht=scontent.fsgn5-11.fna&oh=00_AfDKCW8FNcDKc_253GLFeiLwySKOdgcXSagUPtN8W_-Vog&oe=63AAE43E'
+    },
+    {
+        title: 'Avatar smiling and holding a frying pan in their right hand, tossing onion, carrots, tomatoes and red bell peppers, their left hand on their waist',
+        img: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/320084891_1284762208757651_4565701554755186436_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=109&ccb=1-7&_nc_sid=ac3552&_nc_ohc=cFtb4G9BU4wAX8hlm_2&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfBIf7XXxI4OFPBMXJhcCKrSXXrO2IFk93aSr1Cru_lm-A&oe=63AACFC7'
+    },
+    {
+        title: 'Avatar looking calm. They\'re standing and dropping a microphone to the ground.',
+        img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.1997-6/320166353_948213179481274_1347831873087138816_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=103&ccb=1-7&_nc_sid=ac3552&_nc_ohc=VidnKxqYNmcAX9rFcK8&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfByz7r6fcqWIm6ToJocn7B2FQuN6tugYJ0BrpZIehG1lw&oe=63AB473B'
+    },
+    {
+        title: 'Avatar looking angry, with their mouth censored as if they were swearing',
+        img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.1997-6/320332133_1529501747564638_8403190875454130827_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=103&ccb=1-7&_nc_sid=ac3552&_nc_ohc=IkafXb-gQzMAX8a8NlJ&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfBs9j7E-XXlmy9lREhixkIK3RkQL36yl6gCOel9-Q_cIg&oe=63AB5D19'
+    },
+    {
+        title: 'Avatar screaming with anger with their head on fire. They\'re holding flames in both hands, which form the word no.',
+        img: 'https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.1997-6/319999810_880354499658507_1391981814021740625_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=110&ccb=1-7&_nc_sid=ac3552&_nc_ohc=nl_ehHKmu3QAX8pNS_l&_nc_ht=scontent.fsgn5-11.fna&oh=00_AfBM7BblOwDLQkDoOx2SzKxXjS2-ZLQraq7ay23Xw3zupg&oe=63AA1F6F'
+    },
+    {
+        title: 'Avatar looking sad and holding two pieces of a broken red heart in two hands, a tear drop rolling down their right cheek',
+        img: 'https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.1997-6/320072738_543990684250745_1885127809640191649_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=111&ccb=1-7&_nc_sid=ac3552&_nc_ohc=kQBDH-NN7WIAX8EzQc1&_nc_ht=scontent.fsgn5-15.fna&oh=00_AfAQlrgMOnldZcd5HW2IA15pTsQK9aguc1mnki5vGVN9fw&oe=63AA435E'
+    },
+    {
+        title: 'Avatar running on a soccer field lit up with multiple floodlights. They\'re wearing a green jersey with white soccer boots, and raising their right index finger. The soccer ball is in the goal net behind them. The word goal is written above them in gold.',
+        img: 'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.1997-6/320225134_891606508868439_8471804174823321161_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=106&ccb=1-7&_nc_sid=ac3552&_nc_ohc=8v4T3BCoxbYAX90GqXY&_nc_oc=AQlVDDeRj2_OtIirtLgyJRtNeZkLQ5ctHYEk0yxwSCZC48br1z6xCrwRgEBRcDbj6Kg&_nc_ht=scontent.fsgn5-14.fna&oh=00_AfCiGieUkl2_-CiUbLMvNew3zai_uG0XOAGrcvjGQEIeYw&oe=63AAC537'
+    },
+    {
+        title: 'Avatar looking happy. They\'re wearing a foam finger on their right hand, while holding a super bowl football in their left hand.',
+        img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/320394669_553982110059908_5133302568896874944_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=104&ccb=1-7&_nc_sid=ac3552&_nc_ohc=50Hwfccqe1EAX9ZPVQ4&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfDaOX8-BeMPdNZv2DKaNF87hysxUssg7TADpn0iK7n7Mg&oe=63AB39E7'
+    },
+    {
+        title: 'Avatar looking shocked. They\'re holding a super bowl football with both hands, while raising both their eyebrows and clenching their teeth.',
+        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/320095605_731981744489180_9201899321008037992_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=102&ccb=1-7&_nc_sid=ac3552&_nc_ohc=k10kIZvz0UUAX94rMo4&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfAKtm6gQCwkVcomZImKPSXgZff6wT5WJX18LW2UufFwcQ&oe=63AA79A6'
+    },
+    {
+        title: 'Avatar looking excited. They\'re holding up a trophy in their left hand and shouting, while holding a super bowl football in their right hand.',
+        img: 'https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.1997-6/320386851_467893148841832_6849881247800233684_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=100&ccb=1-7&_nc_sid=ac3552&_nc_ohc=JslUU5DE2mEAX-t9Pqp&_nc_ht=scontent.fsgn5-5.fna&oh=00_AfBbuoVHdzjfg0ut1XJENyQDF0wsnVtPzw1zpa4aeFCKYw&oe=63A99C17'
+    },
+    {
+        title: 'Avatar jumping with joy. Their eyes are closed and hands are up in fists. A table is flipped over in front of them, with a football, tv remote, can, and bowls of tortilla chips, guacamole and popcorn flying. The words Let\'s go! are written beside in red.',
+        img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.1997-6/320071127_857499145505979_3948485075232789701_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=103&ccb=1-7&_nc_sid=ac3552&_nc_ohc=M1-bbRkPRLYAX_MgQ-C&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfDz3ptL9ok7ivfr95x0mmKCSDR6ZKW_16o1-zl5DHBWVA&oe=63A97FF4'
+    },
+    {
+        title: 'Avatar looking determined, flexing their right bicep to show strength.',
+        img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/320474545_1250818835466681_7967136650708222321_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=104&ccb=1-7&_nc_sid=ac3552&_nc_ohc=XSAAseggWVUAX-osg3l&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfDIeQnO-tANR5-bu0zHF5EQfzwa1IUgWY6bZWzWF5K66g&oe=63AB2E40'
+    },
+    {
+        title: 'Avatar gazing at something intensely while drinking from their mug.',
+        img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/320225246_1373088986771001_2710580039284074994_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=104&ccb=1-7&_nc_sid=ac3552&_nc_ohc=_cdlKPyUuK0AX-QZ-mX&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfASbr8TPmCBBU1bjQF3FaLNLDQqGLRsbhljMifMg_UKbA&oe=63AA88BA'
+    },
+    {
+        title: 'Resigned avatar carries around a dark gray storm cloud attached to a string above their head.',
+        img: 'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.1997-6/321099377_1219780795278020_5438107498726848322_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=106&ccb=1-7&_nc_sid=ac3552&_nc_ohc=NxWu0ZJv4RkAX8zpNOE&_nc_ht=scontent.fsgn5-14.fna&oh=00_AfC5wMb_6w-PLR1RfvACMJvebcak53p_YHc2MVRvdyv5fA&oe=63AB5A96'
+    },
+    {
+        title: 'Avatar looking amazed. They\'re holding both their hands close to their chest and standing behind the words we love that, written in mauve on a blue cloud. A pink heart is replacing the letter O in the word love. A rainbow is seen behind them.',
+        img: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/320331621_539063384788190_5279458684206619133_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=105&ccb=1-7&_nc_sid=ac3552&_nc_ohc=if9VdxqesUMAX_sHG6X&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfAzXW1QmEjVxzDS-r_Qx1q_z3zifgSZczSxvZH9hoagLg&oe=63A9A92A'
+    },
+    {
+        title: 'Avatar with text bubble with an dot dot dot ellipsis, looking up and to the left with a slight frown and single eye squint.',
+        img: 'https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.1997-6/320380801_851970089451642_3987573241886277416_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=100&ccb=1-7&_nc_sid=ac3552&_nc_ohc=E1yfePhEpdYAX9WPK9t&_nc_ht=scontent.fsgn5-5.fna&oh=00_AfCrEzObcrhN08ev8dbJqBkZxVxmXDJDMk5rVPW8iilVaw&oe=63AA336A'
+    },
+    {
+        title: 'Sketch of avatar clenching their fists and smiling in excitement, with sparkles around their face.',
+        img: 'https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.1997-6/321077820_1207850529826753_2722346073023454668_n.webp?stp=cp0_dst-webp_s75x225&_nc_cat=110&ccb=1-7&_nc_sid=ac3552&_nc_ohc=3INX7hyAjuIAX-DI5xh&_nc_oc=AQls8Syd917WIKf9qKyvs5MsZb0wwVdW7DOKgOZXVjU12FB2_jWv4dTpBbHQ-oYjgPw&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-11.fna&oh=00_AfAQgSPPOjTQQV4IxSWW7UycUOY0nehAJV874oL0CfiZLA&oe=63AAB165'
+    },
 ];

@@ -14,6 +14,12 @@
 	fill: var(--always-white);
 }
 
+.filter-icon-active {
+	-webkit-filter: var(--filter-accent);
+	-webkit-user-select: none;
+	list-style: none;
+}
+
 .xe3v8dz {
 	fill: var(--always-white);
 }
