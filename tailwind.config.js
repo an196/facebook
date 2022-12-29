@@ -48,8 +48,10 @@ module.exports = {
 					light: '#a5b3b8',
 				},
 
+				//text
 				primaryText: '#E4E6EB',
 				secondaryText: '#B0B3B8',
+				highlightText: '#1877f273',
 
 				// link
 				blueLink: '#4599FF',

@@ -14,7 +14,7 @@ function UserComment({ comment }) {
 					</span>
 					<div
 						className='w-[40px] h-[40px] p-[17px] flex items-center justify-center hover:bg-[#3a3b3c] cursor-pointer hover:opacity-60 
-                rounded-full'
+                		rounded-full'
 					>
 						<i className='bg-img-4 img-icon-threedots flex-none filter-icon group-hover:opacity-100 opacity-0'></i>
 					</div>

@@ -37,10 +37,10 @@ const CommentSection = () => {
 			</div>
 			<CommentInput />
 			{userComments.map((comment, idx) => (
-				<div key={idx}>
+				<li key={idx}>
 					<UserComment comment={comment} />
 					{comment?.reply && <CommentReply comments={comment.reply} />}
-				</div>
+				</li>
 			))}
 			<CommentViewMore />
 		</div>

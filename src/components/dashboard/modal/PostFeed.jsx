@@ -31,7 +31,6 @@ const Interaction = ({ interaction }) => {
 };
 
 function PostFeed({ setShowPostFeed }) {
-	const [content, setContent] = useState('Ân ơi, bạn đang nghĩ gì thế?');
 	const [textMode, setTextMode] = useState('');
 	const inputPost = useRef();
 
@@ -115,9 +114,8 @@ function PostFeed({ setShowPostFeed }) {
 							></span>
 						</div>
 						<div
-							className={`flex flex-row relative items-center   ${
-								textMode === textmode.size2 && 'justify-end mt-5'
-							}
+							className={`flex flex-row relative items-center  
+							${textMode === textmode.size2 && 'justify-end mt-5'}
                             ${textMode !== textmode.size2 && 'justify-between'}
                             ${textMode === textmode.size1 && 'mt-5'}
                         `}

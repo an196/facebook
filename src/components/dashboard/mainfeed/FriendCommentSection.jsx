@@ -4,6 +4,24 @@ import { friendComments } from '../../../data/dummy';
 import FriendComment from './FriendComment';
 import FriendReply from './FriendReply';
 
+const DisplayComment = ({comment}) => {
+	const [replying, setReplying] = useState(false);
+
+	function hdlReply(){
+		setReplying(true);
+	}
+
+	return (
+		<li >
+			<FriendComment comment={comment} onReply={hdlReply} relying={replying}/>
+			{comment?.reply && <FriendReply comments={comment.reply} />}
+			<div className='pl-[48px] mt-1'>
+			{ replying && <CommentInput username={comment.name} idComment={comment._id} />}
+			</div>
+		</li>
+	)
+}
+
 function FriendCommentSection() {
 	return (
 		<div className='py-[5px] px-[16px]'>
@@ -17,14 +35,15 @@ function FriendCommentSection() {
 					<i className='bg-img-5 img-icon-downarrow filter-icon w-[16px] h-[16px] mt-1'> </i>
 				</div>
 			</div>
-
-			{friendComments.map((comment, idx) => (
-				<div key={idx}>
-					<FriendComment comment={comment} />
-					{comment?.reply && <FriendReply comments={comment.reply} />}
-				</div>
-			))}
+			<ul>
+				{friendComments.map((comment, idx) => (
+					<DisplayComment key={idx} comment={comment}/>
+				))}
+			</ul>
+			<div className='mt-3'>
 			<CommentInput />
+			</div>
+			
 		</div>
 	);
 }

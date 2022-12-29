@@ -19,3 +19,15 @@
 	content: 'Aa';
 	color: #a8abaf;
 }
+
+.editor-comment.badge[contenteditable]:empty::before {
+	content: 'Viết bình luận...';
+	display: inline-block;
+	color: #a8abaf;
+}
+
+.editor-comment.badge[contenteditable]:empty:focus::before {
+	content: 'Viết bình luận...';
+	color: #a8abaf;
+}
+

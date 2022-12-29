@@ -9,7 +9,7 @@ import { ChatContext } from './contexts/ChatContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-	<React.StrictMode>
+	// <React.StrictMode>
 		<HelmetProvider>
 			<BrowserRouter>
 				<BoardContext>
@@ -19,7 +19,7 @@ root.render(
 				</BoardContext>
 			</BrowserRouter>
 		</HelmetProvider>
-	</React.StrictMode>,
+	// </React.StrictMode>,
 );
 
 reportWebVitals();

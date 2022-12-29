@@ -1,4 +1,5 @@
 import React from 'react';
+import CommentInput from './CommentInput';
 import FriendComment from './FriendComment';
 
 function FriendReply({ comments, child = false }) {
@@ -7,7 +8,7 @@ function FriendReply({ comments, child = false }) {
 			{comments?.map((comment, idx) => (
 				<li className='flex flex-col relative' key={idx}>
 					<div className='flex flex-row relative'>
-						<div className='w-[26px] h-[22px]   mr-[6px] rounded-bl-[10px]'></div>
+						<div className='w-[26px] h-[22px] mr-[6px] rounded-bl-[10px]'></div>
 						<FriendComment comment={comment} />
 					</div>
 					{comment?.reply && <FriendReply comments={comment.reply} child={true} />}

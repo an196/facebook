@@ -18,7 +18,8 @@
 	/* text */
 	--primary-text: #e4e6eb;
 	--secondary-text: #b0b3b8;
-
+	--text-highlight: rgba(24, 119, 242, 0.45);
+	
 	/* background */
 	--primary-button-background: #2374e1;
 	--messenger-card-background: #242526;

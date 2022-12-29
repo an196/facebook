@@ -180,6 +180,7 @@ export const friendFeeds = [
 
 export const friendComments = [
 	{
+		_id: '1',
 		name: 'Nguyễn Thanh Trúc',
 		img: 'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/312227319_797881398139500_4522884389247688875_n.jpg?stp=cp0_dst-jpg_p32x32&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=3q0vovIiL4YAX8ZL1Jl&_nc_ht=scontent.fsgn5-14.fna&oh=00_AfBHs0a91uWbk9VRBAzihu0eYbq3IbEgflHHghGGkXX4cA&oe=639FF328',
 		timeComment: '9 giờ',
