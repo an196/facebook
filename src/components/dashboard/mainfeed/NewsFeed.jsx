@@ -22,8 +22,6 @@ function NewsFeed({ news }) {
 				</span>
 			</div>
 			<ReactionSection news={news} />
-
-			{/* Comment Section */}
 			<CommentSection />
 		</div>
 	);

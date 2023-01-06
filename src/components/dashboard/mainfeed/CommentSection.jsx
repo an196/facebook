@@ -36,12 +36,14 @@ const CommentSection = () => {
 				</div>
 			</div>
 			<CommentInput />
+			<ul className='list-none'>
 			{userComments.map((comment, idx) => (
 				<li key={idx}>
 					<UserComment comment={comment} />
 					{comment?.reply && <CommentReply comments={comment.reply} />}
 				</li>
 			))}
+			</ul>
 			<CommentViewMore />
 		</div>
 	);

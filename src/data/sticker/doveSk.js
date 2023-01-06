@@ -4,7 +4,7 @@ export const doveStickers = [
         resize: {
             width: 226,
             height: 226,
-            img: 'https://scontent-xsp1-1.xx.fbcdn.net/v/t39.1997-6/69220950_2432278563714702_4482510891270537216_n.png?stp=dst-png_p280x280&_nc_cat=108&ccb=1-7&_nc_sid=0572db&_nc_ohc=LGPzVAcwqF8AX8wbh2j&_nc_ht=scontent-xsp1-1.xx&oh=00_AfDaRoiPQ6dCsD5AapAlrwKhY-HtL_0eMZFilQxjEPXD1g&oe=63A6038C',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69220950_2432278563714702_4482510891270537216_n.png?alt=media&token=a3a04362-69f4-4e5a-ace4-3439b53ad943',
         },
         size: {
             width: 320,
@@ -20,7 +20,7 @@ export const doveStickers = [
         resize: {
             width: 56.5 ,
             height: 56.5,
-            img: 'https://scontent-xsp1-3.xx.fbcdn.net/v/t39.1997-6/69230194_2432278783714680_4328212589138935808_n.png?stp=cp0_dst-png_s75x225&_nc_cat=111&ccb=1-7&_nc_sid=ac3552&_nc_ohc=fQ-orfuM0ykAX_KgDeu&_nc_ht=scontent-xsp1-3.xx&oh=00_AfBkkDbWACjUbPyZdCXi8Q4--5fRaOBfgbU5ndLefgT43Q&oe=63A54FD4',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69230194_2432278783714680_4328212589138935808_n.png?alt=media&token=79d5e9a2-6dc4-4035-ab8c-638298a34841',
         },
         size: {
             width: 80,
@@ -36,7 +36,7 @@ export const doveStickers = [
         resize: {
             width: 169.5,
             height: 169.5,
-            img: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/69177042_2432278993714659_5935491631653322752_n.png?stp=dst-png_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=0572db&_nc_ohc=S-d7CT4LITYAX_0HhPg&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfBIrNhUcUs1oQt4djlHy6VODxlbd9xQi2pTGlRfSyjc9A&oe=63A5D14E',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69177042_2432278993714659_5935491631653322752_n.png?alt=media&token=bb0d0493-0f90-4d6b-b52c-d842f56f4193',
         },
         size: {
             width: 80,
@@ -52,7 +52,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/69191193_2432281687047723_1937668594305335296_n.png?stp=cp0_dst-png_s75x225&_nc_cat=107&ccb=1-7&_nc_sid=ac3552&_nc_ohc=BIokR2BFZ_0AX8dS8K4&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfD4qilKOE58Dy-PkiIWvZL_L-JRtw_5e3giGfBsm5U5oA&oe=63A4E46E',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69191193_2432281687047723_1937668594305335296_n.png?alt=media&token=2f1962bf-ea49-43ee-a198-2ad4881537dd',
         },
         size: {
             width: 80,
@@ -68,7 +68,7 @@ export const doveStickers = [
         resize: {
             width: 226,
             height: 170,
-            img: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/69207319_2432279290381296_8084458976105725952_n.png?stp=dst-png_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=0572db&_nc_ohc=LmOya4ZzvicAX9rkfuZ&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfBiqPbhZDTSlN_XC-3VtemOzaNhM3d2M6g0q6sAotw12A&oe=63A5D74D',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69207319_2432279290381296_8084458976105725952_n.png?alt=media&token=c26645ab-8f79-44f0-85d3-2ae2089060a8',
         },
         size: {
             width: 320,
@@ -84,7 +84,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/69243376_2432281837047708_5641969301742157824_n.png?stp=cp0_dst-png_s75x225&_nc_cat=105&ccb=1-7&_nc_sid=ac3552&_nc_ohc=b3cNO7b8c1MAX_vJXc_&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfAl5x5SvOlFSIbXQXGJhJWqtWV0enGIf2QN-ISGRp9EZA&oe=63A5F4B6',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69243376_2432281837047708_5641969301742157824_n.png?alt=media&token=105d7ac9-cd83-4f1e-940b-3d23fe4d5d69',
         },
         size: {
             width: 80,
@@ -100,7 +100,7 @@ export const doveStickers = [
         resize: {
             width: 169.5,
             height: 169.5,
-            img: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/69326904_2432279850381240_882584258563014656_n.png?stp=dst-png_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=0572db&_nc_ohc=SPdzJ2oaPycAX-NkRwc&_nc_oc=AQkB-sm2i19BjNDKneDjaeGd0kIObOwTg_Wp-88YJhg4Q-q6mZmUTgymplqiSqPrmPw&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfBhiCj65YfleJnHE0y2Cya6-nhCZO5aLEaT_rTGtglU9g&oe=63A47A46',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69326904_2432279850381240_882584258563014656_n.png?alt=media&token=6e372039-7766-422b-b51c-e6e8a925510a',
         },
         size: {
             width: 240,
@@ -116,7 +116,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent-xsp1-1.xx.fbcdn.net/v/t39.1997-6/69222840_2432282003714358_1143017649324687360_n.png?stp=cp0_dst-png_s75x225&_nc_cat=108&ccb=1-7&_nc_sid=ac3552&_nc_ohc=ncbeglcmOu8AX9E33kP&_nc_ht=scontent-xsp1-1.xx&oh=00_AfB5eFtrE4eSlpObENiAYXBy_9ukya_UoZCKGSk_gPr8Xg&oe=63A64D52',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69222840_2432282003714358_1143017649324687360_n.png?alt=media&token=dd00b91c-2962-4b44-b13d-ed532acb3165',
         },
         size: {
             width: 80,
@@ -132,7 +132,7 @@ export const doveStickers = [
         resize: {
             width: 339,
             height: 282.5,
-            img: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/69401152_2432280167047875_3785742422764421120_n.png?stp=dst-png_s417x417&_nc_cat=105&ccb=1-7&_nc_sid=0572db&_nc_ohc=hSrL8pF6eG4AX_5UZiZ&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfAZS9w9Jv76h6gq1i9HSYCgkufXezXJw09zMPMHbY6GcQ&oe=63A52CBE',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69401152_2432280167047875_3785742422764421120_n.png?alt=media&token=219822bd-5928-40c8-9712-9626cbb232f6',
         },
         size: {
             width: 480,
@@ -148,7 +148,7 @@ export const doveStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.1997-6/69278866_2432280450381180_4671425689210060800_n.png?stp=dst-png_p280x280&_nc_cat=103&ccb=1-7&_nc_sid=0572db&_nc_ohc=DzZlLpeiicwAX86_zeO&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfD7Y2aYew-NN57zU404YfSZXwjgteb3fPaN6FpT1H3sNQ&oe=63A5782D',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69278866_2432280450381180_4671425689210060800_n.png?alt=media&token=13993b46-9585-4d54-bcbb-842a6825a745',
         },
         size: {
             width: 400,
@@ -164,7 +164,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent-xsp1-2.xx.fbcdn.net/v/t39.1997-6/69179724_2432282137047678_6670400419065233408_n.png?stp=cp0_dst-png_s75x225&_nc_cat=106&ccb=1-7&_nc_sid=ac3552&_nc_ohc=r7loILnWkhAAX-nt8RA&_nc_ht=scontent-xsp1-2.xx&oh=00_AfCiE6qHwIm5vcYOmSE4ymID6cWsrbHWGpxYMA8AWFHn3A&oe=63A60792',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69179724_2432282137047678_6670400419065233408_n.png?alt=media&token=b93b76c9-82d2-4872-ba36-ecb1c8b67363',
         },
         size: {
             width: 80,
@@ -180,7 +180,7 @@ export const doveStickers = [
         resize: {
             width: 226,
             height: 226,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/69335565_2432280647047827_5271197513951477760_n.png?stp=dst-png_p280x280&_nc_cat=107&ccb=1-7&_nc_sid=0572db&_nc_ohc=ai6H2mPH6tUAX8YCBzB&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfDP6Ikh0EcMlv8tamMKChRUSTihoHuCqrlS2RC9cGRGvQ&oe=63A58F07',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69335565_2432280647047827_5271197513951477760_n.png?alt=media&token=e6bc8992-f9d4-428a-a146-83cb5415bc21',
         },
         size: {
             width: 320,
@@ -196,7 +196,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/69206609_2432282227047669_802741508020109312_n.png?stp=cp0_dst-png_s75x225&_nc_cat=109&ccb=1-7&_nc_sid=ac3552&_nc_ohc=jGoWTkqNTqQAX8WkY3D&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfB3M3UdB_dhz10YTWdAGVYjF0Htz7iHLIOnn9NnoYD8Uw&oe=63A4B3C7',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69206609_2432282227047669_802741508020109312_n.png?alt=media&token=158cecc3-c311-4d09-8420-8ad0763d1d64',
         },
         size: {
             width: 80,
@@ -212,7 +212,7 @@ export const doveStickers = [
         resize: {
             width: 226,
             height: 226,
-            img: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/69187485_2432281003714458_4732559734010281984_n.png?stp=dst-png_p280x280&_nc_cat=109&ccb=1-7&_nc_sid=0572db&_nc_ohc=KzbFH_nr32QAX_JwNJo&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfBZ0rjKbe7Y3fUyQFqxNOHv9_nORaRll4tGe46d02vWSg&oe=63A5E0C8',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69187485_2432281003714458_4732559734010281984_n.png?alt=media&token=d44c72af-5136-40db-b237-8658b3e7bbf0',
         },
         size: {
             width: 320,
@@ -228,7 +228,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/69225665_2432282307047661_5174944032672972800_n.png?stp=cp0_dst-png_s75x225&_nc_cat=109&ccb=1-7&_nc_sid=ac3552&_nc_ohc=t7syaZPUhRIAX_JvmU6&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfAMtxKUtY7dwrmto9IoHJ0Z4smn6OOfHLi50JyLi-p5-w&oe=63A4A945',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69225665_2432282307047661_5174944032672972800_n.png?alt=media&token=5e85bfc8-44eb-4bee-bb0d-8d4740c58d5a',
         },
         size: {
             width: 80,
@@ -244,7 +244,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/69195628_2432282363714322_6600813251561259008_n.png?stp=cp0_dst-png_s75x225&_nc_cat=101&ccb=1-7&_nc_sid=ac3552&_nc_ohc=2Pkq896SrlUAX8Gr9JX&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfDgggYpmfQRLV_4dcfKAFjFKxNsUQnM1sFy6C4LqGe0Ig&oe=63A47B21',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69195628_2432282363714322_6600813251561259008_n.png?alt=media&token=9182c6fe-4c90-465c-841e-5fb7c66ed78b',
         },
         size: {
             width: 80,
@@ -260,7 +260,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.1997-6/69286106_2432282427047649_8700680323727360_n.png?stp=cp0_dst-png_s75x225&_nc_cat=103&ccb=1-7&_nc_sid=ac3552&_nc_ohc=4dRMyfeqfoIAX_m5Ekl&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfDANrhjXkks5wwvQVkWcfZUTTmx4pTrURIt_ORyvFdZ6g&oe=63A4A8F6',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69286106_2432282427047649_8700680323727360_n.png?alt=media&token=437da752-3eba-494c-b1da-678d4678e87d',
         
         },
         size: {
@@ -277,7 +277,7 @@ export const doveStickers = [
         resize: {
             width: 113,
             height: 56.5,
-            img: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/69219317_2432281280381097_2066459107140829184_n.png?stp=dst-png_p110x80&_nc_cat=109&ccb=1-7&_nc_sid=0572db&_nc_ohc=yJaVjP6mm2wAX-gFujV&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfB96Nn1XdRKfaxPNbKaaifcoZ40xRocXHhjSlE0tE_72Q&oe=63A587F5',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69219317_2432281280381097_2066459107140829184_n.png?alt=media&token=383274f6-ec91-41fb-a2b9-8afdc5bfc062',
         },
         size: {
             width: 160,
@@ -293,7 +293,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.1997-6/69180166_2432282567047635_2942949666104279040_n.png?stp=cp0_dst-png_s75x225&_nc_cat=103&ccb=1-7&_nc_sid=ac3552&_nc_ohc=z4EGgc4QxwgAX_1NSsN&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfCF0WItjhk4tMVzQwZjtEivTcoOvNes3SUGstelVI0UOA&oe=63A656EB',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69180166_2432282567047635_2942949666104279040_n.png?alt=media&token=c204c12e-c97b-4b19-a9e2-8d3e93c937a0',
         },
         size: {
             width: 80,
@@ -309,7 +309,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.1997-6/69269065_2432282660380959_7761704029331128320_n.png?stp=cp0_dst-png_s75x225&_nc_cat=110&ccb=1-7&_nc_sid=ac3552&_nc_ohc=kSN2ghRyx1UAX-gc_Ol&_nc_ht=scontent.fsgn5-11.fna&oh=00_AfBgZFssck9AaPbxjH_OYntmC1Cvkr2eseKOj2DshA9A-Q&oe=63A4C4DC',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69269065_2432282660380959_7761704029331128320_n.png?alt=media&token=57cb5fb2-1b58-4097-8c72-0392ab49c880',
         },
         size: {
             width: 80,
@@ -325,7 +325,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/69413914_2432282733714285_6525343520755023872_n.png?stp=cp0_dst-png_s75x225&_nc_cat=100&ccb=1-7&_nc_sid=ac3552&_nc_ohc=e_4Hn7MeResAX9f-Zx_&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfAaMRo-b8jBkOL2EeMZaOutZb2WSdAouk65zuA7i2Dl-A&oe=63A590E4',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69413914_2432282733714285_6525343520755023872_n.png?alt=media&token=0b56d4ce-b7d6-40e8-81e5-b833d01ca555',
         },
         size: {
             width: 80,
@@ -341,7 +341,7 @@ export const doveStickers = [
         resize: {
             width: 226,
             height: 226,
-            img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/69222845_2432281470381078_1465568911570239488_n.png?stp=dst-png_p280x280&_nc_cat=104&ccb=1-7&_nc_sid=0572db&_nc_ohc=9F4aHUZrbTUAX_Ntd1B&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfCTH1pvwa6Xxj8ms9cltPO43PNuxl7k8gvxQv1_0OSgIg&oe=63A974A3',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69222845_2432281470381078_1465568911570239488_n.png?alt=media&token=2f202aa5-adac-40d9-87fd-bfd0171fa8a5',
         },
         size: {
             width: 320,
@@ -357,7 +357,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/69256151_2432282807047611_6813837358790606848_n.png?stp=cp0_dst-png_s75x225&_nc_cat=102&ccb=1-7&_nc_sid=ac3552&_nc_ohc=l3xrF1s2v5AAX_4UH8P&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfCijDYcy-AnLWaKxo9DE-9PKsDLDE03YgXXfrphEKVruw&oe=63A4B532',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69256151_2432282807047611_6813837358790606848_n.png?alt=media&token=09135b41-4e8f-43b2-997a-ae8fe3a3e2e0',
         },
         size: {
             width: 80,
@@ -373,7 +373,7 @@ export const doveStickers = [
         resize: {
             width: 56.5,
             height: 56.5,
-            img: 'https://scontent-xsp1-2.xx.fbcdn.net/v/t39.1997-6/69246457_2432282897047602_4286281334529196032_n.png?stp=cp0_dst-png_s75x225&_nc_cat=106&ccb=1-7&_nc_sid=ac3552&_nc_ohc=Nx7QJxeSU2sAX-WPU9p&_nc_ht=scontent-xsp1-2.xx&oh=00_AfAixYBNM4IAq3pn92RmAjTKoVisWuceCqliU_ME6Ffw9w&oe=63A50A4A',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69246457_2432282897047602_4286281334529196032_n.png?alt=media&token=f117db22-9cf2-4f61-b3ba-0ac0c6e6aef5',
         },
         size: {
             width: 80,

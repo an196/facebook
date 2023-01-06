@@ -39,13 +39,13 @@ export const users = [
 export const searchHistory = [
 	{
 		name: 'Tommy',
-		img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F271859026_1768070396725061_952777433348107183_n.jpg?alt=media&token=9cafc11b-bcab-4b4a-a8f2-bde60f34e51e',
 		type: 'friend',
 		relation: 'Bạn bè',
 	},
 	{
 		name: 'Hồ Thảo Diệu',
-		img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F271859026_1768070396725061_952777433348107183_n.jpg?alt=media&token=9cafc11b-bcab-4b4a-a8f2-bde60f34e51e',
 		type: 'friend',
 		relation: 'Bạn bè',
 	},
@@ -56,13 +56,13 @@ export const searchHistory = [
 	},
 	{
 		name: 'Bùi Hồng Ân',
-		img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F271859026_1768070396725061_952777433348107183_n.jpg?alt=media&token=9cafc11b-bcab-4b4a-a8f2-bde60f34e51e',
 		type: '',
 		relation: '',
 	},
 	{
 		name: 'Kim Nhựt Trường',
-		img: 'https://scontent.fsgn16-1.fna.fbcdn.net/v/t1.6435-1/95764350_1574199796082961_1452891731480543232_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ofrpH0IlQ1IAX998P3S&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfDfKcCTt3xRzJhgcs7kYcdjyAOz2kMEfZUgtLnJ4Ns0Lw&oe=63AEF01C',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F271859026_1768070396725061_952777433348107183_n.jpg?alt=media&token=9cafc11b-bcab-4b4a-a8f2-bde60f34e51e',
 		type: 'friend',
 		relation: 'Bạn bè',
 	},
@@ -77,13 +77,13 @@ export const suggestPage = [
 	},
 	{
 		name: 'Cộng đồng Front-end(HTML/CSS/JS) Việt Nam',
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/240655429_4059163764195718_3652059374269714525_n.jpg?stp=c27.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=ac9ee4&_nc_ohc=iCYrKndf5_4AX8NcqDT&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfDbl5YWnTqi09WaUGmsVTOHy4bw_k16y8yNh5LkC8OQ5A&oe=638D86CE',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F240655429_4059163764195718_3652059374269714525_n.jpg?alt=media&token=004ad562-951b-4d59-aa4b-534fd825f8ff',
 		type: 'group',
 		relation: 'Nhóm của bạn',
 	},
 	{
 		name: 'IELTS Zone',
-		img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/308638448_1137412176980908_1594412049582260048_n.png?stp=c23.0.50.50a_cp0_dst-png_p50x50&_nc_cat=103&ccb=1-7&_nc_sid=ac9ee4&_nc_ohc=5lhYOiYvHxIAX9yoO6S&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfDeNVf0uRNaWnDjXTXQgDgP80j4F9Xl_eFRPoZfRIowZg&oe=638E33DA',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F323903118_1327803708072546_2290864427009295517_n.png?alt=media&token=ef7f279f-d0d2-44be-b162-88c4e6ab2a59',
 		type: 'group',
 		relation: 'Nhóm của bạn',
 	},
@@ -92,7 +92,7 @@ export const suggestPage = [
 export const newsFeeds = [
 	{
 		imgProfile:
-			'https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.6435-1/165930642_5309335065775313_238085367114043880_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=104&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=wgfA3LsYj0oAX9kCoJ3&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfA28ExTi8ytepMg9tSUYuq0rHIDs_rv1HqpnoFSZ1DkxQ&oe=63ACD72F',
+			'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/165930642_5309335065775313_238085367114043880_n.jpg?alt=media&token=095e6150-54d8-4c1b-addf-9f9eb5f14032',
 		name: 'Techrum.vn',
 		postTime: 'Tue Nov 29 2022 09:54:58 GMT+0700 (Indochina Time)',
 		message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
@@ -100,7 +100,7 @@ export const newsFeeds = [
 		type: 'post',
 		messageLink: {
 			original: 'Techrum.vn',
-			img: 'https://external.fsgn5-9.fna.fbcdn.net/emg1/v/t13/15117205045534559463?url=https%3A%2F%2Fphoto.techrum.vn%2Fimages%2F2022%2F12%2F03%2Fdigiarty-software-giveaway-noel-2022-TECHRUM-cover8f214169a559904c.jpg&fb_obo=1&utld=techrum.vn&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75&ccb=13-1&oh=06_AbEz_Y7GR4XOaCV2gf7rrtR34-VFnneA8GuX-pSb0ri35A&oe=6399D43E&_nc_sid=16545a',
+			img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/8892298427777120535.jpg?alt=media&token=a35206fa-9685-4c46-b7f7-47e53acbc464',
 			title: 'Thông tin mới nhất về mẫu iPhone sử dụng cổng sạc "USB-C" của Apple',
 			abbreviation:
 				'Trước đây, việc iPhone chuyển sang sử dụng cổng sạc USB-C dường như là "một điều không thể sảy ra" nhưng theo bối cảnh hiện tại cùng với sức ép từ Liên minh châu Âu thì điều đó lại đang dần trở thành hiện thực, mặc dù sẽ',
@@ -113,7 +113,7 @@ export const newsFeeds = [
 	},
 	{
 		imgProfile:
-			'https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.6435-1/165930642_5309335065775313_238085367114043880_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=104&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=wgfA3LsYj0oAX9kCoJ3&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfA28ExTi8ytepMg9tSUYuq0rHIDs_rv1HqpnoFSZ1DkxQ&oe=63ACD72F',
+			'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/165930642_5309335065775313_238085367114043880_n.jpg?alt=media&token=095e6150-54d8-4c1b-addf-9f9eb5f14032',
 		name: 'Techrum.vn',
 		postTime: 'Tue Nov 29 2022 09:54:58 GMT+0700 (Indochina Time)',
 		message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
@@ -121,7 +121,7 @@ export const newsFeeds = [
 		type: 'post',
 		messageLink: {
 			original: 'Techrum.vn',
-			img: 'https://external.fsgn5-9.fna.fbcdn.net/emg1/v/t13/15117205045534559463?url=https%3A%2F%2Fphoto.techrum.vn%2Fimages%2F2022%2F12%2F03%2Fdigiarty-software-giveaway-noel-2022-TECHRUM-cover8f214169a559904c.jpg&fb_obo=1&utld=techrum.vn&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75&ccb=13-1&oh=06_AbEz_Y7GR4XOaCV2gf7rrtR34-VFnneA8GuX-pSb0ri35A&oe=6399D43E&_nc_sid=16545a',
+			img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/8892298427777120535.jpg?alt=media&token=a35206fa-9685-4c46-b7f7-47e53acbc464',
 			title: 'Thông tin mới nhất về mẫu iPhone sử dụng cổng sạc "USB-C" của Apple',
 			abbreviation:
 				'Trước đây, việc iPhone chuyển sang sử dụng cổng sạc USB-C dường như là "một điều không thể sảy ra" nhưng theo bối cảnh hiện tại cùng với sức ép từ Liên minh châu Âu thì điều đó lại đang dần trở thành hiện thực, mặc dù sẽ',
@@ -134,7 +134,7 @@ export const newsFeeds = [
 	},
 	{
 		imgProfile:
-			'https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.6435-1/165930642_5309335065775313_238085367114043880_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=104&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=wgfA3LsYj0oAX9kCoJ3&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfA28ExTi8ytepMg9tSUYuq0rHIDs_rv1HqpnoFSZ1DkxQ&oe=63ACD72F',
+			'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/165930642_5309335065775313_238085367114043880_n.jpg?alt=media&token=095e6150-54d8-4c1b-addf-9f9eb5f14032',
 		name: 'Techrum.vn',
 		postTime: 'Tue Nov 29 2022 09:54:58 GMT+0700 (Indochina Time)',
 		message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
@@ -142,7 +142,7 @@ export const newsFeeds = [
 		type: 'post',
 		messageLink: {
 			original: 'Techrum.vn',
-			img: 'https://external.fsgn5-9.fna.fbcdn.net/emg1/v/t13/15117205045534559463?url=https%3A%2F%2Fphoto.techrum.vn%2Fimages%2F2022%2F12%2F03%2Fdigiarty-software-giveaway-noel-2022-TECHRUM-cover8f214169a559904c.jpg&fb_obo=1&utld=techrum.vn&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75&ccb=13-1&oh=06_AbEz_Y7GR4XOaCV2gf7rrtR34-VFnneA8GuX-pSb0ri35A&oe=6399D43E&_nc_sid=16545a',
+			img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/8892298427777120535.jpg?alt=media&token=a35206fa-9685-4c46-b7f7-47e53acbc464',
 			title: 'Thông tin mới nhất về mẫu iPhone sử dụng cổng sạc "USB-C" của Apple',
 			abbreviation:
 				'Trước đây, việc iPhone chuyển sang sử dụng cổng sạc USB-C dường như là "một điều không thể sảy ra" nhưng theo bối cảnh hiện tại cùng với sức ép từ Liên minh châu Âu thì điều đó lại đang dần trở thành hiện thực, mặc dù sẽ',
@@ -158,17 +158,17 @@ export const newsFeeds = [
 export const friendFeeds = [
 	{
 		imgProfile:
-			'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.30808-1/241222333_967757587290042_7371355489603781813_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=8NUU4mGvdpUAX93Umcw&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfBk5eESVGFb-e9PyK8FZsNTaaZyXDPODv8B3RslZaGy4A&oe=639ECC55',
+			'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/241222333_967757587290042_7371355489603781813_n.jpg?alt=media&token=46b1f3f6-09af-4c80-bd1c-d34323ccd204',
 		name: 'Ái Bùi',
 		postTime: 'Tue Nov 29 2022 09:54:58 GMT+0700 (Indochina Time)',
 		message: 'Lightning tụt hậu quá rồi, đã đến lúc để Apple chuyển sang cổng sạc USB-C cho kịp với thế giới 👍',
 		status: 'friend',
 		type: 'post',
 		images: [
-			'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/317627721_1258202191578912_1368064564384227729_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=86n5y41ig6EAX9dACL0&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfAS8LAfDB3_7DHHHEFd8x4vr7ZdfR-g3meGkzytMvJWQQ&oe=63A03484',
-			'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/318313545_1258151588250639_4322090724507527701_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=qAMq2RGS25wAX_JYJ_8&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfAbl8B_V0JXeaNoLwhz2OURa9yYZC0s3e8DOI0e2FQ-Ug&oe=63A0215B',
-			'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.30808-6/318136758_1258202268245571_7235108657310529896_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=IFlYe7RXsskAX-AJxZD&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfDa-YNh_84lvZkX2rphwRGukyRQ8f3Zy9-lz-O7yzGb6g&oe=639F2705',
-			'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/318085097_1258202521578879_6604481942453635891_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=o_d2DCQp_O0AX8TI_dV&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfAFbbH88gv0PbW79dKQ4GX9Cz9Zo_-v5l-AgiFv6IpqSQ&oe=639F3692',
+			'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/317627721_1258202191578912_1368064564384227729_n.jpg?alt=media&token=0bf9430a-356e-4eac-8ccb-9d9c02a792e3',
+			'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/318085097_1258202521578879_6604481942453635891_n.jpg?alt=media&token=73ca934b-2550-4af2-9f8f-818e92be4e4e',
+			'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/318136758_1258202268245571_7235108657310529896_n.jpg?alt=media&token=00446656-9242-446a-93d0-20c10f8d2798',
+			'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/318313545_1258151588250639_4322090724507527701_n.jpg?alt=media&token=8fa70450-3eb3-48dc-8381-b005d0ad2beb',
 		],
 		actions: {
 			liked: 2,
@@ -182,20 +182,20 @@ export const friendComments = [
 	{
 		_id: '1',
 		name: 'Nguyễn Thanh Trúc',
-		img: 'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/312227319_797881398139500_4522884389247688875_n.jpg?stp=cp0_dst-jpg_p32x32&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=3q0vovIiL4YAX8ZL1Jl&_nc_ht=scontent.fsgn5-14.fna&oh=00_AfBHs0a91uWbk9VRBAzihu0eYbq3IbEgflHHghGGkXX4cA&oe=639FF328',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0',
 		timeComment: '9 giờ',
 		content: 'Vào rạng sáng nay',
 		sticker: {
 			dynamic: true,
 			title: 'Nhãn dán QooBee Agapi Angry, dragon with crossed arms',
-			img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/17636530_1747081108936474_2091496026287374336_n.png?stp=dst-png_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=0572db&_nc_ohc=OOMUbxAUJIgAX-aJ4A9&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfAFW477DIwz5LU9UacvkkzJR6giU_q0cJP2HezPwpM5Gw&oe=63A92885',
+			img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/68277375_2419773764924732_2269613864855273472_n.png?stp=dst-png_p240x240&_nc_cat=1&ccb=1-7&_nc_sid=0572db&_nc_ohc=I2eEBjHnkPoAX9WYJg0&_nc_oc=AQkYwQfBI5Mnb-6ORNsP7faNxhG7qclQIXUonwQ0iGIzzOzcdCT3q461hAqsRSpb7R8&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfB8r4tVnHLYaTY8cvmY5RHdbUWz0XlrnOgi1uzKW9Mx8Q&oe=63BD9271',
 			size: {
-				width: 400,
-				height: 320,
+				width: 240,
+				height: 240,
 			},
-			frame: 20,
-			x: 5,
-			y: 4,
+			frame: 8,
+			x: 3,
+			y: 3,
 		},
 		video: '',
 		gif: '',
@@ -289,7 +289,7 @@ export const userComments = [
 
 export const notifications = [
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'unseen',
@@ -297,7 +297,7 @@ export const notifications = [
 		time: '1 giờ',
 	},
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'seen',
@@ -305,7 +305,7 @@ export const notifications = [
 		time: '2 giờ',
 	},
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'unseen',
@@ -313,7 +313,7 @@ export const notifications = [
 		time: '5 giờ',
 	},
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'seen',
@@ -321,7 +321,7 @@ export const notifications = [
 		time: '5 giờ',
 	},
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'unseen',
@@ -329,7 +329,7 @@ export const notifications = [
 		time: '5 giờ',
 	},
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'unseen',
@@ -337,7 +337,7 @@ export const notifications = [
 		time: '5 giờ',
 	},
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'unseen',
@@ -345,7 +345,7 @@ export const notifications = [
 		time: '5 giờ',
 	},
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'unseen',
@@ -353,7 +353,7 @@ export const notifications = [
 		time: '5 giờ',
 	},
 	{
-		img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-1/293623687_102292549230940_4751052111957985766_n.jpg?stp=cp0_dst-jpg_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=Khzbfk840w0AX9Mhcyd&tn=bFoPEUrE-aqP5Red&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBe3jzRqmx_g_VHE4-S8QHYD1N5QJRfMrrK5vLJhACjQA&oe=6393B797',
+		img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/shortlink%2F294355487_3607092969512175_6565235476448713565_n.jpg?alt=media&token=754b8890-c7aa-4da3-acbd-4b6b2c2dedb9',
 		message:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt nihil eos, dignissimos provident tenetur eveniet dolor quia adipisci vel similique impedit sit atque vitae quos pariatur! Eligendi, veritatis ea.',
 		status: 'unseen',

@@ -4,12 +4,12 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/17636530_1747081108936474_2091496026287374336_n.png?stp=dst-png_p280x280&_nc_cat=104&ccb=1-7&_nc_sid=0572db&_nc_ohc=Yy2E4K6xOB0AX_D30zc&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfDBVxcm6bOsqo48nynehYlxiEKmcakNuXaOeHoTTUma-g&oe=63A53405',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17636530_1747081108936474_2091496026287374336_n.png?alt=media&token=99b0149a-876d-4b5a-86b6-3c17ca542331',
         },
         size: {
             width: 400,
             height: 320,
-            img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/17636530_1747081108936474_2091496026287374336_n.png?stp=dst-png_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=0572db&_nc_ohc=OOMUbxAUJIgAX-aJ4A9&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfAFW477DIwz5LU9UacvkkzJR6giU_q0cJP2HezPwpM5Gw&oe=63A92885'
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17636496_1747081475603104_5738142372642947072_n.png?alt=media&token=3d5f3518-c31f-4b64-bfb4-ef86cf1e8bed'
         },
         frame: 20,
         x: 5,
@@ -20,7 +20,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent-xsp1-3.xx.fbcdn.net/v/t39.1997-6/17636496_1747081475603104_5738142372642947072_n.png?stp=dst-png_p280x280&_nc_cat=111&ccb=1-7&_nc_sid=0572db&_nc_ohc=E7-5qWUrSZwAX9uGGrf&tn=nXthrLtSduKSlaxw&_nc_ht=scontent-xsp1-3.xx&oh=00_AfCcFZebFAOzewnuXq_xUkkxbWBDeOJhIiYLVEwTNh3bsQ&oe=63A63397',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17636496_1747081475603104_5738142372642947072_n.png?alt=media&token=3d5f3518-c31f-4b64-bfb4-ef86cf1e8bed',
         },
         size: {
             width: 400,
@@ -36,7 +36,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17639180_1747082235603028_893175957152595968_n.png?stp=dst-png_p280x280&_nc_cat=107&ccb=1-7&_nc_sid=0572db&_nc_ohc=q6y7hu-PIAQAX94p6z-&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfB5NSsmUPVPd38gcyad9i__k_yED-WLG8kxnstzve7TIg&oe=63A53ABF',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17639180_1747082235603028_893175957152595968_n.png?alt=media&token=1eb697e3-1e1d-455b-ae59-ae32221a1d99',
         },
         size: {
             width: 400,
@@ -52,7 +52,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.1997-6/17629382_1747082952269623_7834442586138869760_n.png?stp=dst-png_p280x280&_nc_cat=103&ccb=1-7&_nc_sid=0572db&_nc_ohc=PF54YuviLvEAX8JPYS-&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfCK4mD8OTmbSHQxF0daxA0-CgDESE04puW2itAYFKG03Q&oe=63A5A628',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17629382_1747082952269623_7834442586138869760_n.png?alt=media&token=3da781b5-c651-449f-a519-eaa389cf90ce',
         },
         size: {
             width: 400,
@@ -68,7 +68,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17636424_1747083712269547_5227341474043002880_n.png?stp=dst-png_p280x280&_nc_cat=100&ccb=1-7&_nc_sid=0572db&_nc_ohc=ASONp4Q6sm8AX82IVog&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfAMDNh44E4oNBJ6HEmCo4AQCrfKks1xyUq5AzrzvNRFXA&oe=63A4DCC2',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17636424_1747083712269547_5227341474043002880_n.png?alt=media&token=5d5d1eed-96cc-41bc-bc50-edf098d3c7e2',
         },
         size: {
             width: 400,
@@ -84,7 +84,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17636511_1747083982269520_8939283933321756672_n.png?stp=dst-png_p280x280&_nc_cat=100&ccb=1-7&_nc_sid=0572db&_nc_ohc=VUSDzxhHN4EAX-rhrbF&_nc_oc=AQkJUJCA-3oW-zTCi0JdwukzrTgHjMOmIpRwsfHdDh9mcCdm10IUFMpyUxOwfQwKWc0&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfDDzCGnStvHfkUdVgDAYX9Enp8r4MycCM-FvzNh1Yz0qQ&oe=63A5E9A6',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17636511_1747083982269520_8939283933321756672_n.png?alt=media&token=1a81cda8-8356-4146-8231-f5880a2e04c7',
         },
         size: {
             width: 400,
@@ -100,7 +100,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent-xsp1-2.xx.fbcdn.net/v/t39.1997-6/17639077_1747084578936127_3067438975351259136_n.png?stp=dst-png_p280x280&_nc_cat=106&ccb=1-7&_nc_sid=0572db&_nc_ohc=cXhtS41vbHwAX8pKr74&_nc_ht=scontent-xsp1-2.xx&oh=00_AfAUh9xK9u59t8j_sNUqc3Qmhx9kDrM4scxvXBglxNnUGQ&oe=63A60E62',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17639077_1747084578936127_3067438975351259136_n.png?alt=media&token=69b095b9-2144-4cdf-9212-83e6bae40a98',
         },
         size: {
             width: 400,
@@ -116,7 +116,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.1997-6/17633039_1747084805602771_3124548451111534592_n.png?stp=dst-png_p280x280&_nc_cat=110&ccb=1-7&_nc_sid=0572db&_nc_ohc=TuAvx9ob_PUAX_BUybE&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-11.fna&oh=00_AfAGpWB65SH-jY2jup2R9R9-BYVKdJl32c2IzxaQyLRxuw&oe=63A4EA33',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17636472_1747089448935640_6933457966125285376_n.png?alt=media&token=f44cedc7-2864-49eb-a425-fb91a9c7213e',
         },
         size: {
             width: 400,
@@ -132,7 +132,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/17636427_1747085332269385_2843334943419924480_n.png?stp=dst-png_p280x280&_nc_cat=102&ccb=1-7&_nc_sid=0572db&_nc_ohc=OToKO3U4VQ8AX-7Wy-v&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfDGt9C0eezldqcvdA7eSKENo182WRWjx-C9jNK7SQaZUg&oe=63A4C8EA',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17636427_1747085332269385_2843334943419924480_n.png?alt=media&token=98121f70-3449-426e-beda-3393eb4e8268',
         },
         size: {
             width: 400,
@@ -148,7 +148,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/17633022_1747092192268699_6372975492890361856_n.png?stp=dst-png_p280x280&_nc_cat=105&ccb=1-7&_nc_sid=0572db&_nc_ohc=ETB14hAq9FAAX8vG_uw&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfDMrQfgfoIP0EfZsxX2udOga1hNZ29BkXFCs_oPOeL0lw&oe=63A659FC',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17633022_1747092192268699_6372975492890361856_n.png?alt=media&token=3fcd533d-6f7d-496f-9927-04f7d0efb0c6',
         },
         size: {
             width: 400,
@@ -164,7 +164,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17639065_1747082045603047_5766317340924837888_n.png?stp=dst-png_p280x280&_nc_cat=107&ccb=1-7&_nc_sid=0572db&_nc_ohc=gLdVfA_ftEUAX8zrVIl&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfCrm9os2U96Do_Jrn3dP-3sSSHyyWDVM_7ZHjI3pRDOtw&oe=63A47AA2',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17639065_1747082045603047_5766317340924837888_n.png?alt=media&token=1a0af1b3-c6e8-4b5c-b5f1-9fae0dbabd0c',
         },
         size: {
             width: 400,
@@ -180,7 +180,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17639221_1747085738936011_8182663059731382272_n.png?stp=dst-png_p280x280&_nc_cat=107&ccb=1-7&_nc_sid=0572db&_nc_ohc=3My6SFsAV7UAX_o0cKG&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfCDRHIvzkN16T4AN2OL7UlvKvW-T7azEVvoeuxz4HOugg&oe=63A4933A',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17639221_1747085738936011_8182663059731382272_n.png?alt=media&token=1c2bd715-5c3c-428c-86bb-0215f493a5d3',
         },
         size: {
             width: 400,
@@ -196,7 +196,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17639062_1747085965602655_7536533479710785536_n.png?stp=dst-png_p280x280&_nc_cat=100&ccb=1-7&_nc_sid=0572db&_nc_ohc=QT4-CwtJE9gAX_--ldL&_nc_oc=AQlIouOigAXb-By7P9QwE8n1EhZwiYm5I3f5LImf-jTAmZsJil4LZv9Ew3ak4Ii8Q40&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfDpR9E5Xt4M5p_1isi-_MEtH5fgbI0oAFMKthWdtzmxpw&oe=63A5B4A7',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17639062_1747085965602655_7536533479710785536_n.png?alt=media&token=09d151f2-7e87-4198-a5c9-7959c02efde2',
         },
         size: {
             width: 400,
@@ -212,7 +212,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.1997-6/17632982_1747086592269259_8978091548411428864_n.png?stp=dst-png_p280x280&_nc_cat=104&ccb=1-7&_nc_sid=0572db&_nc_ohc=cUWmjq6TL2oAX-Pz4_5&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfBi2oUJ1gFXJOIVDoSWCMlcS0ih4I5p0hI5-HPzhuf70w&oe=63A56A0F',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17632982_1747086592269259_8978091548411428864_n.png?alt=media&token=b1adb42b-cb0c-45da-85de-94273fcc39e3',
         },
         size: {
             width: 400,
@@ -228,7 +228,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.1997-6/17639221_1747090252268893_4581922242958458880_n.png?stp=dst-png_p280x280&_nc_cat=105&ccb=1-7&_nc_sid=0572db&_nc_ohc=CebxTrBr2FUAX8bjUzY&_nc_ht=scontent.fsgn5-2.fna&oh=00_AfA23jYIvVGvQQqPwLA8QfUmjkYnx_QOhlHE664zx9zbwg&oe=63A65B73',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17639221_1747090252268893_4581922242958458880_n.png?alt=media&token=f75ff98d-c245-42d3-88c2-d9b95e6f34f6',
         },
         size: {
             width: 400,
@@ -244,7 +244,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 282.5,
-            img: 'https://scontent-xsp1-1.xx.fbcdn.net/v/t39.1997-6/16685976_1747087142269204_3364302819883483136_n.png?stp=dst-png_p280x280&_nc_cat=108&ccb=1-7&_nc_sid=0572db&_nc_ohc=qYY0vq8tiZQAX8uHL6q&_nc_ht=scontent-xsp1-1.xx&oh=00_AfAI8iO8q_lJbj_n-Vhj5dYKeQZUlc-ucrO-e1fjzm243Q&oe=63A50546',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F16685976_1747087142269204_3364302819883483136_n.png?alt=media&token=fabb54d1-d387-4ad5-a94c-e30da7e23048',
         },
         size: {
             width: 400,
@@ -260,7 +260,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 282.5,
-            img: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.1997-6/17634117_1747087838935801_4077834575810658304_n.png?stp=dst-png_p280x280&_nc_cat=103&ccb=1-7&_nc_sid=0572db&_nc_ohc=odG__yGmlYcAX-T76qH&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfBze99zBjOg-A7gLLkfEPhMi8Q7TE8oPzw3RkSk8NlxFQ&oe=63A6331A',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17634117_1747087838935801_4077834575810658304_n.png?alt=media&token=9e74950d-2f9d-44ed-9e5c-5d7bad9c38c0',
         },
         size: {
             width: 400,
@@ -276,7 +276,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 282.5,
-            img: 'https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.1997-6/17629380_1747088995602352_4907090875454062592_n.png?stp=dst-png_p280x280&_nc_cat=101&ccb=1-7&_nc_sid=0572db&_nc_ohc=-YxXB_MPkOgAX97eFl6&_nc_oc=AQmbCotJ3wJbdcSQXZXjMkMxpNybUNvveARW_ItcV2IUHTILYa6ZBvR0TIUIfzrVjY0&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfDT16nnLyxhwLE3bPqPHnAQKvWcZk412BOxTbKidTcSDA&oe=63A5110B',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17629380_1747088995602352_4907090875454062592_n.png?alt=media&token=0811aba9-0d24-4e46-a013-3f9fa55710ec',
         },
         size: {
             width: 400,
@@ -292,7 +292,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 282.5,
-            img: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.1997-6/17636472_1747089448935640_6933457966125285376_n.png?stp=dst-png_p280x280&_nc_cat=100&ccb=1-7&_nc_sid=0572db&_nc_ohc=nQdn3_noeX4AX__Siuf&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfCzxly2nDHTWwV_tMvOctrFDPgYyD57RrBGYPXiTSBNcg&oe=63A601B7',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F17636472_1747089448935640_6933457966125285376_n.png?alt=media&token=f44cedc7-2864-49eb-a425-fb91a9c7213e',
         },
         size: {
             width: 400,
@@ -308,7 +308,7 @@ export const beeStickers = [
         resize: {
             width: 282.5,
             height: 226,
-            img: 'https://scontent-xsp1-2.xx.fbcdn.net/v/t39.1997-6/16685165_1747091038935481_6094795735348281344_n.png?stp=dst-png_p280x280&_nc_cat=106&ccb=1-7&_nc_sid=0572db&_nc_ohc=rewt_XIWkQIAX_8a-eK&_nc_ht=scontent-xsp1-2.xx&oh=00_AfCcsyQ1mkZEXDdCGju_WFXgtmCdcpuMS11uS1VM8NYVdg&oe=63A4C425',
+            img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F16685165_1747091038935481_6094795735348281344_n.png?alt=media&token=46f3c567-631b-4955-ad01-ce8469768f6b',
         },
         size: {
             width: 400,

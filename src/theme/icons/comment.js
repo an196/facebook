@@ -126,7 +126,7 @@ const QooBeeAgapi = styled.img`
 `;
 
 QooBeeAgapi.defaultProps = {
-	src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/29625756_1908637042780879_1752765252870602752_n.png?stp=dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=0572db&_nc_ohc=gppYLWDivs0AX_XDaww&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfCcTqVbahIpzfzJ0TvItPZ82FPRe3quRT6Fj7WvQteEzA&oe=63A5C136',
+	src: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fbees%2F29625756_1908637042780879_1752765252870602752_n.png?alt=media&token=3c71be86-9a84-4041-9fa7-1e685259f979',
 };
 
 const DoveCity = styled.img`
@@ -135,7 +135,7 @@ const DoveCity = styled.img`
 `;
 
 DoveCity.defaultProps = {
-	src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/69283087_2432277797048112_5900238230850109440_n.png?stp=dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=0572db&_nc_ohc=R7IgbzNuDngAX8HAdyH&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBDa2wI5d8u2pIXH6BreQyqDaEWtrJTcnCd9GPdf0BriA&oe=63A5CD95',
+	src: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Fdove%2F69283087_2432277797048112_5900238230850109440_n.png?alt=media&token=0037cf6c-c057-4f58-adcc-163b366d2960',
 };
 
 const DownArrow = () => {

@@ -30,13 +30,13 @@ const RowItem = ({ history, enableDelete }) => {
 	return (
 		<div className=' p-[8px] w-[300px] hover:bg-[#303031] rounded-xl'>
 			<div className='flex flex-row w-full items-center space-x-3 text-[#e1e3e8] cursor-pointer'>
-				<div className={`w-[36px]  rounded-full overflow-hidden bg-[#18191a]`}>
+				<div className={`w-[36px] flex-none  rounded-full overflow-hidden bg-[#18191a]`}>
 					{history.type && history.type === typeDefined.lastSearch ? (
 						<div className='w-[20px] h-[20px] m-[8px]'>
 							<IClock />
 						</div>
 					) : (
-						<img src={history.img} width={36} height={36} />
+						<img src={history.img} width={36} height={36} className='object-contain '/>
 					)}
 				</div>
 				<span className='flex flex-col grow justify-center'>

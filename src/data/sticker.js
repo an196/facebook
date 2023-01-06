@@ -1,52 +1,52 @@
 export const topics = [
     {
         title: 'Vui vẻ',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/10173506_1459861224274242_53501986_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=8afFv1e1268AX-qZDyy&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfCVa4YWvLmyLNQQHyBjq0iUOJUfQg5M7_sCQhw4-SEUNg&oe=63A5762F',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F10173506_1459861224274242_53501986_n.png?alt=media&token=a2e53e6c-b353-479b-a865-9c1cd8d9bf7b',
         bgColor: '#ffcc00',
     },
     {
         title: 'Đang yêu',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/70058110_2300299466886963_5190591122518310912_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=v19fdfOyCikAX-cwcS8&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBQEAmcuXWzTaJlCkY8BRibi2Kuwgtpkt2gubDK_Smr3g&oe=63A543D4',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F70058110_2300299466886963_5190591122518310912_n.png?alt=media&token=15266a49-7969-4921-b3a4-8d63d799e2e4',
         bgColor: '#f64e88',
     },
     {
         title: 'Buồn',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/851553_575284795890898_2058317020_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=PIQ86aD0SboAX_6jHRJ&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBT16VTRL5P5JYLP4ma5OKZRs8bLMQfYOi8btseVUJcZw&oe=63A4F8B0',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F851553_575284795890898_2058317020_n.png?alt=media&token=43145ab7-5b46-41b2-bb60-e96a08f4dcd7',
         bgColor: '#a9a192',
     },
     {
         title: 'Đang ăn',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/851554_490565907723521_1819310451_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=VRJyN0ajNloAX-IewvV&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBSp0oONTpKdFXRFgc5I8ifLYXzhJgeHnMDrNz_goWBdQ&oe=63A4D715',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F851554_490565907723521_1819310451_n.png?alt=media&token=c58a9f2d-1dd5-4d7d-a3ea-28ded5cf3aa4',
         bgColor: '#fc8a0f',
     },
     {
         title: 'Đang chúc mừng',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/11405161_990066267681256_1477399391_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=d_Lyopvh5ncAX8Yrdg-&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfDQfthTO5bGYsnSJPOx3ilP-P9M0M67ScoyEX8nRVto5w&oe=63A50E30',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F11405161_990066267681256_1477399391_n.png?alt=media&token=da060a3e-19a3-4bbd-b9be-3d6a961484e5',
         bgColor: '#95c63f',
     },
     {
         title: 'Đang hoạt động',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/851560_488524324594346_757465311_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=x-wfk-WRi_YAX9BMfIh&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfDu-Hg0Y5-KMiFjYdDxGbKmR8YjvfzBnKi6oWC9fTOMRg&oe=63A4B68C',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F851560_488524324594346_757465311_n.png?alt=media&token=65c31ac1-ace8-4fb7-a0f4-0ce3bdc0299f',
         bgColor: '#54c6e3',
     },
     {
         title: 'Đang làm việc',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/851554_575285909224120_1862309190_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=-4-k2rsU-2AAX-asnRx&tn=nXthrLtSduKSlaxw&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfC0apGCEdkCbOVJ0q3hIiznHTzz9TPdDD363DsZ363sWA&oe=63A5EE38',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F851554_575285909224120_1862309190_n.png?alt=media&token=c093acad-5ad4-4d10-b96c-2716db8b71cc',
         bgColor: '#19b596',
     },
     {
         title: 'Buồn ngủ',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/851577_209575355899633_2072364476_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=6aAbEtGHZakAX_exfnE&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfB52CtBJCXElLQ9JZ7GomqNVt10KxC5XFS3TSyIHgRJfQ&oe=63A5613D',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F851577_209575355899633_2072364476_n.png?alt=media&token=b47e8f19-ee4a-48f8-974c-4035df2494da',
         bgColor: '#9571a9',
     },
     {
         title: 'Giận dữ',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/70236861_2357917957814504_8239578823876673536_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=mu7rJxc_0t0AX9Jca7S&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfBaXwC5d4mLmVHZ5JAljKJWNByvZ4GjklRNuRVx7d9IYw&oe=63A58229',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F70236861_2357917957814504_8239578823876673536_n.png?alt=media&token=6770f951-9fd3-4ccc-8ef8-6baf0e71eb0f',
         bgColor: '#ed513e',
     },
     {
         title: 'Bối rối',
-        img: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.1997-6/10333099_298592936987572_2124775027_n.png?stp=cp0_dst-png_p34x34&_nc_cat=1&ccb=1-7&_nc_sid=ac3552&_nc_ohc=XZou0bi119UAX8_GdYr&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfB84JSxDEAeb_ppFwN72WKT0Ebb-p9t7XQa3EtSVVXK4A&oe=63A55F93',
+        img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/sticker%2Finstance%2F10333099_298592936987572_2124775027_n.png?alt=media&token=6515d198-3298-4522-8cc5-bbcc92ab267a',
         bgColor: '#b37736',
     },
 ]
