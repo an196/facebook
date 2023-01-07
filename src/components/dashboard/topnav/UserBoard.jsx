@@ -52,9 +52,7 @@ const Top = () => {
 
 function UserBoard() {
 	return (
-		<div
-			className='absolute right-0 top-10 z-40 flex flex-col w-[360px] bg-[#242526] text-white  flex-initial rounded-md'
-		>
+		<div className='absolute right-0 top-10 z-40 flex flex-col w-[360px] bg-[#242526] text-white  flex-initial rounded-md'>
 			<Top />
 			<div className='w-full'>
 				{items.map((item, idx) => (

@@ -38,8 +38,9 @@ const rightIcons = [
 const MiddleButton = ({ item, index }) => {
 	return (
 		<span
-			className={`${index === 0 && 'menu-item-active'
-				} flex w-full h-full justify-center items-center cursor-pointer relative group
+			className={`${
+				index === 0 && 'menu-item-active'
+			} flex w-full h-full justify-center items-center cursor-pointer relative group
     `}
 		>
 			<Tooltip lable={item.name}>
@@ -60,24 +61,21 @@ const RightBtn = ({ icon, num, active }) => {
 	let btnRef = useRef();
 	let boardRef = useRef();
 
-	const {setElementRefs} = useBoardContext();
+	const { setElementRefs } = useBoardContext();
 
-	useEffect(()=>{
+	useEffect(() => {
 		setElementRefs(icon.name, btnRef, boardRef);
-	},[])
+	}, []);
 
 	return (
-		< >
+		<>
 			<Tooltip lable={icon.name}>
 				{icon?.icon ? (
 					<div
-						className={`left-icon-item hover:bg-[#525151] flex  ${active && 'bg-[#2d88ff]/20'
-							}`}
+						className={`left-icon-item hover:bg-[#525151] flex  ${active && 'bg-[#2d88ff]/20'}`}
 						ref={btnRef}
 					>
-						<div className={`h-[20px] w-[20px] ${active ? 'text-[#2d88ff]' : ''}`}>
-							{icon?.icon}
-						</div>
+						<div className={`h-[20px] w-[20px] ${active ? 'text-[#2d88ff]' : ''}`}>{icon?.icon}</div>
 						{icon.name === 'notification' && (
 							<div
 								className='absolute top-0 right-0 w-[19px] h-[19px] bg-[#e41e3f] rounded-full flex items-center justify-center 
@@ -112,13 +110,12 @@ function TopNav() {
 				<span className='w-[40px] h-[40px] p-auto filt-logo mr-2'>
 					<ILogo3 />
 				</span>
-				<span
-					className='w-[240px] h-[40px] bg-[#3a3b3c] text-[#a5b3b8] flex flex-row p-[12px] items-center rounded-full overflow-hidden z-20'
-				>
+				<span className='w-[240px] h-[40px] bg-[#3a3b3c] text-[#a5b3b8] flex flex-row p-[12px] items-center rounded-full overflow-hidden z-20'>
 					{
 						<span
-							className={`h-[18px] w-[18px] cursor-pointer ${showSearchBoard ? 'animate-move-left-2' : !fisrtload && 'animate-move-right'
-								} `}
+							className={`h-[18px] w-[18px] cursor-pointer ${
+								showSearchBoard ? 'animate-move-left-2' : !fisrtload && 'animate-move-right'
+							} `}
 						>
 							<ISearch />
 						</span>

@@ -148,9 +148,7 @@ function getStatusMessage(message) {
 
 function ChatBoard() {
 	return (
-		<div
-			className='absolute w-[360px] h-[801px] top-10 right-0 bg-[#242526] rounded-md !z-200'
-		>
+		<div className='absolute w-[360px] h-[801px] top-10 right-0 bg-[#242526] rounded-md !z-200'>
 			<div className='w-[360px] h-full flex flex-col'>
 				<Top />
 				<Bottom />

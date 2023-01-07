@@ -106,7 +106,7 @@ function StickerBoard() {
 						<TabBtn tab={tab} key={idx} onClick={hdlTabClick} />
 					))}
 				</div>
-				{	currentTab && currentTab.element }
+				{currentTab && currentTab.element}
 			</div>
 			<div
 				className='w-[21px] h-[12px] transform -scale-x-100 scale-y-100 absolute bottom-[100%] right-[100%] translate-x-[16px] 

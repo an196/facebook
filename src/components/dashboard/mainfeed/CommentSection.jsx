@@ -30,19 +30,21 @@ const CommentSection = () => {
 					<span className='font-semibold tracking-tight '>Bình luận liên quan nhất</span>
 					<i
 						className='bg-img-5 img-icon-downarrow filter-icon w-[16px] h-[16px] mt-1'
-						onClick={() => setShowFilterComment(!showFilterComment)}
+						onClick={() => {
+							setShowFilterComment(true);
+						}}
 					></i>
 					{showFilterComment && <FiltCommentBoard show={setShowFilterComment} />}
 				</div>
 			</div>
 			<CommentInput />
 			<ul className='list-none'>
-			{userComments.map((comment, idx) => (
-				<li key={idx}>
-					<UserComment comment={comment} />
-					{comment?.reply && <CommentReply comments={comment.reply} />}
-				</li>
-			))}
+				{userComments.map((comment, idx) => (
+					<li key={idx}>
+						<UserComment comment={comment} />
+						{comment?.reply && <CommentReply comments={comment.reply} />}
+					</li>
+				))}
 			</ul>
 			<CommentViewMore />
 		</div>

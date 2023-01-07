@@ -36,7 +36,7 @@ const RowItem = ({ history, enableDelete }) => {
 							<IClock />
 						</div>
 					) : (
-						<img src={history.img} width={36} height={36} className='object-contain '/>
+						<img src={history.img} width={36} height={36} className='object-contain ' />
 					)}
 				</div>
 				<span className='flex flex-col grow justify-center'>

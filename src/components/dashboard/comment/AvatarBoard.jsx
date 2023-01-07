@@ -1,5 +1,5 @@
 import React from 'react';
-import {avatarStickers} from '../../../data/sticker/avatarSk';
+import { avatarStickers } from '../../../data/sticker/avatarSk';
 import { ITriangle } from '../../../theme/icons';
 
 function AvatarBoard() {

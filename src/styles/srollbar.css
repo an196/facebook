@@ -24,7 +24,7 @@
 }
 
 .hide-scrollbar::-webkit-scrollbar-track {
-	background: transparent !important;;
+	background: transparent !important;
 	border-radius: 10px;
 }
 
@@ -34,9 +34,8 @@
 	border: transparent !important;
 }
 
-
 .hide-scrollbar:hover:-webkit-scrollbar-track {
-	background: var(--primary) !important;;
+	background: var(--primary) !important;
 	border-radius: 10px;
 }
 

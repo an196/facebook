@@ -10,15 +10,15 @@ import { ChatContext } from './contexts/ChatContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	// <React.StrictMode>
-		<HelmetProvider>
-			<BrowserRouter>
-				<BoardContext>
-					<ChatContext>
-						<App />
-					</ChatContext>
-				</BoardContext>
-			</BrowserRouter>
-		</HelmetProvider>
+	<HelmetProvider>
+		<BrowserRouter>
+			<BoardContext>
+				<ChatContext>
+					<App />
+				</ChatContext>
+			</BoardContext>
+		</BrowserRouter>
+	</HelmetProvider>,
 	// </React.StrictMode>,
 );
 

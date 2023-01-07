@@ -3,24 +3,61 @@ import CommentInput from './CommentInput';
 import { friendComments } from '../../../data/dummy';
 import FriendComment from './FriendComment';
 import FriendReply from './FriendReply';
+import { useEffect } from 'react';
 
-const DisplayComment = ({comment}) => {
+const user = {
+	_idUser: '01234567891',
+	name: 'Ng.Trần Lê Dương',
+	img: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/michael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=1f6e25a3-9158-4a36-bef9-2a43c48a12a0',
+};
+
+const DisplayComment = ({ comment }) => {
 	const [replying, setReplying] = useState(false);
+	const [_comment, setComment] = useState(comment);
 
-	function hdlReply(){
+	function hdlReply() {
 		setReplying(true);
 	}
 
+	function hdlEndReply() {
+		setReplying(false);
+	}
+
+	function hdlContent(e) {
+		const content = e.childNodes[1].textContent;
+		console.log('content', content);
+		console.log(_comment, '_comment');
+
+		const newReplyId = (Math.max(..._comment.reply.map((rep) => rep._id)) + 1).toString();
+		const newComment = {
+			..._comment,
+			reply: [..._comment.reply, { ...user, content, _id: newReplyId, timeComment: '9 giờ' }],
+		};
+		console.log('newComment', newComment);
+		setComment(newComment);
+	}
+
 	return (
-		<li >
-			<FriendComment comment={comment} onReply={hdlReply} relying={replying}/>
-			{comment?.reply && <FriendReply comments={comment.reply} />}
-			<div className='pl-[48px] mt-1'>
-			{ replying && <CommentInput username={comment.name} idComment={comment._id} />}
-			</div>
+		<li>
+			{_comment && (
+				<>
+					<FriendComment comment={_comment} onReply={hdlReply} relying={replying} />
+					{_comment?.reply && <FriendReply comments={_comment.reply} />}
+					<div className='pl-[48px] mt-1'>
+						{replying && (
+							<CommentInput
+								username={_comment.name}
+								idComment={_comment._id}
+								endReply={hdlEndReply}
+								submit={hdlContent}
+							/>
+						)}
+					</div>
+				</>
+			)}
 		</li>
-	)
-}
+	);
+};
 
 function FriendCommentSection() {
 	return (
@@ -37,13 +74,12 @@ function FriendCommentSection() {
 			</div>
 			<ul>
 				{friendComments.map((comment, idx) => (
-					<DisplayComment key={idx} comment={comment}/>
+					<DisplayComment key={idx} comment={comment} />
 				))}
 			</ul>
 			<div className='mt-3'>
-			<CommentInput />
+				<CommentInput />
 			</div>
-			
 		</div>
 	);
 }

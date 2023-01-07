@@ -79,7 +79,8 @@ export const BoardContext = ({ children }) => {
 		if (
 			menuBoardRef.current.contains(event.target) ||
 			messengeBoardRef.current.contains(event.target) ||
-			notificationBoardRef.current.contains(event.target) || userBoardRef.current.contains(event.target)
+			notificationBoardRef.current.contains(event.target) ||
+			userBoardRef.current.contains(event.target)
 		)
 			return (_board = VALID);
 	}
