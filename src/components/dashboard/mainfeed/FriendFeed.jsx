@@ -1,4 +1,5 @@
 import React from 'react';
+import { FocusingTypingContext } from '../../../contexts/FocusingTypingContext';
 import FriendCommentSection from './FriendCommentSection';
 import HeaderFeed from './HeaderFeed';
 import ReactionSection from './ReactionSection';
@@ -33,7 +34,9 @@ function FriendFeed({ news }) {
 				</div>
 			</div>
 			<ReactionSection news={news} />
-			<FriendCommentSection />
+			<FocusingTypingContext>
+				<FriendCommentSection />
+			</FocusingTypingContext>
 		</div>
 	);
 }

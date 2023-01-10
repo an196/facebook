@@ -49,6 +49,7 @@ const IconComment = ({ icon, hdlClick, active }) => {
 const CommentInput = ({ username, idComment, endReply, submit }) => {
 	const [currentTab, setCurrentTab] = useState(null);
 	const [addedSpanContent, setAddedSpanContent] = useState(false);
+	const inputRef = useRef();
 
 	function hdlClick(name) {
 		if (currentTab && currentTab.name === name) {
@@ -81,11 +82,10 @@ const CommentInput = ({ username, idComment, endReply, submit }) => {
 	}
 
 	useEffect(() => {
+		const container = document.getElementById(idComment);
 		const typing = function () {
-			const container = document.getElementById(idComment);
-			const maxWith = container.offsetWidth;
-
 			if (container.childNodes[1]) {
+				const maxWith = container.offsetWidth;
 				let textEle = container.childNodes[1];
 
 				const namewidth = container.childNodes[0].offsetWidth;
@@ -100,7 +100,8 @@ const CommentInput = ({ username, idComment, endReply, submit }) => {
 		const getEndTyping = function (e) {
 			if (e.key === 'Enter') {
 				const content = document.getElementById(idComment);
-				submit(content);
+
+				submit(container);
 				endReply();
 			}
 		};
@@ -123,18 +124,19 @@ const CommentInput = ({ username, idComment, endReply, submit }) => {
 	}, []);
 
 	return (
-		<div className='flex flex-row' id='comment-input'>
+		<div className='flex flex-row grow' id='comment-input'>
 			<div className='w-[32px] h-[32px] rounded-full overflow-hidden mr-[6px] flex-none'>
 				<img src={avartar} alt='avatar' />
 			</div>
 			<form className='flex flex-wrap justify-end bg-[#3a3b3c] w-full px-[12px] rounded-[18px] clearfix relative'>
-				<div className='flex  grow pointer-events-auto break-words whitespace-pre-wrap select-text py-[8px] '>
+				<div className='flex cursor-text grow pointer-events-auto break-words whitespace-pre-wrap select-text py-[8px] '>
 					<p
 						className='flex flex-wrap w-full bg-inherit outline-none text-[15px] editor-comment badge whitespace-pre-wrap 
-						text-primaryText'
+						text-primaryText cursor-text'
 						id={idComment}
 						contentEditable
 						suppressContentEditableWarning={true}
+						ref={inputRef}
 					>
 						{username && (
 							<span
