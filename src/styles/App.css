@@ -1,0 +1,81 @@
+@tailwind base;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* default */
+	--accent: hsl(214, 100%, 59%);
+	--blue-link: #4599ff;
+	--disabled-icon: rgba(255, 255, 255, 0.3);
+	--primary: #393a3b;
+	--secondary: #95979b;
+	--positive: #31a24c;
+
+	/* text */
+	--primary-text: #e4e6eb;
+	--secondary-text: #b0b3b8;
+	--text-highlight: rgba(24, 119, 242, 0.45);
+
+	/* background */
+	--primary-button-background: #2374e1;
+	--messenger-card-background: #242526;
+	--comment-background: #3a3b3c;
+	--card-background: #242526;
+
+	/* filter */
+	--filter-primary-icon: invert(89%) sepia(6%) hue-rotate(185deg);
+	--filter-secondary-icon: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%);
+	--filter-accent: invert(40%) sepia(52%) saturate(200%) saturate(200%) saturate(200%) saturate(189%)
+		hue-rotate(191deg) brightness(103%) contrast(102%);
+	--filter-always-white: invert(100%);
+	--filter-placeholder-icon: invert(59%) sepia(11%) saturate(200%) saturate(135%) hue-rotate(176deg) brightness(96%)
+		contrast(94%);
+
+	--fds-soft: cubic-bezier(0.08, 0.52, 0.52, 1);
+	--fds-fast: 200ms;
+
+	/* always */
+	--always-white: white;
+	--always-black: black;
+}
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge and Safari */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--primary);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--secondary);
+	border-radius: 14px;
+	border: 1px solid var(--primary);
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.menu-item {
+		@apply w-[28px] h-[28px];
+	}
+	.menu-item-active {
+		@apply border-b-[3px] border-primaryButtonBackground text-primaryButtonBackground;
+	}
+	.left-icon-item {
+		@apply w-[40px] h-[40px] p-[10px] rounded-full bg-[#3a3b3c] text-[#e4e6eb];
+	}
+}

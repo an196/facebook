@@ -4,7 +4,7 @@ function CameraIcon() {
 	const rect = useRef();
 	const triangle = useRef();
 	const verRect = useRef();
-    const horRect = useRef();
+	const horRect = useRef();
 
 	let ctx = null;
 
@@ -19,8 +19,7 @@ function CameraIcon() {
 		ctx.fillStyle = ' #b0b3b8';
 		ctx.fillRect(0, 0, 100, 100);
 
-        canvasEle.parentElement.style = 'border-radius: 3px; overflow: hidden'
-
+		canvasEle.parentElement.style = 'border-radius: 3px; overflow: hidden';
 	}, []);
 
 	// //draw triangle
@@ -40,8 +39,7 @@ function CameraIcon() {
 		canvasEle.parentElement.style = 'margin-left: -5px; margin-top: 1px';
 	}, []);
 
-
-    //draw verRect
+	//draw verRect
 	useEffect(() => {
 		const canvasEle = verRect.current;
 		canvasEle.width = 2;
@@ -51,12 +49,12 @@ function CameraIcon() {
 		ctx = canvasEle.getContext('2d');
 		// ctx.fillStyle = '#18191a';
 		ctx.fillStyle = '#18191a';
-        ctx.fillRect(0, 0, 100, 100);
+		ctx.fillRect(0, 0, 100, 100);
 
-        canvasEle.parentElement.style = 'margin-left: -14px; margin-top: 2px '
+		canvasEle.parentElement.style = 'margin-left: -14px; margin-top: 2px ';
 	}, []);
 
-     //draw horRect
+	//draw horRect
 	useEffect(() => {
 		const canvasEle = horRect.current;
 		canvasEle.width = 8;
@@ -66,9 +64,9 @@ function CameraIcon() {
 		ctx = canvasEle.getContext('2d');
 		// ctx.fillStyle = '#18191a';
 		ctx.fillStyle = '#18191a';
-        ctx.fillRect(0, 0, 100, 100);
+		ctx.fillRect(0, 0, 100, 100);
 
-        canvasEle.parentElement.style = 'margin-left: -5px; margin-top: 5px '
+		canvasEle.parentElement.style = 'margin-left: -5px; margin-top: 5px ';
 	}, []);
 
 	return (
@@ -80,10 +78,10 @@ function CameraIcon() {
 				<div>
 					<canvas ref={triangle}></canvas>
 				</div>
-                <div>
+				<div>
 					<canvas ref={verRect}></canvas>
 				</div>
-                <div>
+				<div>
 					<canvas ref={horRect}></canvas>
 				</div>
 			</div>

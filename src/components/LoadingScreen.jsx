@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function LoadingScreen() {
-  return (
-    <div>Loading...</div>
-  )
+	return <div>Loading...</div>;
 }
 
-export default LoadingScreen
+export default LoadingScreen;

@@ -1,0 +1,17 @@
+.tooltip {
+	position: relative;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	position: absolute;
+	z-index: 20;
+	opacity: 0;
+	transition: opacity 0.3s;
+	transition-delay: 500ms;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 0.75;
+}

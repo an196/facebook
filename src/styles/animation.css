@@ -1,0 +1,52 @@
+.animate-move-left {
+	animation-duration: 0.5s;
+	animation-name: kf-move-1;
+	animation-fill-mode: forwards;
+}
+
+.animate-move-right {
+	animation-duration: 0.75s;
+	animation-name: kf-move-2;
+	animation-fill-mode: forwards;
+}
+
+.animate-move-left-2 {
+	animation-duration: 0.75s;
+	animation-name: kf-move-3;
+	animation-fill-mode: forwards;
+}
+
+.animate-test {
+	height: 300%;
+	width: 300%;
+	animation: 0s ease 0s 1 normal none running none;
+}
+
+@keyframes kf-move-1 {
+	from {
+		transform: translateX(20px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes kf-move-2 {
+	from {
+		transform: translateX(-20px);
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes kf-move-3 {
+	from {
+		transform: translateX(0px);
+		visibility: visible;
+	}
+	to {
+		transform: translateX(-50px);
+		margin-left: -20px;
+	}
+}

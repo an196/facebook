@@ -1,0 +1,32 @@
+#editor-post.badge[contenteditable]:empty::before {
+	content: 'Ân ơi, bạn đang nghĩ gì thế?';
+	display: inline-block;
+	color: #a8abaf;
+}
+
+#editor-post.badge[contenteditable]:empty:focus::before {
+	content: 'Ân ơi, bạn đang nghĩ gì thế?';
+	color: #a8abaf;
+}
+
+#editor-chat.badge[contenteditable]:empty::before {
+	content: 'Aa';
+	display: inline-block;
+	color: #a8abaf;
+}
+
+#editor-chat.badge[contenteditable]:empty:focus::before {
+	content: 'Aa';
+	color: #a8abaf;
+}
+
+.editor-comment.badge[contenteditable]:empty::before {
+	content: 'Viết bình luận...';
+	display: inline-block;
+	color: #a8abaf;
+}
+
+.editor-comment.badge[contenteditable]:empty:focus::before {
+	content: 'Viết bình luận...';
+	color: #a8abaf;
+}
