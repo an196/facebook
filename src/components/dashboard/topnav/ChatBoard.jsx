@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ISearch, ITicket } from '../../../theme/icons/index';
 import board from '../../../constant/board';
 import { useBoardContext } from '../../../contexts/BoardContext';
 import { messages } from '../../../data/dummy';
+import useDetectHeightBoard from '../../../hooks/useDetectHeightBoard';
 
 const iconsTopLeft = [
 	{ icon: 'icon-threedots' },
@@ -42,13 +43,20 @@ const UserMessages = ({ message }) => {
 };
 
 const Top = () => {
+	const BOARDHEIGHT = 757;
+	const ADJUSTCOUNT = 60;
+	const TOPNAVHEIGHT = 56;
+
+	const {getHeight} = useDetectHeightBoard();
+	const [boardHeigt, setBoardHeight] = useState(state => getHeight(BOARDHEIGHT, TOPNAVHEIGHT + ADJUSTCOUNT));
+	
 	return (
 		<div className='flex w-full '>
-			<div className='block h-[757px] w-full overflow-y-auto '>
+			<div className={`block  w-full overflow-y-auto`} style={{height:boardHeigt +'px' }}>
 				<div className='flex h-full w-full'>
 					<div className='w-[360px] box-border block  relative '>
 						<div className='flex flex-row px-4 pt-3 pb-1 items-center justify-between'>
-							<span className='text-[24px] w-full font-bold text-[#e4e6eb]'>Chat</span>
+							<span className='text-[24px] w-full font-bold text-[#e4e6eb] leading-none'>Chat</span>
 							<span className='flex flex-row items-center justify-center'>
 								{iconsTopLeft.map((icon, idx) => (
 									<div
@@ -147,8 +155,9 @@ function getStatusMessage(message) {
 }
 
 function ChatBoard() {
+	
 	return (
-		<div className='absolute w-[360px] h-[801px] top-10 right-0 bg-[#242526] rounded-md !z-200'>
+		<div className='absolute w-[360px] min-h-min top-10 right-0 bg-[#242526] rounded-md !z-200'>
 			<div className='w-[360px] h-full flex flex-col'>
 				<Top />
 				<Bottom />
