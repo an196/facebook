@@ -9,16 +9,16 @@ import { user } from '../../../data/dummy';
 const DisplayComment = ({ comment }) => {
 	const [_comment, setComment] = useState(comment);
 
-	function hdlContent(e) {
-		const content = e.childNodes[1].textContent;
-		const newReplyId = (Math.max(..._comment.reply.map((rep) => rep._id)) + 1).toString();
-		const newComment = {
-			..._comment,
-			reply: [..._comment.reply, { ...user, content, _id: newReplyId, timeComment: '9 giờ' }],
-		};
+	// function hdlContent(e) {
+	// 	const content = e.childNodes[1].textContent;
+	// 	const newReplyId = (Math.max(..._comment.reply.map((rep) => rep._id)) + 1).toString();
+	// 	const newComment = {
+	// 		..._comment,
+	// 		reply: [..._comment.reply, { ...user, content, _id: newReplyId, timeComment: '9 giờ' }],
+	// 	};
 
-		setComment(newComment);
-	}
+	// 	setComment(newComment);
+	// }
 
 	return (
 		<li>

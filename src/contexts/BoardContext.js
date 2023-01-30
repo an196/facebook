@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useRef, useEffect } from 'react';
 
 //const
 const VALID = 'valid';
+
 const BOARD = {
 	MENU: 'menu',
 	MESSENGER: 'messenger',

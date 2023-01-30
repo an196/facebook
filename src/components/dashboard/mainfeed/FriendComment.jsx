@@ -10,6 +10,7 @@ const nomalComment = 'bg-[#3a3b3c]';
 function FriendComment({ comment, onReply, replying, child }) {
 	const { isTyping, changeTyping, replyFor } = useSingleTyping();
 	const { focusingFor } = useFocusingTypingContext();
+
 	function getActive() {
 		if (!child) {
 			if (replyFor?._id === comment._id && focusingFor?._id === comment._id) return activeComment;
@@ -35,8 +36,8 @@ function FriendComment({ comment, onReply, replying, child }) {
 							<p className={`text-[15px] font-normal`}>{comment?.content}</p>
 						</span>
 						<div
-							className='w-[40px] h-[40px] p-[17px] flex items-center justify-center hover:bg-[#3a3b3c] cursor-pointer hover:opacity-60 
-                        rounded-full'
+							className='w-[40px] h-[40px] p-[17px] flex items-center justify-center hover:bg-[#3a3b3c] 
+							cursor-pointer hover:opacity-60 rounded-full'
 						>
 							<i className='bg-img-4 img-icon-threedots flex-none filter-icon group-hover:opacity-100 opacity-0'></i>
 						</div>

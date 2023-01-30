@@ -12,11 +12,9 @@ root.render(
 	// <React.StrictMode>
 	<HelmetProvider>
 		<BrowserRouter>
-			<BoardContext>
-				<ChatContext>
-					<App />
-				</ChatContext>
-			</BoardContext>
+			<ChatContext>
+				<App />
+			</ChatContext>
 		</BrowserRouter>
 	</HelmetProvider>,
 	// </React.StrictMode>,

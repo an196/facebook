@@ -7,7 +7,7 @@ export const SingleTypingContext = ({ children }) => {
 	const { changeFocus } = useFocusingTypingContext();
 
 	const [isTyping, setTyping] = useState(false);
-	const [replyFor, setReplyFor] = useState(); // reply for comment in current
+	const [replyFor, setReplyFor] = useState(); 	// reply for comment in current
 
 	function changeTyping(child, comment) {
 		if (child) return;
