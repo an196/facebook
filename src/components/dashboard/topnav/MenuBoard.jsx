@@ -2,9 +2,8 @@ import React, { useRef, useEffect } from 'react';
 import { Section } from '../leftnav';
 import { HorizontalLine } from '../../../components';
 import items from '../../../data/menu';
-import { useBoardContext } from '../../../contexts/BoardContext';
-import board from '../../../constant/board';
-import useDetectOutside from '../../../hooks/useDetectOutside';
+import { useState } from 'react';
+import useDetectHeightBoard from '../../../hooks/useDetectHeightBoard';
 
 const itemsCreate1 = [
 	{ title: 'Đăng', icon: 'icon-pencil' },
@@ -25,7 +24,7 @@ const LeftMenu = () => {
 		<div className='m-2 pt-0 mt-0'>
 			<div className='w-[360px] bg-[#242526] rounded-md block '>
 				<div className='p-4 pb-2'>
-					<div className='flex flex-row items-center bg-[#3a3b3c] rounded-full'>
+					<div className='flex flex-row items-center bg-[#3a3b3c] rounded-full mt-2'>
 						<span className='h-[36px] pl-[10px] flex justify-center items-center'>
 							<i className='img-icon-search bg-img-5 filter-icon'></i>
 						</span>
@@ -78,7 +77,7 @@ const RightMenu = () => {
 				<div className='flex relative m-2 mt-0 '>
 					<div className=' bg-[#242526] rounded-md w-[200px] '>
 						<div className='px-1 py-2'>
-							<p className='text-[20px] font-bold p-[6px]'>Tạo</p>
+							<p className='text-[20px] font-bold p-[6px] leading-none'>Tạo</p>
 						</div>
 						<div className='py-2'>
 							{itemsCreate1.map((item, idx) => (
@@ -99,16 +98,25 @@ const RightMenu = () => {
 };
 
 function MenuBoard({}) {
+	const BOARDHEIGHT = 752;
+	const ADJUSTCOUNT = 60;
+	const TOPNAVHEIGHT = 56;
+
+	const { getHeight } = useDetectHeightBoard();
+	const [boardHeigt, setBoardHeight] = useState((state) => getHeight(BOARDHEIGHT, TOPNAVHEIGHT + ADJUSTCOUNT));
+
 	return (
 		<div
-			className='absolute right-0 top-10 z-50 flex flex-col max-w-[607px] flex-initial h-[752px] rounded-md 
-			text-[#e4e6eb] bg-[#323436] pl-2'
+			className={`absolute right-0 top-10 z-50 flex flex-col max-w-[607px] flex-initial rounded-md 
+			text-[#e4e6eb] bg-[#323436] pl-2 h-[${boardHeigt}px] overflow-clip`}
 		>
-			<div className='text-[24px] font-bold  w-full py-4 px-4'>Menu</div>
-			<div className='h-[752px]  w-full '>
-				<div className='flex flex-col relative overflow-y-auto overscroll-y-contain overflow-x-clip h-[680px] '>
+			<div className='text-[24px] font-bold  w-full py-4 px-4 leading-none'>Menu</div>
+			<div className={`h-[${boardHeigt}px]  w-full `}>
+				<div
+					className={`flex flex-col relative overflow-y-auto overscroll-y-contain overflow-x-clip max-h-[680px] `}
+				>
 					<div className='flex flex-col relative grow'>
-						<div className='block w-[592px]  '>
+						<div className={`block w-[592px]`} style={{ height: boardHeigt + 'px' }}>
 							<div className='flex flex-row items-stretch justify-center'>
 								<LeftMenu />
 								<RightMenu />
