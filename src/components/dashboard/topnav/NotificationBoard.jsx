@@ -62,18 +62,20 @@ function NotificationBoard() {
 	const ADJUSTCOUNT = 10;
 	const TOPNAVHEIGHT = 56;
 
-	const {getHeight} = useDetectHeightBoard();
-	const [boardHeigt, setBoardHeight] = useState(state => getHeight(BOARDHEIGHT, TOPNAVHEIGHT + ADJUSTCOUNT));
-	
+	const { getHeight } = useDetectHeightBoard();
+	const [boardHeigt, setBoardHeight] = useState((state) => getHeight(BOARDHEIGHT, TOPNAVHEIGHT + ADJUSTCOUNT));
+
 	return (
 		<div
 			className={`absolute right-0 top-10 w-[360px] max-h-[${boardHeigt}px] bg-[#242526] text-[#e4e6eb] rounded-md`}
 			ref={notifiBoard}
-			style={{height:boardHeigt +'px' }}
+			style={{ height: boardHeigt + 'px' }}
 		>
 			<div className='flex flex-col w-full h-full overflow-hidden'>
-				<div className={`flex flex-col overflow-y-auto max-h-[${boardHeigt}px] pb-4 scroll-smooth`} 
-					style={{height:boardHeigt +'px' }}>
+				<div
+					className={`flex flex-col overflow-y-auto max-h-[${boardHeigt}px] pb-4 scroll-smooth`}
+					style={{ height: boardHeigt + 'px' }}
+				>
 					<span className='relative mt-5  px-4 flex justify-between items-center'>
 						<span className='text-[24px] font-bold'>Thông báo</span>
 						<div className='w-8 h-8 flex items-center justify-center hover:bg-white/10 rounded-full'>

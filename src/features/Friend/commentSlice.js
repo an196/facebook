@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+const axios = require('axios');
 import commentApi from '../../api/commentApi';
 
 const initialState = {
@@ -7,7 +8,7 @@ const initialState = {
 
 export const getFriendComments = createAsyncThunk('comment/getComments', async () => {
 	const response = await commentApi.getComments();
-	
+
 	if (response.status === 200) return response.data;
 	return 0;
 });
@@ -19,7 +20,6 @@ export const commentSlice = createSlice({
 	extraReducers: (builder) => {
 		builder.addCase(getFriendComments.fulfilled, (state, { payload }) => {
 			state.comments = payload;
-			
 		});
 	},
 });
@@ -27,5 +27,5 @@ export const commentSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const {} = commentSlice.actions;
 
-export const selectFriendComments = state => state.comment.comments;
+export const selectFriendComments = (state) => state.comment.comments;
 export default commentSlice.reducer;

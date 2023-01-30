@@ -123,7 +123,6 @@ const CommentInput = ({ username, idComment, endReply, submit }) => {
 		};
 	}, []);
 
-	console.log(username)
 	return (
 		<div className='flex flex-row grow' id='comment-input'>
 			<div className='w-[32px] h-[32px] rounded-full overflow-hidden mr-[6px] flex-none'>

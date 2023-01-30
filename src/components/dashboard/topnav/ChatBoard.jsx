@@ -47,12 +47,12 @@ const Top = () => {
 	const ADJUSTCOUNT = 60;
 	const TOPNAVHEIGHT = 56;
 
-	const {getHeight} = useDetectHeightBoard();
-	const [boardHeigt, setBoardHeight] = useState(state => getHeight(BOARDHEIGHT, TOPNAVHEIGHT + ADJUSTCOUNT));
-	
+	const { getHeight } = useDetectHeightBoard();
+	const [boardHeigt, setBoardHeight] = useState((state) => getHeight(BOARDHEIGHT, TOPNAVHEIGHT + ADJUSTCOUNT));
+
 	return (
 		<div className='flex w-full '>
-			<div className={`block  w-full overflow-y-auto`} style={{height:boardHeigt +'px' }}>
+			<div className={`block  w-full overflow-y-auto`} style={{ height: boardHeigt + 'px' }}>
 				<div className='flex h-full w-full'>
 					<div className='w-[360px] box-border block  relative '>
 						<div className='flex flex-row px-4 pt-3 pb-1 items-center justify-between'>
@@ -155,7 +155,6 @@ function getStatusMessage(message) {
 }
 
 function ChatBoard() {
-	
 	return (
 		<div className='absolute w-[360px] min-h-min top-10 right-0 bg-[#242526] rounded-md !z-200'>
 			<div className='w-[360px] h-full flex flex-col'>

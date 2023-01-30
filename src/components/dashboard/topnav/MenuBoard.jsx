@@ -102,9 +102,9 @@ function MenuBoard({}) {
 	const ADJUSTCOUNT = 60;
 	const TOPNAVHEIGHT = 56;
 
-	const {getHeight} = useDetectHeightBoard();
-	const [boardHeigt, setBoardHeight] = useState(state => getHeight(BOARDHEIGHT, TOPNAVHEIGHT + ADJUSTCOUNT));
-	
+	const { getHeight } = useDetectHeightBoard();
+	const [boardHeigt, setBoardHeight] = useState((state) => getHeight(BOARDHEIGHT, TOPNAVHEIGHT + ADJUSTCOUNT));
+
 	return (
 		<div
 			className={`absolute right-0 top-10 z-50 flex flex-col max-w-[607px] flex-initial rounded-md 
@@ -112,9 +112,11 @@ function MenuBoard({}) {
 		>
 			<div className='text-[24px] font-bold  w-full py-4 px-4 leading-none'>Menu</div>
 			<div className={`h-[${boardHeigt}px]  w-full `}>
-				<div className={`flex flex-col relative overflow-y-auto overscroll-y-contain overflow-x-clip max-h-[680px] `}>
+				<div
+					className={`flex flex-col relative overflow-y-auto overscroll-y-contain overflow-x-clip max-h-[680px] `}
+				>
 					<div className='flex flex-col relative grow'>
-						<div className={`block w-[592px]`} style={{height: boardHeigt+'px'}}>
+						<div className={`block w-[592px]`} style={{ height: boardHeigt + 'px' }}>
 							<div className='flex flex-row items-stretch justify-center'>
 								<LeftMenu />
 								<RightMenu />
