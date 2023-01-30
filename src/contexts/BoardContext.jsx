@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useRef, useEffect } from 'react';
+import React,{ createContext, useContext, useState, useRef, useEffect } from 'react';
 
 //const
 const VALID = 'valid';
@@ -103,7 +103,7 @@ export const BoardContext = ({ children }) => {
 		};
 	}, [stateBoard.menu, stateBoard.messenger, stateBoard.notification, stateBoard.user, menuRef]);
 
-	return (
+	return(
 		<Context.Provider
 			value={{
 				initialState,
