@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { INews, IReels, ICameraPlus } from '../../../theme/icons/index';
 import HorizontalLine from '../../HorizontalLine';
 import SubSection from './SubSection';
