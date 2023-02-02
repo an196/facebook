@@ -24,7 +24,7 @@ function FriendComment({ comment, onReply, replying, child }) {
 		<>
 			<div className='flex flex-row mt-[8px] group relative w-full'>
 				<div className='w-[32px] h-[32px] rounded-full flex-none overflow-hidden mr-[6px]'>
-					<img src={comment?.img || avatar} alt='avatar' />
+					<img src={comment?.imgProfile || avatar} alt='avatar' />
 				</div>
 				<div className='flex flex-col w-full'>
 					<div className='flex flex-row items-center'>
@@ -32,7 +32,7 @@ function FriendComment({ comment, onReply, replying, child }) {
 							className={` text-[#e4e6eb]  flex flex-col rounded-xl px-[12px] py-[8px] mr-[6px]  
 							${getActive()}`}
 						>
-							<span className='text-[13px]  font-semibold cursor-pointer'>{comment?.name}</span>
+							<span className='text-[13px]  font-semibold cursor-pointer'>{comment?.username}</span>
 							<p className={`text-[15px] font-normal`}>{comment?.content}</p>
 						</span>
 						<div

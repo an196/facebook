@@ -48,7 +48,7 @@ function FriendReply({ comments, child = false }) {
 				<div className='flex flex-row relative w-full'>
 					<div className='w-[26px] h-[22px] mr-[6px] rounded-bl-[10px] flex-none'></div>
 					<CommentInput
-						username={replyFor?.name}
+						username={replyFor?.username}
 						idComment={replyFor?._id}
 						endReply={hdlEndReply}
 						submit={hdlContent}
@@ -60,7 +60,7 @@ function FriendReply({ comments, child = false }) {
 				<div className='flex flex-row relative w-full mt-1'>
 					<div className='w-[26px] h-[22px] mr-[6px] rounded-bl-[10px] flex-none'></div>
 					<CommentInput
-						username={_replyFor?.name}
+						username={_replyFor?.username}
 						idComment={_replyFor?._id}
 						endReply={hdlEndReply}
 						submit={hdlContent}
