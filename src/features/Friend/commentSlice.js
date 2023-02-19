@@ -1,9 +1,10 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 const axios = require('axios');
 import commentApi from '../../api/commentApi';
+import { friendComments } from '../../data/dummy';
 
 const initialState = {
-	comments: [],
+	comments: friendComments,
 };
 
 export const getFriendComments = createAsyncThunk('comment/getComments', async () => {
