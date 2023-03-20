@@ -3,16 +3,16 @@ import { useState } from 'react';
 import { PostFeed } from '../../dashboard';
 
 const actions = [
-	{ name: 'Video trực tiếp', icon: 'bg-img-1 action-feed-icon-1' },
-	{ name: 'Ảnh/Video', icon: 'bg-img-1 action-feed-icon-2' },
-	{ name: 'Feeling/activity', icon: 'bg-img-1 action-feed-icon-3' },
+	{ name: 'Video trực tiếp', icon: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/red-camera.png?alt=media&token=dbe7186f-df17-4177-8789-ae7a3b90015c' },
+	{ name: 'Ảnh/Video', icon: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/green-image.png?alt=media&token=9e229931-dc23-44c9-89fb-6d4626fb998c' },
+	{ name: 'Feeling/activity', icon: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/yellow-face.png?alt=media&token=08b36d5e-5bff-44b3-bcc6-6d5060c7c6b2' },
 ];
 
 const Action = ({ action }) => {
 	return (
 		<span className='w-full flex flex-row justify-center items-center cursor-pointer h-[40px] rounded-md hover:bg-[#494c4e]'>
 			<div style={{ width: '24px', height: '24px', marginRight: '8px' }}>
-				<i data-visualcompletion='css-img' className={`${action.icon}`}></i>
+				<img data-visualcompletion='css-img' src={action.icon}></img>
 			</div>
 			<span className='text-[15px] font-semibold'>{action.name}</span>
 		</span>

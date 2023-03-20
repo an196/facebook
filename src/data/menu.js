@@ -1,8 +1,8 @@
 const socials = [
 	{
 		title: 'Sự kiện',
-		style: 'left-nav-icon-12 bg-img-f',
-		type: 'icon',
+		src: 'https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/event.png?alt=media&token=2b9720ec-8c3f-4f87-bd9f-b67bfe37904d',
+		type: 'img',
 		subtitle: 'Tổ chức hoặc tìm sự kiện cùng những hoạt động khác trên mạng và ở quanh đây.',
 	},
 	{

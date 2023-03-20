@@ -7,24 +7,24 @@ import { EmojiBoard, AvatarBoard, GifBoard, StickerBoard } from '../../../compon
 const icons = [
 	{
 		name: 'avatar',
-		icon: 'bg-img-3 img-icon-avatar ',
+		icon: 'img-icon-avatar ',
 		lable: 'Bình luận bằng nhãn dán avatar',
 		board: <AvatarBoard />,
 	},
 	{
 		name: 'feeling',
-		icon: 'bg-img-3 img-icon-feeling ',
+		icon: 'img-icon-feeling ',
 		lable: 'Chèn một biểu tượng cảm xúc',
 		board: <EmojiBoard />,
 	},
 	{
 		name: 'camera',
-		icon: 'bg-img-3 img-icon-camera',
+		icon: 'img-icon-camera',
 		lable: 'Đính kèm một ảnh hoặc một video',
 		board: <></>,
 	},
-	{ name: 'gif', icon: 'bg-img-3 img-icon-gif', lable: 'Bình luận bằng file GIF', board: <GifBoard /> },
-	{ name: 'lable', icon: 'bg-img-3 img-icon-lable', lable: 'Bình luận bằng nhãn dán', board: <StickerBoard /> },
+	{ name: 'gif', icon: 'img-icon-gif', lable: 'Bình luận bằng file GIF', board: <GifBoard /> },
+	{ name: 'lable', icon: 'img-icon-lable', lable: 'Bình luận bằng nhãn dán', board: <StickerBoard /> },
 ];
 
 const IconComment = ({ icon, hdlClick, active }) => {

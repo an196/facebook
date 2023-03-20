@@ -22,6 +22,10 @@
 	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/yQE5d0gZsxk.png');
 }
 
+.bg-img-f2 {
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/facebook-a9c10.appspot.com/o/icon1.png?alt=media&token=0e113e9e-cda7-4026-8e63-d9938fddf05d');
+}
+
 .bg-img-g {
 	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/1juTcM7mrdW.png');
 }
@@ -87,8 +91,13 @@
 }
 
 .left-nav-icon-10 {
-	background-position: 0 -37px;
-	background-size: auto;
+	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/CQd7aGaFAXB.png"); 
+	background-position: 0px -37px; 
+	background-size: auto; 
+	width: 36px; 
+	height: 36px; 
+	background-repeat: no-repeat; 
+	display: inline-block;
 }
 
 .left-nav-icon-11 {
@@ -97,8 +106,13 @@
 }
 
 .left-nav-icon-12 {
-	background-position: 0 -148px;
-	background-size: auto;
+	background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/WMOYDeEqIYv.png"); 
+	background-position: 0px 0px; 
+	background-size: auto; 
+	width: 36px; 
+	height: 36px; 
+	background-repeat: no-repeat; 
+	display: inline-block;
 }
 
 .left-nav-icon-13 {
@@ -124,3 +138,4 @@
 .left-nav-icon-17 {
 	background-position: 0px -164px;
 }
+

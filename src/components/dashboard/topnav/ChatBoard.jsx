@@ -91,7 +91,7 @@ const Top = () => {
 							</span>
 						</div>
 						{/* message queue */}
-						<div className='h-[72px] w-full flex flex-row items-center justify-between space-x-3 px-4'>
+						{/* <div className='h-[72px] w-full flex flex-row items-center justify-between space-x-3 px-4'>
 							<div className='w-[56px] h-[56px] flex items-center justify-center bg-[#3a3b3c] rounded-full'>
 								<i className='icon-double-messages filter-icon-2'></i>
 							</div>
@@ -102,7 +102,7 @@ const Top = () => {
 							<div className='w-4 h-4'>
 								<i className='icon-right-arrow filter-icon'></i>
 							</div>
-						</div>
+						</div> */}
 						{/* User */}
 						{messages.map((message, idx) => (
 							<UserMessages key={idx} message={message} />

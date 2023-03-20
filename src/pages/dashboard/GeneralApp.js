@@ -17,7 +17,7 @@ const EditBtn = ({ setShow, show }) => {
 						className='w-12 h-12 rounded-full overflow-hidden bg-[#4b4c4f] hover:bg-[#4b4c4f]/80 cursor-pointer 
 						flex items-center justify-center'
 					>
-						<i className='bg-img-6 img-icon-pencil filter-icon w-[20px] h-[20px]'></i>
+						<i className='img-icon-pencil filter-icon w-[20px] h-[20px]'></i>
 					</div>
 				</Tooltip>
 			</div>
